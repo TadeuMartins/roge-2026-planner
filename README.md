@@ -2,6 +2,10 @@
 
 Planner web para transformar a programação oficial da **ROG.e 2026** em uma agenda estratégica.
 
+## Site
+
+https://tadeumartins.github.io/roge-2026-planner/
+
 ## Diferenciais
 
 - Sincronização automática com as páginas oficiais de Programação, ROG.e FEST e Expositores.
