@@ -1,107 +1,3877 @@
 {
-  "generated_at": "2026-09-14T18:50:54.654Z",
+  "generated_at": "2026-09-14T18:55:20.057Z",
   "source": "https://roge.energy/expositores",
-  "count": 20,
+  "count": 645,
   "exhibitors": [
     {
       "name": "2Solve",
       "pavilion": "2",
-      "stand": "G47"
+      "stand": "G47",
+      "website": "https://www.2solve.com/"
     },
     {
       "name": "4pipe",
       "pavilion": "4",
-      "stand": "X74"
+      "stand": "X74",
+      "website": "https://4pipe.com.br/"
     },
     {
       "name": "4tube",
       "pavilion": "6",
-      "stand": "ZB04"
+      "stand": "ZB04",
+      "website": "https://www.4tube.com.br/"
     },
     {
       "name": "6XPHERE",
       "pavilion": "4",
-      "stand": "S69"
+      "stand": "S69",
+      "website": "https://6xphere.com/"
     },
     {
       "name": "Abb",
       "pavilion": "4",
-      "stand": "R10"
+      "stand": "R10",
+      "website": "https://www.br.abb.com/"
     },
     {
       "name": "ABC Drives",
       "pavilion": "6",
-      "stand": "ZA27"
+      "stand": "ZA27",
+      "website": "https://abcdrives.com.br/"
     },
     {
       "name": "Abeemar",
       "pavilion": "3",
-      "stand": "J05"
+      "stand": "J05",
+      "website": "https://roge.energy/www.abeemar.org.br"
     },
     {
       "name": "ABH2",
       "pavilion": "4",
-      "stand": "R70"
+      "stand": "R70",
+      "website": "https://abh2.org/"
     },
     {
       "name": "Abimaq",
       "pavilion": "3",
-      "stand": "J13 - Ilha Abimaq"
+      "stand": "J13 - Ilha Abimaq",
+      "website": "https://www.abimaq.org.br/"
     },
     {
       "name": "Abiogás",
       "pavilion": "4",
-      "stand": "R71"
+      "stand": "R71",
+      "website": "https://www.abiogas.org.br/"
     },
     {
       "name": "Abix",
       "pavilion": "3",
-      "stand": "I28"
+      "stand": "I28",
+      "website": "https://www.abix.com.br/"
     },
     {
       "name": "Abpip",
       "pavilion": "2",
-      "stand": "G46"
+      "stand": "G46",
+      "website": "https://abpip.org.br/"
     },
     {
       "name": "ABS",
       "pavilion": "4",
-      "stand": "T52"
+      "stand": "T52",
+      "website": "https://www.eagle.org/"
     },
     {
       "name": "Acelen",
       "pavilion": "4",
-      "stand": "S47"
+      "stand": "S47",
+      "website": "https://www.acelen.com/"
     },
     {
       "name": "Açokorte",
       "pavilion": "3",
-      "stand": "M69"
+      "stand": "M69",
+      "website": "https://www.acokorte.com.br/"
     },
     {
       "name": "AÇOS TORRES",
       "pavilion": "2",
-      "stand": "B50"
+      "stand": "B50",
+      "website": "https://acostorres.com.br/"
     },
     {
       "name": "Actemium",
       "pavilion": "3",
-      "stand": "Q22"
+      "stand": "Q22",
+      "website": "https://www.actemium.com.br/"
     },
     {
       "name": "Actreg",
       "pavilion": "3",
-      "stand": "N52"
+      "stand": "N52",
+      "website": "https://www.actreg.com/en/"
     },
     {
       "name": "ACTREG",
       "pavilion": "3",
-      "stand": "N53"
+      "stand": "N53",
+      "website": "https://www.actreg.com/"
     },
     {
       "name": "Aepio",
       "pavilion": "3",
-      "stand": "I40"
+      "stand": "I40",
+      "website": "https://www.tmtrov.com/"
+    },
+    {
+      "name": "Aépio",
+      "pavilion": "3",
+      "stand": "I40",
+      "website": "https://www.aepio.com.br/site/"
+    },
+    {
+      "name": "AeroTech",
+      "pavilion": "6",
+      "stand": "ZD16",
+      "website": "https://www.aerotech.ind.br/"
+    },
+    {
+      "name": "AERZEN",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": ""
+    },
+    {
+      "name": "Agencia Argentina de Inversiones y Comercio Internacional",
+      "pavilion": "2",
+      "stand": "G30",
+      "website": "https://www.inversionycomercio.ar/"
+    },
+    {
+      "name": "Airmarine Engenharia Ltda",
+      "pavilion": "4",
+      "stand": "U69",
+      "website": ""
+    },
+    {
+      "name": "Airswift",
+      "pavilion": "3",
+      "stand": "O40 - UK Pavilion",
+      "website": "https://www.airswift.com/"
+    },
+    {
+      "name": "AKZO NOBEL",
+      "pavilion": "4",
+      "stand": "R12",
+      "website": "https://www.international-marine.com/"
+    },
+    {
+      "name": "Albriggs / Aquamec",
+      "pavilion": "3",
+      "stand": "O14",
+      "website": "https://www.albriggs.com.br/"
+    },
+    {
+      "name": "Alcon + Kofre",
+      "pavilion": "6",
+      "stand": "ZA07",
+      "website": "https://www.alcon.com.br/"
+    },
+    {
+      "name": "Aliseo",
+      "pavilion": "2",
+      "stand": "B53",
+      "website": "https://www.aliseosa.com.br/"
+    },
+    {
+      "name": "ALIX",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.ifs.com/pt/partners/find-a-partner/alix"
+    },
+    {
+      "name": "Alleima",
+      "pavilion": "3",
+      "stand": "J52",
+      "website": "https://alleima.com/"
+    },
+    {
+      "name": "ALLSEAS",
+      "pavilion": "4",
+      "stand": "R54",
+      "website": "https://www.allseas.com/en"
+    },
+    {
+      "name": "Alpha",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z03",
+      "website": "https://www.cn-alpha.com/"
+    },
+    {
+      "name": "ALT Railteco",
+      "pavilion": "6",
+      "stand": "ZC19",
+      "website": "https://altrailteco.com/"
+    },
+    {
+      "name": "Altave",
+      "pavilion": "3",
+      "stand": "L05",
+      "website": "https://altave.com.br/"
+    },
+    {
+      "name": "Altrad Sparrows",
+      "pavilion": "2",
+      "stand": "G40",
+      "website": "https://www.altradsparrows.com.br/"
+    },
+    {
+      "name": "Altus",
+      "pavilion": "3",
+      "stand": "M06",
+      "website": ""
+    },
+    {
+      "name": "Alutal",
+      "pavilion": "4",
+      "stand": "Y55",
+      "website": "https://www.alutal.com.br/"
+    },
+    {
+      "name": "Ambflex",
+      "pavilion": "3",
+      "stand": "K69",
+      "website": "https://www.ambflex.com.br/"
+    },
+    {
+      "name": "Ambipar",
+      "pavilion": "2",
+      "stand": "E14",
+      "website": "https://ambipar.com/"
+    },
+    {
+      "name": "American Completion Tools – ACT",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://americancompletiontools.com/"
+    },
+    {
+      "name": "amsouza",
+      "pavilion": "4",
+      "stand": "X19",
+      "website": "https://www.amsouza.com.br/"
+    },
+    {
+      "name": "AmSpec",
+      "pavilion": "4",
+      "stand": "T68",
+      "website": "https://www.amspecgroup.com/"
+    },
+    {
+      "name": "ANP",
+      "pavilion": "2",
+      "stand": "B11",
+      "website": "https://www.gov.br/anp/pt-br/"
+    },
+    {
+      "name": "ANPING COUNTY XINGHUO METAL PRODUCTS",
+      "pavilion": "4",
+      "stand": "Y59 - 2",
+      "website": "http://www.shakerscreen.com.cn/"
+    },
+    {
+      "name": "Apema",
+      "pavilion": "2",
+      "stand": "D10",
+      "website": "https://www.apema.com.br/"
+    },
+    {
+      "name": "API",
+      "pavilion": "3",
+      "stand": "P43",
+      "website": "https://www.api.org/"
+    },
+    {
+      "name": "Applus",
+      "pavilion": "4",
+      "stand": "T81",
+      "website": "https://www.applus.com/br/pt/"
+    },
+    {
+      "name": "Araujo Engenharia",
+      "pavilion": "4",
+      "stand": "W47",
+      "website": "https://www.araujoengenharia.com.br/"
+    },
+    {
+      "name": "ARBRASIL",
+      "pavilion": "6",
+      "stand": "ZC12",
+      "website": "https://www.arbrasilcompressores.com.br/"
+    },
+    {
+      "name": "Archer",
+      "pavilion": "3",
+      "stand": "O52",
+      "website": "https://archerwell.com/"
+    },
+    {
+      "name": "Argentera",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://www.argenteraoilgas.com/"
+    },
+    {
+      "name": "Armacell",
+      "pavilion": "4",
+      "stand": "S68",
+      "website": "https://www.armacell.us/southamerica/"
+    },
+    {
+      "name": "Aselco Automação",
+      "pavilion": "4",
+      "stand": "V06",
+      "website": "https://www.aselco.com.br/"
+    },
+    {
+      "name": "ASN",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.asn.com/"
+    },
+    {
+      "name": "ASP Group",
+      "pavilion": "2",
+      "stand": "G07",
+      "website": "https://www.atlantic.com.pt/"
+    },
+    {
+      "name": "ASTM",
+      "pavilion": "4",
+      "stand": "Y45",
+      "website": "https://www.astm.org/"
+    },
+    {
+      "name": "ASVOTEC",
+      "pavilion": "3",
+      "stand": "L58",
+      "website": "https://www.asvotec.com.br/"
+    },
+    {
+      "name": "ATBL",
+      "pavilion": "4",
+      "stand": "S75",
+      "website": "https://www.atbl.com.br/"
+    },
+    {
+      "name": "ATGás",
+      "pavilion": "4",
+      "stand": "U38",
+      "website": "http://atgas.org.br/"
+    },
+    {
+      "name": "Atlas Copco",
+      "pavilion": "3",
+      "stand": "K52",
+      "website": "https://www.atlascopco.com.br/"
+    },
+    {
+      "name": "Autobahn Industries",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://autobahnindustries.com/"
+    },
+    {
+      "name": "AVLIGHT",
+      "pavilion": "4",
+      "stand": "U10",
+      "website": "https://www.avlight.com.br/"
+    },
+    {
+      "name": "AXENS",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.axens.net/"
+    },
+    {
+      "name": "Az Armaturen",
+      "pavilion": "3",
+      "stand": "N58",
+      "website": "https://az-armaturen.com.br/"
+    },
+    {
+      "name": "Baker Hughes",
+      "pavilion": "3",
+      "stand": "L34",
+      "website": "https://www.bakerhughes.com/"
+    },
+    {
+      "name": "Bartec",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://bartec.com/"
+    },
+    {
+      "name": "BEICIP-FRANLAB",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "http://www.beicip-.com/"
+    },
+    {
+      "name": "Beijing Doright Tools Co.,Ltd",
+      "pavilion": "2",
+      "stand": "G10 - 1",
+      "website": "https://www.dorightsafetytools.com/"
+    },
+    {
+      "name": "BEIJING GEO-VISTA TECHNOLOGY LTD.",
+      "pavilion": "6",
+      "stand": "ZC42 - 29",
+      "website": "http://www.geovista.cn/"
+    },
+    {
+      "name": "Beijing Power International Exhibition",
+      "pavilion": "2 - 3",
+      "stand": "China Pavilion",
+      "website": "http://en.piechina.com/"
+    },
+    {
+      "name": "Beijing Ruihao International Exhibition Co., Ltd.",
+      "pavilion": "2",
+      "stand": "G10",
+      "website": "https://www.ruihaoexpo.com/"
+    },
+    {
+      "name": "BEIJING ZHH FLOW CONTROL SYSTEM",
+      "pavilion": "6",
+      "stand": "ZA19",
+      "website": "https://www.zhh-fcs.com/"
+    },
+    {
+      "name": "BEIZE VALVE",
+      "pavilion": "2",
+      "stand": "G11 - 4",
+      "website": "https://www.beize-valve.com/zh"
+    },
+    {
+      "name": "Bekaert",
+      "pavilion": "6",
+      "stand": "O40 - UK Pavilion",
+      "website": "https://www.bekaert.com/"
+    },
+    {
+      "name": "Belov",
+      "pavilion": "2",
+      "stand": "B62",
+      "website": "https://www.belov.com.br/index.html"
+    },
+    {
+      "name": "Bermad",
+      "pavilion": "3",
+      "stand": "O40 - UK Pavilion",
+      "website": "https://www.bermad.com/"
+    },
+    {
+      "name": "BGH",
+      "pavilion": "3",
+      "stand": "M10",
+      "website": "https://bgh.de/en/"
+    },
+    {
+      "name": "Boerger",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.boerger.com/de/"
+    },
+    {
+      "name": "Bollfilter",
+      "pavilion": "2",
+      "stand": "G35",
+      "website": "https://www.bollfilter.com/"
+    },
+    {
+      "name": "Boskalis",
+      "pavilion": "2",
+      "stand": "A31",
+      "website": "https://www.boskalis.com/"
+    },
+    {
+      "name": "BP",
+      "pavilion": "4",
+      "stand": "V52",
+      "website": "https://www.bp.com/"
+    },
+    {
+      "name": "BR Med",
+      "pavilion": "3",
+      "stand": "H45",
+      "website": "https://grupobrmed.com.br/"
+    },
+    {
+      "name": "Brascabo",
+      "pavilion": "2",
+      "stand": "A47",
+      "website": "https://brascabo.net/"
+    },
+    {
+      "name": "Braspray",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z11",
+      "website": "https://braspray.com.br/"
+    },
+    {
+      "name": "Brastub",
+      "pavilion": "6",
+      "stand": "ZC19",
+      "website": "https://brastub.com.br/"
+    },
+    {
+      "name": "Brava Energia",
+      "pavilion": "4",
+      "stand": "V48",
+      "website": "https://bravaenergia.com/"
+    },
+    {
+      "name": "Bravante",
+      "pavilion": "4",
+      "stand": "V38",
+      "website": "https://www.bravante.com.br/"
+    },
+    {
+      "name": "Bray",
+      "pavilion": "2",
+      "stand": "F18",
+      "website": "https://www.bray.com/"
+    },
+    {
+      "name": "Bucka",
+      "pavilion": "4",
+      "stand": "Y73",
+      "website": "https://www.bucka.com.br/"
+    },
+    {
+      "name": "Burckhardt Compression",
+      "pavilion": "2",
+      "stand": "F43",
+      "website": "https://www.burckhardtcompression.com/"
+    },
+    {
+      "name": "Bureau Veritas",
+      "pavilion": "4",
+      "stand": "U81",
+      "website": "https://www.bureauveritas.com/"
+    },
+    {
+      "name": "Butting",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.butting.com/en/"
+    },
+    {
+      "name": "BW",
+      "pavilion": "4",
+      "stand": "W68",
+      "website": "https://www.bwenergy.no/en/"
+    },
+    {
+      "name": "CAC",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.cac-chem.de/en/"
+    },
+    {
+      "name": "Caldex",
+      "pavilion": "3",
+      "stand": "L06",
+      "website": "https://www.caldex.com.br/"
+    },
+    {
+      "name": "Câmara Brasil Alemanha – AHK",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://brasilien-riodejaneiro.ahk.de/br"
+    },
+    {
+      "name": "Camorim",
+      "pavilion": "4",
+      "stand": "S18",
+      "website": "https://camorim.com.br/"
+    },
+    {
+      "name": "CANGZHOU LONGTAIDI PIPE TECHNOLOGY",
+      "pavilion": "3",
+      "stand": "I06 - 19",
+      "website": "https://en.longtaidi.com/"
+    },
+    {
+      "name": "CANGZHOU OUDI PIPELINE EQUIPMENT",
+      "pavilion": "3",
+      "stand": "I45",
+      "website": "https://www.odpipefitting.com/"
+    },
+    {
+      "name": "Caprock",
+      "pavilion": "4",
+      "stand": "Y77",
+      "website": "https://www.speedcast.com/"
+    },
+    {
+      "name": "Carvalhão",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://transportescarvalho.com.br/"
+    },
+    {
+      "name": "CASA OFFSHORE E ILHA MENDES",
+      "pavilion": "4",
+      "stand": "Y62",
+      "website": "https://casaoffshore.com.br/"
+    },
+    {
+      "name": "Cascadura Group",
+      "pavilion": "6",
+      "stand": "ZD20",
+      "website": "https://www.cascaduragroup.com/"
+    },
+    {
+      "name": "CCS Brasil",
+      "pavilion": "4",
+      "stand": "R67",
+      "website": "https://ccsbr.com.br/"
+    },
+    {
+      "name": "CEFRONT TECHNOLOGY AS",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://www.cefront.com/"
+    },
+    {
+      "name": "CEPECAM",
+      "pavilion": "4",
+      "stand": "R68",
+      "website": "https://www.deqm.puc-rio.br/laboratorios/"
+    },
+    {
+      "name": "CESAR",
+      "pavilion": "4",
+      "stand": "W80",
+      "website": "https://www.cesar.org.br/"
+    },
+    {
+      "name": "CFQ",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z10",
+      "website": "https://www.cfq.org.br/"
+    },
+    {
+      "name": "CHENGDU ZHONGHUAN",
+      "pavilion": "6",
+      "stand": "ZD39",
+      "website": "https://en.zh-flow.com/"
+    },
+    {
+      "name": "Chevron",
+      "pavilion": "4",
+      "stand": "W38",
+      "website": "https://brazil.chevron.com/"
+    },
+    {
+      "name": "Chromax",
+      "pavilion": "2",
+      "stand": "A39",
+      "website": "http://www.chromax.com.br/"
+    },
+    {
+      "name": "CILGROUP",
+      "pavilion": "6",
+      "stand": "ZA16",
+      "website": "https://www.cilgroup.com.br/"
+    },
+    {
+      "name": "Cladtek",
+      "pavilion": "3",
+      "stand": "Q14",
+      "website": "https://cladtek.com/"
+    },
+    {
+      "name": "Clariant",
+      "pavilion": "4",
+      "stand": "S53",
+      "website": "https://www.clariant.com/pt/Corporate"
+    },
+    {
+      "name": "CMM Offshore",
+      "pavilion": "4",
+      "stand": "V10",
+      "website": "https://www.cmmoffshore.com/"
+    },
+    {
+      "name": "CNOOC",
+      "pavilion": "6",
+      "stand": "ZC20",
+      "website": "https://www.cnooc.com.cn/English/"
+    },
+    {
+      "name": "Coester",
+      "pavilion": "3",
+      "stand": "K14 - Ilha Abimaq",
+      "website": "https://www.coester.com.br/"
+    },
+    {
+      "name": "Constellation",
+      "pavilion": "4",
+      "stand": "S48",
+      "website": "https://pt.theconstellation.com/"
+    },
+    {
+      "name": "Convat",
+      "pavilion": "6",
+      "stand": "ZD39",
+      "website": ""
+    },
+    {
+      "name": "Convergint",
+      "pavilion": "2",
+      "stand": "D46",
+      "website": "https://www.convergint.com/"
+    },
+    {
+      "name": "Coremarine AS",
+      "pavilion": "4",
+      "stand": "X52",
+      "website": "https://core-marine.com/"
+    },
+    {
+      "name": "Coutec",
+      "pavilion": "4",
+      "stand": "Y16",
+      "website": "https://www.couteccomercial.com/"
+    },
+    {
+      "name": "CPTDC",
+      "pavilion": "6",
+      "stand": "ZD44",
+      "website": "https://cptdc.cnpc.com.cn/"
+    },
+    {
+      "name": "CRC Evans",
+      "pavilion": "3",
+      "stand": "O40 - UK Pavilion",
+      "website": "https://www.crcevans.com/"
+    },
+    {
+      "name": "CTGV",
+      "pavilion": "6",
+      "stand": "ZB04",
+      "website": "https://www.tgvalve.com/"
+    },
+    {
+      "name": "DALIAN CIMC SPECIAL LOGISTICS EQUIPMENT",
+      "pavilion": "2",
+      "stand": "G29 - 12",
+      "website": "https://en.dcle.cn/"
+    },
+    {
+      "name": "Danfoss",
+      "pavilion": "6",
+      "stand": "ZD24",
+      "website": "https://www.danfoss.com.br/"
+    },
+    {
+      "name": "DANNY",
+      "pavilion": "3",
+      "stand": "Q34",
+      "website": "https://www.danny.com.br/nr-37-seguranca-e-saude-em-plataformas-de-petroleo/"
+    },
+    {
+      "name": "DATA",
+      "pavilion": "2",
+      "stand": "E04",
+      "website": "https://www.data.com.br/"
+    },
+    {
+      "name": "DBR Energies",
+      "pavilion": "4",
+      "stand": "V68",
+      "website": "https://dbrenergies.com.br/"
+    },
+    {
+      "name": "DCL Solutions",
+      "pavilion": "4",
+      "stand": "V68",
+      "website": "https://dclsolutions.com.br/"
+    },
+    {
+      "name": "Deep Trekker / Orion",
+      "pavilion": "2",
+      "stand": "F10",
+      "website": "https://www.deeptrekker.com/"
+    },
+    {
+      "name": "Deeplynx & Videoray",
+      "pavilion": "2",
+      "stand": "D07",
+      "website": "https://www.deeplynxsolutions.com.br/"
+    },
+    {
+      "name": "Deepsea Technologies",
+      "pavilion": "4",
+      "stand": "U48 - UK Pavilion",
+      "website": "https://deepsea-tech.com/"
+    },
+    {
+      "name": "Deepwater/Stoprust",
+      "pavilion": "6",
+      "stand": "ZD12",
+      "website": "https://stoprust.com/"
+    },
+    {
+      "name": "Delp",
+      "pavilion": "3",
+      "stand": "H40",
+      "website": "https://www.delp.com.br/"
+    },
+    {
+      "name": "DELU",
+      "pavilion": "2",
+      "stand": "A61",
+      "website": "https://www.delu.com.br/"
+    },
+    {
+      "name": "DEME",
+      "pavilion": "4",
+      "stand": "R56",
+      "website": "https://www.deme-group.com/"
+    },
+    {
+      "name": "DHV Industries",
+      "pavilion": "4",
+      "stand": "Y36",
+      "website": "https://www.dhvindustries.com/"
+    },
+    {
+      "name": "DIFILTRO",
+      "pavilion": "2",
+      "stand": "F45",
+      "website": ""
+    },
+    {
+      "name": "Digisensor",
+      "pavilion": "6",
+      "stand": "ZA05",
+      "website": "https://www.digisensor.com.br/"
+    },
+    {
+      "name": "DNH AS",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://dnh.no/"
+    },
+    {
+      "name": "DNV",
+      "pavilion": "4",
+      "stand": "R61",
+      "website": "https://www.dnv.com/"
+    },
+    {
+      "name": "DOF",
+      "pavilion": "4",
+      "stand": "X26",
+      "website": "http://www.dof.com/"
+    },
+    {
+      "name": "DONGTAI ZHONGHAI SUPER ALLOY CO., LTD",
+      "pavilion": "2",
+      "stand": "G41",
+      "website": "https://www.genovalimited.com/"
+    },
+    {
+      "name": "Dorf Ketal",
+      "pavilion": "4",
+      "stand": "S06",
+      "website": "https://dorfketal.com/"
+    },
+    {
+      "name": "DPC",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.dpc.com.br/"
+    },
+    {
+      "name": "DT Marine",
+      "pavilion": "4",
+      "stand": "W02",
+      "website": "https://dtmarineservicos.com/"
+    },
+    {
+      "name": "Durum",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://durum.com.br/"
+    },
+    {
+      "name": "Dustre",
+      "pavilion": "3",
+      "stand": "Q40",
+      "website": "https://dustre.com.br/"
+    },
+    {
+      "name": "Dynamics Machinery Co., Ltd",
+      "pavilion": "2",
+      "stand": "G10 - 6",
+      "website": "http://www.dmsmachinery.com/"
+    },
+    {
+      "name": "EagleBurgmann",
+      "pavilion": "3",
+      "stand": "I34",
+      "website": "https://www.eagleburgmann.com.br/"
+    },
+    {
+      "name": "EB Bombas",
+      "pavilion": "4",
+      "stand": "W03",
+      "website": "https://www.ebbombas.com.br/"
+    },
+    {
+      "name": "EIC – Energy Industries Council",
+      "pavilion": "3",
+      "stand": "O40 - UK Pavilion",
+      "website": "https://www.the-eic.com/"
+    },
+    {
+      "name": "EIVA",
+      "pavilion": "4",
+      "stand": "Y51",
+      "website": "https://www.eiva.com/"
+    },
+    {
+      "name": "EM&I",
+      "pavilion": "6",
+      "stand": "ZD31",
+      "website": "https://emialliance.com/pt-br/"
+    },
+    {
+      "name": "Endress + Hauser",
+      "pavilion": "4",
+      "stand": "T06",
+      "website": "https://www.br.endress.com/pt"
+    },
+    {
+      "name": "Enerflex",
+      "pavilion": "2",
+      "stand": "G60",
+      "website": "https://enerflex.com/"
+    },
+    {
+      "name": "Enflex",
+      "pavilion": "4",
+      "stand": "Y35",
+      "website": "https://enflexgroup.com/"
+    },
+    {
+      "name": "Enmac",
+      "pavilion": "2",
+      "stand": "C60",
+      "website": "https://www.enmac.com.br/"
+    },
+    {
+      "name": "Enterlog",
+      "pavilion": "2",
+      "stand": "F10",
+      "website": "https://www.enterlog.com.br/"
+    },
+    {
+      "name": "EPS Leading",
+      "pavilion": "3",
+      "stand": "N52",
+      "website": "https://www.leading-eps.com/en/"
+    },
+    {
+      "name": "EPS LEADING",
+      "pavilion": "3",
+      "stand": "N53",
+      "website": "https://www.leading-eps.com/es/"
+    },
+    {
+      "name": "Equinor",
+      "pavilion": "4",
+      "stand": "X68",
+      "website": "https://www.equinor.com.br/"
+    },
+    {
+      "name": "Equipsea",
+      "pavilion": "4",
+      "stand": "U48 - UK Pavilion",
+      "website": "https://equipsea.com.br/"
+    },
+    {
+      "name": "Erflow",
+      "pavilion": "2",
+      "stand": "E46",
+      "website": "https://erflow.com.br/"
+    },
+    {
+      "name": "Estaleiro Mauá",
+      "pavilion": "3",
+      "stand": "L14",
+      "website": "http://www.estaleiromaua.ind.br/"
+    },
+    {
+      "name": "ESTEL",
+      "pavilion": "4",
+      "stand": "Y68",
+      "website": "https://www.estel.com.br/"
+    },
+    {
+      "name": "Evolen",
+      "pavilion": "Estande:",
+      "stand": "Ver site",
+      "website": "https://www.evolen.org/en/"
+    },
+    {
+      "name": "Exail",
+      "pavilion": "3",
+      "stand": "P70",
+      "website": "https://www.exail.com/"
+    },
+    {
+      "name": "Expresso Predileto",
+      "pavilion": "4",
+      "stand": "U30",
+      "website": "https://www.expressopredileto.com.br/"
+    },
+    {
+      "name": "Expro",
+      "pavilion": "4",
+      "stand": "X18",
+      "website": "http://www.exprogroup.com/"
+    },
+    {
+      "name": "Exsto do Brasil",
+      "pavilion": "3",
+      "stand": "Q50",
+      "website": "https://www.exsto.com/pt"
+    },
+    {
+      "name": "ExxonMobil",
+      "pavilion": "4",
+      "stand": "R64",
+      "website": "https://corporate.exxonmobil.com/"
+    },
+    {
+      "name": "FAC Engenharia",
+      "pavilion": "Estande: X50 - A",
+      "stand": "X50 - A",
+      "website": "https://facengenharia.com.br/"
+    },
+    {
+      "name": "FAP do Brasil",
+      "pavilion": "4",
+      "stand": "U22",
+      "website": "http://www.fapbrasil.com.br/"
+    },
+    {
+      "name": "FB Solutions",
+      "pavilion": "4",
+      "stand": "V83",
+      "website": "https://fbsolution.com.br/"
+    },
+    {
+      "name": "FCO Offshore",
+      "pavilion": "4",
+      "stand": "V84",
+      "website": "https://fcooffshore.com.br/"
+    },
+    {
+      "name": "Fechometal",
+      "pavilion": "2",
+      "stand": "E43",
+      "website": "https://fechometal.com/br/"
+    },
+    {
+      "name": "FGD",
+      "pavilion": "4",
+      "stand": "U48 - UK Pavilion",
+      "website": "https://www.fg-detection.com/Applications"
+    },
+    {
+      "name": "FIA",
+      "pavilion": "6",
+      "stand": "ZD03",
+      "website": "https://fia.com.br/"
+    },
+    {
+      "name": "Firjan",
+      "pavilion": "4",
+      "stand": "Y07",
+      "website": "https://www.firjan.com.br/"
+    },
+    {
+      "name": "Fishbones",
+      "pavilion": "4",
+      "stand": "Y52 - Norway Pavilion",
+      "website": "https://www.fishbones.as/"
+    },
+    {
+      "name": "Fishbones AS",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.fishbones.as/"
+    },
+    {
+      "name": "Fitacabo",
+      "pavilion": "3",
+      "stand": "K16",
+      "website": "https://www.fitacabo.com.br/pt/"
+    },
+    {
+      "name": "Flexomarine",
+      "pavilion": "4",
+      "stand": "T19",
+      "website": "https://www.flexomarine.com.br/"
+    },
+    {
+      "name": "FLEXPRIN",
+      "pavilion": "2",
+      "stand": "D14",
+      "website": "https://www.flexprin.com.br/"
+    },
+    {
+      "name": "Flir",
+      "pavilion": "6",
+      "stand": "ZA43",
+      "website": "https://www.flir.com/pt-br/"
+    },
+    {
+      "name": "Flow Latino Americana",
+      "pavilion": "3",
+      "stand": "I43",
+      "website": "https://www.flowwaterjet.com/"
+    },
+    {
+      "name": "Flow Management",
+      "pavilion": "6",
+      "stand": "ZD48",
+      "website": "https://www.flowmanagement.com.ar/quem-somos.html"
+    },
+    {
+      "name": "Flowork Inc.",
+      "pavilion": "4",
+      "stand": "Y43",
+      "website": "https://www.floworkvalve.com/"
+    },
+    {
+      "name": "Flowserve",
+      "pavilion": "3",
+      "stand": "M58",
+      "website": "https://www.flowserve.com/"
+    },
+    {
+      "name": "Fluidex",
+      "pavilion": "3",
+      "stand": "N52",
+      "website": "https://www.fluidexspain.com/"
+    },
+    {
+      "name": "FLUIDEX",
+      "pavilion": "3",
+      "stand": "N53",
+      "website": "https://www.fluidexspain.com/"
+    },
+    {
+      "name": "Fluke",
+      "pavilion": "4",
+      "stand": "T64",
+      "website": "https://www.fluke.com/pt-br"
+    },
+    {
+      "name": "Flutrol",
+      "pavilion": "3",
+      "stand": "I52",
+      "website": "https://www.flutrol.com.br/"
+    },
+    {
+      "name": "Fluxo",
+      "pavilion": "3",
+      "stand": "N14",
+      "website": "https://fluxo.si/"
+    },
+    {
+      "name": "FLV",
+      "pavilion": "6",
+      "stand": "ZC08",
+      "website": "https://www.flv-valve.com/"
+    },
+    {
+      "name": "Forship",
+      "pavilion": "4",
+      "stand": "T80",
+      "website": "https://www.forship.com/"
+    },
+    {
+      "name": "Fototerra",
+      "pavilion": "3",
+      "stand": "J06",
+      "website": "https://fototerra.com.br/"
+    },
+    {
+      "name": "Fragomen",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.fragomen.com/"
+    },
+    {
+      "name": "Framo",
+      "pavilion": "4",
+      "stand": "S58",
+      "website": "https://www.framo.com/"
+    },
+    {
+      "name": "Franik",
+      "pavilion": "2",
+      "stand": "B60",
+      "website": "https://www.franik.com.br/"
+    },
+    {
+      "name": "Frenstar Valves",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://frenstarvalves.com/"
+    },
+    {
+      "name": "Frictape – Virtusolis",
+      "pavilion": "2",
+      "stand": "F14",
+      "website": "http://virtusolis.com.br/home/"
+    },
+    {
+      "name": "Fugro",
+      "pavilion": "2",
+      "stand": "D40",
+      "website": "https://www.fugro.com/en"
+    },
+    {
+      "name": "Furui Group",
+      "pavilion": "2",
+      "stand": "B31",
+      "website": "https://www.linkedin.com/company/furui-do-brasil/?originalSubdomain=br"
+    },
+    {
+      "name": "FYV Valves",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z15",
+      "website": "https://www.fyvvalves.com/"
+    },
+    {
+      "name": "Gaia Earth-Group",
+      "pavilion": "2",
+      "stand": "C12",
+      "website": "https://www.gaiaearthgroup.com/"
+    },
+    {
+      "name": "Gallianz (Anhui) New Materials Co., Ltd.",
+      "pavilion": "2",
+      "stand": "G10 - 10",
+      "website": "https://www.gzcladplates.com/"
+    },
+    {
+      "name": "Galp",
+      "pavilion": "4",
+      "stand": "Y48",
+      "website": "https://www.galp.com/corp"
+    },
+    {
+      "name": "Gascat",
+      "pavilion": "3",
+      "stand": "N06",
+      "website": "https://www.gascat.com.br/"
+    },
+    {
+      "name": "GaveaLog",
+      "pavilion": "4",
+      "stand": "T02",
+      "website": "https://gavea-group.com/gavea-log"
+    },
+    {
+      "name": "GEA",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.gea.com/pt/"
+    },
+    {
+      "name": "Geldbach",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.geldbach.com.br/"
+    },
+    {
+      "name": "Geogás",
+      "pavilion": "2",
+      "stand": "G37",
+      "website": "https://geogas.com.br/"
+    },
+    {
+      "name": "GEOxyz",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.geoxyz.eu/"
+    },
+    {
+      "name": "GETSAF HYDRAULICS",
+      "pavilion": "2",
+      "stand": "F55",
+      "website": "https://getsafmarine.com/"
+    },
+    {
+      "name": "GETSAF HYDRAULICS (RIZHAO) CO.,LTD",
+      "pavilion": "2",
+      "stand": "F55 - 1",
+      "website": "https://getsafmarine.com/"
+    },
+    {
+      "name": "Ghenova",
+      "pavilion": "4",
+      "stand": "Y80",
+      "website": "https://ghenova.com/"
+    },
+    {
+      "name": "GHP Automação",
+      "pavilion": "6",
+      "stand": "ZC11",
+      "website": "https://www.ghpautomacao.com/"
+    },
+    {
+      "name": "Glenair",
+      "pavilion": "4",
+      "stand": "Y14",
+      "website": "https://www.glenair.com/index.htm"
+    },
+    {
+      "name": "GOTREX",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.gotrex.fr/"
+    },
+    {
+      "name": "GP Offshore",
+      "pavilion": "3",
+      "stand": "O44",
+      "website": "https://www.gpserviceoffshore.com.br/"
+    },
+    {
+      "name": "Gradwell Oilfield",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://gradwelloilfield.com/"
+    },
+    {
+      "name": "Grand Oilfield Technology",
+      "pavilion": "2",
+      "stand": "A41",
+      "website": "https://en.grandoiltech.com/"
+    },
+    {
+      "name": "Green BMS",
+      "pavilion": "2",
+      "stand": "C46",
+      "website": "https://greenbms.com.br/"
+    },
+    {
+      "name": "Grupo DR1",
+      "pavilion": "2",
+      "stand": "B40",
+      "website": "https://www.grupodr1.com.br/"
+    },
+    {
+      "name": "Grupo Forte",
+      "pavilion": "3",
+      "stand": "I53",
+      "website": "https://fortefixadores.com.br/"
+    },
+    {
+      "name": "Grupo INJ",
+      "pavilion": "4",
+      "stand": "R66",
+      "website": "https://grupoinj.com/"
+    },
+    {
+      "name": "GS Ferramentas",
+      "pavilion": "2",
+      "stand": "B42",
+      "website": "https://www.gsferramentas.com.br/"
+    },
+    {
+      "name": "GUANGZHOU JST SEALS TECHNOLOGY CO., LTD.",
+      "pavilion": "6",
+      "stand": "ZC42 - 26",
+      "website": "https://www.jst-seals.com/"
+    },
+    {
+      "name": "GUOCHENG VALVE",
+      "pavilion": "2",
+      "stand": "E14 - 1",
+      "website": "https://www.cgcv-valve.com/"
+    },
+    {
+      "name": "Halliburton",
+      "pavilion": "3",
+      "stand": "L40",
+      "website": "https://www.halliburton.com/"
+    },
+    {
+      "name": "Hansa Flex",
+      "pavilion": "3",
+      "stand": "K66",
+      "website": "https://www.hansa-flex.com/"
+    },
+    {
+      "name": "HANWEI VALVE",
+      "pavilion": "6",
+      "stand": "ZD39",
+      "website": "https://www.hwvalve.com/en/index.html"
+    },
+    {
+      "name": "HCI",
+      "pavilion": "4",
+      "stand": "W22",
+      "website": "https://www.hcigroup.com.br/"
+    },
+    {
+      "name": "Heatex Engenharia",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.heatexengenharia.com.br/"
+    },
+    {
+      "name": "Hebei GN Solids Control Co.,Ltd",
+      "pavilion": "2",
+      "stand": "G10 - 7",
+      "website": "http://www.gnsolidscontrol.com/"
+    },
+    {
+      "name": "HEBEI HUAYANG STEEL PIPE",
+      "pavilion": "2",
+      "stand": "G29 - 9",
+      "website": "https://www.hbhuayang.com/"
+    },
+    {
+      "name": "HEBEI LEFLOW IMPORT AND EXPORT CO., LTD.",
+      "pavilion": "2",
+      "stand": "F55 - 2",
+      "website": "https://www.leflowvalves.com/"
+    },
+    {
+      "name": "HEBEI OUHAO PIPELINE EQUIPMENT",
+      "pavilion": "3",
+      "stand": "I06 - 17",
+      "website": "https://www.hbohgd.com/"
+    },
+    {
+      "name": "HEBEI XINFENG HIGH-PRESSURE FLANGE AND PIPE FITTING",
+      "pavilion": "2",
+      "stand": "G11 - 6",
+      "website": "https://www.hbxfgj.com/"
+    },
+    {
+      "name": "Hebei Xinyue",
+      "pavilion": "6",
+      "stand": "ZA40-C",
+      "website": "https://www.hbxychina.com/"
+    },
+    {
+      "name": "HENAN DINAK MECHANICAL EQUIPMENT",
+      "pavilion": "3",
+      "stand": "K14 - Ilha Abimaq",
+      "website": "https://www.dnkairsep.com/"
+    },
+    {
+      "name": "Henan Lanyu Machinery",
+      "pavilion": "2",
+      "stand": "G58",
+      "website": "https://www.lanyuoilfield.com/"
+    },
+    {
+      "name": "HENAN OTYWELL",
+      "pavilion": "2",
+      "stand": "E14 - 2",
+      "website": "https://www.otywellsafety.com/"
+    },
+    {
+      "name": "HENAN SHENLONG PETROLEUM DRILLING TOOLS",
+      "pavilion": "3",
+      "stand": "I06 - 15",
+      "website": "https://www.petrodrillingtools.com/cn/"
+    },
+    {
+      "name": "Hengyang Hongyuan Pipe Industry Co., Ltd.",
+      "pavilion": "2",
+      "stand": "A44",
+      "website": ""
+    },
+    {
+      "name": "Hi-Force",
+      "pavilion": "3",
+      "stand": "O40 - UK Pavilion",
+      "website": "https://www.hi-force.com/en-uk/home"
+    },
+    {
+      "name": "Hico",
+      "pavilion": "4",
+      "stand": "T42",
+      "website": "https://hico.com.br/"
+    },
+    {
+      "name": "Hidropartes",
+      "pavilion": "4",
+      "stand": "X76",
+      "website": "https://www.hidropartes.com.br/"
+    },
+    {
+      "name": "High Supply",
+      "pavilion": "3",
+      "stand": "H66",
+      "website": "https://highsupply.com.br/"
+    },
+    {
+      "name": "Hita Belzona",
+      "pavilion": "4",
+      "stand": "S12",
+      "website": "https://hita.com.br/"
+    },
+    {
+      "name": "HKM Indústria",
+      "pavilion": "2",
+      "stand": "F44",
+      "website": "https://hkm.ind.br/"
+    },
+    {
+      "name": "HMFlow",
+      "pavilion": "3",
+      "stand": "P62",
+      "website": "https://www.hmflow.com.br/"
+    },
+    {
+      "name": "HMN",
+      "pavilion": "6",
+      "stand": "ZC03",
+      "website": "https://www.hmntech.com/front/en"
+    },
+    {
+      "name": "HMS",
+      "pavilion": "6",
+      "stand": "ZB07",
+      "website": "https://www.hms-networks.com/"
+    },
+    {
+      "name": "Hoerbiger",
+      "pavilion": "3",
+      "stand": "H18",
+      "website": "http://www.hoerbiger.com/"
+    },
+    {
+      "name": "HOMY",
+      "pavilion": "2",
+      "stand": "C06",
+      "website": "https://www.homybuild.com/"
+    },
+    {
+      "name": "HTP – HANGZHOU TURBINE POWER GROUP CO.,LTD",
+      "pavilion": "6",
+      "stand": "ZD08",
+      "website": "https://en.htc.cn/"
+    },
+    {
+      "name": "Huajun Jincheng",
+      "pavilion": "2",
+      "stand": "F61",
+      "website": "http://en.huajunjincheng.com/about/"
+    },
+    {
+      "name": "Huali Energy",
+      "pavilion": "6",
+      "stand": "ZA03",
+      "website": "http://www.hljn.com/zh/"
+    },
+    {
+      "name": "Huazi Industry",
+      "pavilion": "3",
+      "stand": "Q06 - 2",
+      "website": "https://www.huazi.com/"
+    },
+    {
+      "name": "HUB Equatorial",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z01",
+      "website": "https://hubequatorial.com.br/"
+    },
+    {
+      "name": "Huisman",
+      "pavilion": "4",
+      "stand": "T60",
+      "website": "https://huismanequipment.com/"
+    },
+    {
+      "name": "Hummel",
+      "pavilion": "4",
+      "stand": "U48 - UK Pavilion",
+      "website": "https://www.hummel.com/en/"
+    },
+    {
+      "name": "Hydac",
+      "pavilion": "2",
+      "stand": "B46",
+      "website": "https://www.hydac.com/pt-br/"
+    },
+    {
+      "name": "Hydratight",
+      "pavilion": "4",
+      "stand": "R30",
+      "website": "https://www.hydratight.com.br/"
+    },
+    {
+      "name": "Hypneumat",
+      "pavilion": "4",
+      "stand": "V14",
+      "website": "https://site.hypneumat.com.br/"
+    },
+    {
+      "name": "Hytorc Rio",
+      "pavilion": "4",
+      "stand": "V81",
+      "website": "https://hytorc-rio.com.br/"
+    },
+    {
+      "name": "IADC – INTERNATIONAL ASSOCIATION OF DRILLING CONTRACTORS",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://iadc.org/"
+    },
+    {
+      "name": "IAPG",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z14",
+      "website": "https://www.iapg.org.ar/"
+    },
+    {
+      "name": "IATI",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.iati.org.br/"
+    },
+    {
+      "name": "IEC",
+      "pavilion": "3",
+      "stand": "Q35",
+      "website": "https://www.iecengenharia.com.br/"
+    },
+    {
+      "name": "IFP Eerngies Nouvelles",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.ifpenergiesnouvelles.fr/"
+    },
+    {
+      "name": "IFP Training",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.ifptraining.com/"
+    },
+    {
+      "name": "IFS",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.ifs.com/"
+    },
+    {
+      "name": "IK GROUP",
+      "pavilion": "4",
+      "stand": "Y19",
+      "website": "https://ik-worldwide.com/"
+    },
+    {
+      "name": "IKM",
+      "pavilion": "3",
+      "stand": "O06",
+      "website": "https://www.ikm.com/"
+    },
+    {
+      "name": "Imenco",
+      "pavilion": "4",
+      "stand": "Y63",
+      "website": "https://imenco.no/"
+    },
+    {
+      "name": "IMI",
+      "pavilion": "4",
+      "stand": "W48",
+      "website": "https://www.imiplc.com/process-automation"
+    },
+    {
+      "name": "Incase",
+      "pavilion": "6",
+      "stand": "ZB20",
+      "website": "https://www.incase.com.br/"
+    },
+    {
+      "name": "Indusenz AS",
+      "pavilion": "4",
+      "stand": "X52",
+      "website": "https://indusenz.com/"
+    },
+    {
+      "name": "Industec",
+      "pavilion": "3",
+      "stand": "J08",
+      "website": "https://www.industecengenharia.com.br/"
+    },
+    {
+      "name": "Industrial Scientific",
+      "pavilion": "4",
+      "stand": "T64",
+      "website": "https://www.indsci.com/en"
+    },
+    {
+      "name": "InflowControl",
+      "pavilion": "4",
+      "stand": "X52",
+      "website": "https://www.inflowcontrol.no/"
+    },
+    {
+      "name": "Infotec",
+      "pavilion": "3",
+      "stand": "I44",
+      "website": "http://www.infotecbrasil.com.br/"
+    },
+    {
+      "name": "Ingeteam",
+      "pavilion": "6",
+      "stand": "ZA39",
+      "website": "https://www.ingeteam.com/en-us/sectors/water/s15_62_p/products.aspx"
+    },
+    {
+      "name": "Innovo",
+      "pavilion": "2",
+      "stand": "G40",
+      "website": "https://innovoteam.com/"
+    },
+    {
+      "name": "Inovar",
+      "pavilion": "3",
+      "stand": "Q48",
+      "website": "https://www.inovartec.com/"
+    },
+    {
+      "name": "Inovaren Partners",
+      "pavilion": "4",
+      "stand": "S42",
+      "website": "https://inovaren.com/"
+    },
+    {
+      "name": "Instrutemp",
+      "pavilion": "6",
+      "stand": "ZA11",
+      "website": "https://www.instrutemp.com.br/"
+    },
+    {
+      "name": "International Trade Winds",
+      "pavilion": "6",
+      "stand": "ZA15",
+      "website": "https://www.itwmetals.com.br/br/"
+    },
+    {
+      "name": "Interwell",
+      "pavilion": "4",
+      "stand": "X52",
+      "website": "https://interwell.com/"
+    },
+    {
+      "name": "IPH do Brasil",
+      "pavilion": "3",
+      "stand": "J18",
+      "website": "https://www.iphglobal.com/"
+    },
+    {
+      "name": "IRAETA ENERGY",
+      "pavilion": "2",
+      "stand": "E14 - 4",
+      "website": "https://www.iraeta.com/"
+    },
+    {
+      "name": "ISN",
+      "pavilion": "6",
+      "stand": "Z12",
+      "website": "https://www.isnetworld.com/pt"
+    },
+    {
+      "name": "Isolare",
+      "pavilion": "4",
+      "stand": "S10",
+      "website": "https://www.isolex.ind.br/"
+    },
+    {
+      "name": "Jacquet International",
+      "pavilion": "3",
+      "stand": "O67",
+      "website": "https://international.myjacquet.com/index.php/en-us/"
+    },
+    {
+      "name": "JC Valves",
+      "pavilion": "3",
+      "stand": "N53",
+      "website": "https://jc-valves.com/"
+    },
+    {
+      "name": "JCC Vedações",
+      "pavilion": "6",
+      "stand": "ZD11",
+      "website": "https://jcc.ind.br/"
+    },
+    {
+      "name": "Jevin",
+      "pavilion": "3",
+      "stand": "J66",
+      "website": "https://www.jevin.com.br/"
+    },
+    {
+      "name": "JIANGMEN EUROFIX METAL AND RUBBER PRODUCTS",
+      "pavilion": "3",
+      "stand": "I06 - 20",
+      "website": "http://www.amercoindustries.com.cn/"
+    },
+    {
+      "name": "Jiangsu Yanxin Science & Technology Incorporated Corporation",
+      "pavilion": "2",
+      "stand": "G10 - 5",
+      "website": "https://www.chinayanxin.com/"
+    },
+    {
+      "name": "JIUJIANG LANZO NEW MATERIAL TECHNOLOGY CO., LTD",
+      "pavilion": "6",
+      "stand": "ZA48",
+      "website": "https://www.lanzochem.com/"
+    },
+    {
+      "name": "John Crane",
+      "pavilion": "4",
+      "stand": "Y47",
+      "website": "https://www.johncrane.com/"
+    },
+    {
+      "name": "JOHNSON CONTROLS",
+      "pavilion": "6",
+      "stand": "ZA04",
+      "website": "https://www.johnsoncontrols.com.br/"
+    },
+    {
+      "name": "Jotun",
+      "pavilion": "4",
+      "stand": "U18",
+      "website": "https://www.jotun.com/"
+    },
+    {
+      "name": "JVS",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://www.jvsflowcontrol.com/"
+    },
+    {
+      "name": "Kaefer Rip",
+      "pavilion": "4",
+      "stand": "T18",
+      "website": "https://kaeferbrasil.com.br/"
+    },
+    {
+      "name": "Kaeser",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://br.kaeser.com/"
+    },
+    {
+      "name": "KAITAI VALVÚLAS",
+      "pavilion": "4",
+      "stand": "U83",
+      "website": "https://www.katavalvegroup.com/"
+    },
+    {
+      "name": "Kallman Worldwide",
+      "pavilion": "4",
+      "stand": "Y42",
+      "website": "https://www.kallman.com/tag/kallman-worldwide/"
+    },
+    {
+      "name": "Kelitong",
+      "pavilion": "2",
+      "stand": "F44",
+      "website": ""
+    },
+    {
+      "name": "Kidde",
+      "pavilion": "4",
+      "stand": "S65",
+      "website": "https://www.br.kidde.com/fire-safety/pt/br"
+    },
+    {
+      "name": "KINAM ENGINEERING INDUSTRIES",
+      "pavilion": "2",
+      "stand": "D24",
+      "website": "https://kinam.in/kinam-home/"
+    },
+    {
+      "name": "KITO CROSBY",
+      "pavilion": "4",
+      "stand": "X34",
+      "website": "https://kitocrosby.com/"
+    },
+    {
+      "name": "Klueber",
+      "pavilion": "3",
+      "stand": "I34",
+      "website": "https://klueber.com/"
+    },
+    {
+      "name": "Koko Valve",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z05",
+      "website": "https://www.kokovalve.com/"
+    },
+    {
+      "name": "KONGSBERG",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.kongsberg.com/"
+    },
+    {
+      "name": "Kongsberg Maritime",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.kongsbergmaritime.com/"
+    },
+    {
+      "name": "Konzept Energy",
+      "pavilion": "4",
+      "stand": "Y38",
+      "website": "https://konzeptenergy.net/"
+    },
+    {
+      "name": "Kraken Robotics",
+      "pavilion": "2",
+      "stand": "F39",
+      "website": "https://www.krakenrobotics.com/"
+    },
+    {
+      "name": "KSB",
+      "pavilion": "4",
+      "stand": "U61",
+      "website": "http://www.ksb.com.br/"
+    },
+    {
+      "name": "Lactea",
+      "pavilion": "6",
+      "stand": "ZC04",
+      "website": "https://www.lactea.com.br/"
+    },
+    {
+      "name": "LAISIDE VALVE",
+      "pavilion": "3",
+      "stand": "P29 - 1",
+      "website": "https://www.lsvvalves.com/"
+    },
+    {
+      "name": "Lankhorst",
+      "pavilion": "3",
+      "stand": "L69",
+      "website": "https://wireco.com/pt/"
+    },
+    {
+      "name": "Lanxess",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://lanxess.com/pt-br"
+    },
+    {
+      "name": "Lemasa",
+      "pavilion": "3",
+      "stand": "K18 - ILHA ABIMAQ",
+      "website": "https://www.lemasa.com.br/"
+    },
+    {
+      "name": "Leser",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.leser.com/pt-pt/"
+    },
+    {
+      "name": "Lewa",
+      "pavilion": "3",
+      "stand": "K52",
+      "website": "https://www.lewa.com/pt-BR/"
+    },
+    {
+      "name": "LGE",
+      "pavilion": "3",
+      "stand": "I66",
+      "website": "https://lgeserv.com.br/"
+    },
+    {
+      "name": "LKL Group",
+      "pavilion": "2",
+      "stand": "B55",
+      "website": "https://www.lklgroup.com.br/"
+    },
+    {
+      "name": "LOGITEC",
+      "pavilion": "2",
+      "stand": "D14",
+      "website": "https://logitecltda.com.br/pt/"
+    },
+    {
+      "name": "LONGHUA – AIR COOLER",
+      "pavilion": "6",
+      "stand": "ZD39",
+      "website": "https://www.lhkjglobal.com/"
+    },
+    {
+      "name": "LONGRUN FLANGE",
+      "pavilion": "6",
+      "stand": "ZD39",
+      "website": "https://www.longrunflangechina.com/"
+    },
+    {
+      "name": "Loquen",
+      "pavilion": "2",
+      "stand": "D45",
+      "website": "https://roge.energy/www.loquen.com"
+    },
+    {
+      "name": "LSI Válvulas",
+      "pavilion": "6",
+      "stand": "ZC03",
+      "website": "https://lsivalvulas.com.br/"
+    },
+    {
+      "name": "Lumina",
+      "pavilion": "4",
+      "stand": "S60",
+      "website": "https://luminagroup.com.br/"
+    },
+    {
+      "name": "M&O Partners",
+      "pavilion": "4",
+      "stand": "W58",
+      "website": "https://mopartners.global/"
+    },
+    {
+      "name": "Mac Laren",
+      "pavilion": "3",
+      "stand": "K34",
+      "website": "https://site.maclaren.com.br/"
+    },
+    {
+      "name": "Maccomevap",
+      "pavilion": "4",
+      "stand": "V34",
+      "website": "https://maccomevap.com.br/"
+    },
+    {
+      "name": "Macnor",
+      "pavilion": "3",
+      "stand": "I49",
+      "website": "https://macnor.com.br/"
+    },
+    {
+      "name": "Madiba",
+      "pavilion": "3",
+      "stand": "M10",
+      "website": "https://www.madibametals.com.br/"
+    },
+    {
+      "name": "Magral",
+      "pavilion": "2",
+      "stand": "E19",
+      "website": "https://www.magral.com.br/"
+    },
+    {
+      "name": "Maringá Turismo",
+      "pavilion": "das Artes",
+      "stand": "Ver site",
+      "website": "https://maringaturismo.com.br/"
+    },
+    {
+      "name": "Maritime Robotics",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.maritimerobotics.com/"
+    },
+    {
+      "name": "Mayekawa",
+      "pavilion": "4",
+      "stand": "U6",
+      "website": "https://www.mayekawa.com.br/"
+    },
+    {
+      "name": "MBF",
+      "pavilion": "2",
+      "stand": "D39",
+      "website": "https://mbf-fixadores.com.br/"
+    },
+    {
+      "name": "MDL",
+      "pavilion": "4",
+      "stand": "W74",
+      "website": "https://www.maritimedevelopments.com/"
+    },
+    {
+      "name": "Mecus Subsea",
+      "pavilion": "4",
+      "stand": "R44",
+      "website": "https://mecussubsea.com.br/"
+    },
+    {
+      "name": "Megalaser",
+      "pavilion": "3",
+      "stand": "J14",
+      "website": "https://megalaser.com.br/"
+    },
+    {
+      "name": "Melfex",
+      "pavilion": "3",
+      "stand": "N69",
+      "website": "https://melfex.com.br/"
+    },
+    {
+      "name": "Merax",
+      "pavilion": "3",
+      "stand": "K62",
+      "website": "https://www.merax.com.br/principal"
+    },
+    {
+      "name": "Metalinox",
+      "pavilion": "3",
+      "stand": "P05",
+      "website": "https://www.metalinoxsp.com.br/"
+    },
+    {
+      "name": "Metroval",
+      "pavilion": "4",
+      "stand": "S52",
+      "website": "https://www.metroval.com.br/"
+    },
+    {
+      "name": "MFX",
+      "pavilion": "4",
+      "stand": "V50",
+      "website": "https://www.mfx.com.br/"
+    },
+    {
+      "name": "Micromazza",
+      "pavilion": "3",
+      "stand": "J15 - Ilha Abimaq",
+      "website": "https://www.micromazza.com/"
+    },
+    {
+      "name": "Mineral Engenharia e Meio Ambiente",
+      "pavilion": "2",
+      "stand": "B61",
+      "website": ""
+    },
+    {
+      "name": "MINOX TECHNOLOGY AS",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://minox.no/"
+    },
+    {
+      "name": "MISC",
+      "pavilion": "4",
+      "stand": "U56",
+      "website": "https://www.miscgroup.com/"
+    },
+    {
+      "name": "MJ Solution",
+      "pavilion": "3",
+      "stand": "J40",
+      "website": "https://mjsolution.com.br/"
+    },
+    {
+      "name": "Modec",
+      "pavilion": "4",
+      "stand": "S38",
+      "website": "https://www.modec.com/"
+    },
+    {
+      "name": "Montipower",
+      "pavilion": "4",
+      "stand": "T03",
+      "website": "https://montipower.com/pt-pt/"
+    },
+    {
+      "name": "MORKEN BRASIL",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://www.morkenbrasil.com.br/"
+    },
+    {
+      "name": "Multus",
+      "pavilion": "4",
+      "stand": "T54",
+      "website": "https://multus.tech/"
+    },
+    {
+      "name": "MXM",
+      "pavilion": "4",
+      "stand": "Y03",
+      "website": "https://www.mxm.com.br/"
+    },
+    {
+      "name": "N2 Offshore",
+      "pavilion": "4",
+      "stand": "S74",
+      "website": "http://n2offshore.com/"
+    },
+    {
+      "name": "NANJING SUNTECH METAL EQUIPMENT",
+      "pavilion": "2",
+      "stand": "G11 - 5",
+      "website": "https://www.suntech-metal.com/"
+    },
+    {
+      "name": "NANYANG DOER GAS EQUIPMENT CO., LTD.",
+      "pavilion": "6",
+      "stand": "ZC42 - 27",
+      "website": "https://www.doervip.com/"
+    },
+    {
+      "name": "NDT Global",
+      "pavilion": "2",
+      "stand": "A40",
+      "website": "https://www.tscsubsea.com/"
+    },
+    {
+      "name": "Neuman Esser",
+      "pavilion": "3",
+      "stand": "K20 - Ilha Abimaq",
+      "website": "https://www.neuman-esser.com/"
+    },
+    {
+      "name": "Neuver Maritime",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.neuver.com/"
+    },
+    {
+      "name": "NevadaNano",
+      "pavilion": "4",
+      "stand": "Y41",
+      "website": "https://nevadanano.com/"
+    },
+    {
+      "name": "NEWREST GROUP Sces",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.newrest.eu/"
+    },
+    {
+      "name": "Newtesol",
+      "pavilion": "3",
+      "stand": "N53",
+      "website": "https://newtesol.com/"
+    },
+    {
+      "name": "NEXSON GROUP",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.nexson-group.com/"
+    },
+    {
+      "name": "Next Supply",
+      "pavilion": "4",
+      "stand": "W77",
+      "website": "https://nextsupply.com.br/"
+    },
+    {
+      "name": "Nexus",
+      "pavilion": "6",
+      "stand": "ZC07",
+      "website": "https://nexuslogistics.com/"
+    },
+    {
+      "name": "Niedax",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.niedax.com/br-pt/"
+    },
+    {
+      "name": "Noksel",
+      "pavilion": "3",
+      "stand": "N52",
+      "website": "https://nokselspain.com/"
+    },
+    {
+      "name": "Noksel España",
+      "pavilion": "3",
+      "stand": "N53",
+      "website": "https://nokselspain.com/"
+    },
+    {
+      "name": "NorLense",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.norlense.no/"
+    },
+    {
+      "name": "Norpem",
+      "pavilion": "3",
+      "stand": "I22",
+      "website": "https://norpem.com.br/"
+    },
+    {
+      "name": "NOV",
+      "pavilion": "3",
+      "stand": "P06",
+      "website": "https://www.nov.com/"
+    },
+    {
+      "name": "NSG",
+      "pavilion": "3",
+      "stand": "H34",
+      "website": "https://nsgeng.com/"
+    },
+    {
+      "name": "Nuvisa",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://nuvisa.com/"
+    },
+    {
+      "name": "Ocean Visuals",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.oceanvisuals.no/"
+    },
+    {
+      "name": "OceanAlpha",
+      "pavilion": "6",
+      "stand": "ZA35",
+      "website": "https://www.oceanalpha.com/"
+    },
+    {
+      "name": "Oceanpact",
+      "pavilion": "4",
+      "stand": "Y58",
+      "website": "https://www.oceanpact.com/"
+    },
+    {
+      "name": "Octave",
+      "pavilion": "3",
+      "stand": "K49",
+      "website": "https://www.octave.com/"
+    },
+    {
+      "name": "Ocyan",
+      "pavilion": "3",
+      "stand": "P10",
+      "website": "https://www.ocyan-sa.com/"
+    },
+    {
+      "name": "Odfjell Technology",
+      "pavilion": "6",
+      "stand": "ZD07",
+      "website": "https://www.odfjelltechnology.com/"
+    },
+    {
+      "name": "OEG",
+      "pavilion": "4",
+      "stand": "W75",
+      "website": "https://www.oegoffshore.com/"
+    },
+    {
+      "name": "OFFSHORE Link Sat",
+      "pavilion": "4",
+      "stand": "R58",
+      "website": "https://www.ols-br.com/"
+    },
+    {
+      "name": "Ogequip",
+      "pavilion": "6",
+      "stand": "ZB15",
+      "website": "https://ogequip.com.br/"
+    },
+    {
+      "name": "Oil States",
+      "pavilion": "3",
+      "stand": "L66",
+      "website": "https://oilstates.com/"
+    },
+    {
+      "name": "Oilequip",
+      "pavilion": "3",
+      "stand": "M48",
+      "website": "https://www.oilequip.com.br/"
+    },
+    {
+      "name": "Opito",
+      "pavilion": "4",
+      "stand": "S74",
+      "website": "https://www.opito.com/"
+    },
+    {
+      "name": "Orguel",
+      "pavilion": "2",
+      "stand": "C07",
+      "website": "https://orguel.com.br/"
+    },
+    {
+      "name": "OSC AS",
+      "pavilion": "4",
+      "stand": "X52",
+      "website": "https://www.osc.no/"
+    },
+    {
+      "name": "OSM Thome",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://osmthome.com/"
+    },
+    {
+      "name": "Ouro Nova",
+      "pavilion": "3",
+      "stand": "P49",
+      "website": "https://ouronova.com/"
+    },
+    {
+      "name": "OUYI Valve",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://www.ouyivalve.com/"
+    },
+    {
+      "name": "Palfinger Marine",
+      "pavilion": "4",
+      "stand": "X52",
+      "website": "https://www.palfinger.com/europe/en.html"
+    },
+    {
+      "name": "Palm Tecnologia",
+      "pavilion": "4",
+      "stand": "T56",
+      "website": "http://www.palmtecnologia.com.br/"
+    },
+    {
+      "name": "PANTERRA",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://panterra.no/"
+    },
+    {
+      "name": "Parametrics",
+      "pavilion": "2",
+      "stand": "G44",
+      "website": "https://www.panametrics.com/"
+    },
+    {
+      "name": "Parker",
+      "pavilion": "3",
+      "stand": "O40 - UK Pavilion",
+      "website": "https://www.parker.com/br/pt/home.html"
+    },
+    {
+      "name": "Parveen",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://parveen.in/"
+    },
+    {
+      "name": "Paschoalin",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://www.paschoalin.com.br/"
+    },
+    {
+      "name": "Pashal",
+      "pavilion": "2",
+      "stand": "A59",
+      "website": "https://pashal.com/"
+    },
+    {
+      "name": "Pavilhão Norueguês (Innovation Norway)",
+      "pavilion": "4",
+      "stand": "Y52 + X52",
+      "website": "https://www.innovationnorway.no/"
+    },
+    {
+      "name": "PCL",
+      "pavilion": "4",
+      "stand": "W83",
+      "website": "https://www.engatespcl.com.br/"
+    },
+    {
+      "name": "Pensalab",
+      "pavilion": "3",
+      "stand": "Q05",
+      "website": "https://pensalab.com.br/"
+    },
+    {
+      "name": "Pepperl+Fuchs",
+      "pavilion": "4",
+      "stand": "V03",
+      "website": "https://www.pepperl-fuchs.com/pt-br"
+    },
+    {
+      "name": "Petrobras",
+      "pavilion": "3",
+      "stand": "O38",
+      "website": "https://petrobras.com.br/"
+    },
+    {
+      "name": "Petrocean",
+      "pavilion": "2",
+      "stand": "G50",
+      "website": ""
+    },
+    {
+      "name": "Petrogal",
+      "pavilion": "4",
+      "stand": "Y48",
+      "website": "https://www.galp.com/corp/pt/sobre-nos/o-que-fazemos/upstream/brasil"
+    },
+    {
+      "name": "Petrohouse",
+      "pavilion": "2",
+      "stand": "E10",
+      "website": "https://petro-house.com/"
+    },
+    {
+      "name": "PETROMATERIALS",
+      "pavilion": "2",
+      "stand": "G11 - 1",
+      "website": "http://www.petromaterials.com/"
+    },
+    {
+      "name": "PETRONAS",
+      "pavilion": "6",
+      "stand": "ZD19",
+      "website": "https://www.petronas.com/"
+    },
+    {
+      "name": "Pipelux",
+      "pavilion": "6",
+      "stand": "ZB08",
+      "website": "https://www.pipelux.com/"
+    },
+    {
+      "name": "PIPING TECHNOLOGY INDUSTRY",
+      "pavilion": "4",
+      "stand": "V66",
+      "website": "https://www.ptipiping.com/"
+    },
+    {
+      "name": "PixForce",
+      "pavilion": "4",
+      "stand": "Y37 - USA Pavilion",
+      "website": "https://pixforce.com/"
+    },
+    {
+      "name": "PLATINUM VALVE（ZHEJIANG） CO., LTD.",
+      "pavilion": "6",
+      "stand": "ZA48",
+      "website": "https://www.platinumvalve.com/"
+    },
+    {
+      "name": "Point Thermic",
+      "pavilion": "3",
+      "stand": "J44",
+      "website": "https://pointthermic.com.br/"
+    },
+    {
+      "name": "Polar Group",
+      "pavilion": "3",
+      "stand": "I05",
+      "website": "https://www.polarb2b.com/"
+    },
+    {
+      "name": "Porto Do Açu",
+      "pavilion": "3",
+      "stand": "J34",
+      "website": "https://www.portodoacu.com.br/"
+    },
+    {
+      "name": "Posidonia",
+      "pavilion": "4",
+      "stand": "X84",
+      "website": "http://www.posidoniashipping.com/"
+    },
+    {
+      "name": "Positivo Service",
+      "pavilion": "2",
+      "stand": "B64",
+      "website": "https://www.positivoservice.com/"
+    },
+    {
+      "name": "PPG",
+      "pavilion": "4",
+      "stand": "W81",
+      "website": "https://www.ppg.com/pt-BR"
+    },
+    {
+      "name": "PPSA",
+      "pavilion": "2",
+      "stand": "C18",
+      "website": "https://www.presalpetroleo.gov.br/"
+    },
+    {
+      "name": "Prefeitura de Macaé",
+      "pavilion": "2",
+      "stand": "C30",
+      "website": "https://www.macae.rj.gov.br/"
+    },
+    {
+      "name": "Presserv",
+      "pavilion": "4",
+      "stand": "T03",
+      "website": "https://presserv.com/"
+    },
+    {
+      "name": "Prestmo",
+      "pavilion": "2",
+      "stand": "D43",
+      "website": "https://www.prestmo.com.br/"
+    },
+    {
+      "name": "Presys",
+      "pavilion": "4",
+      "stand": "T48",
+      "website": "https://www.presys.com.br/"
+    },
+    {
+      "name": "PRF – Gas Solutions, SA",
+      "pavilion": "2",
+      "stand": "E15",
+      "website": "https://www.prf.pt/"
+    },
+    {
+      "name": "PRIMESTAR ENERGY TECHNOLOGY CO., LTD.",
+      "pavilion": "6",
+      "stand": "ZC42 - 25",
+      "website": "https://www.primestaroil.com/"
+    },
+    {
+      "name": "Priner",
+      "pavilion": "4",
+      "stand": "T14",
+      "website": "https://www.priner.com.br/"
+    },
+    {
+      "name": "PRIO",
+      "pavilion": "4",
+      "stand": "X06",
+      "website": "https://www.petroriosa.com.br/"
+    },
+    {
+      "name": "Proclad",
+      "pavilion": "3",
+      "stand": "Q52",
+      "website": "https://roge.energy/www.procladgroup.com"
+    },
+    {
+      "name": "PromArgentina",
+      "pavilion": "2",
+      "stand": "G30",
+      "website": "https://argentina.ar/"
+    },
+    {
+      "name": "Prometheus Group",
+      "pavilion": "4",
+      "stand": "T74",
+      "website": "https://www.prometheusgroup.com/"
+    },
+    {
+      "name": "Protego",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.protego.com/pt_br/"
+    },
+    {
+      "name": "Prousiesp",
+      "pavilion": "3",
+      "stand": "J40",
+      "website": "https://www.prousiesp.com.br/"
+    },
+    {
+      "name": "PUC Rio",
+      "pavilion": "4",
+      "stand": "R68",
+      "website": "https://www.deqm.puc-rio.br/laboratorios/"
+    },
+    {
+      "name": "PWS",
+      "pavilion": "6",
+      "stand": "ZA47",
+      "website": "https://www.pwscompany.com/"
+    },
+    {
+      "name": "Qingdao MJHai Marine Equipment Co., Ltd",
+      "pavilion": "2",
+      "stand": "G10 - 8",
+      "website": "https://mjhai.com/"
+    },
+    {
+      "name": "QLP Group",
+      "pavilion": "6",
+      "stand": "ZA23",
+      "website": "https://www.qlpgroup.com.br/"
+    },
+    {
+      "name": "Raccortubi",
+      "pavilion": "6",
+      "stand": "ZB44",
+      "website": "https://www.raccortubi.com/"
+    },
+    {
+      "name": "RAD Torque & TorsionX",
+      "pavilion": "4",
+      "stand": "Y46",
+      "website": "https://www.radtorque.com/"
+    },
+    {
+      "name": "Radix",
+      "pavilion": "4",
+      "stand": "U52",
+      "website": "https://radixeng.com.br/"
+    },
+    {
+      "name": "Ravan",
+      "pavilion": "6",
+      "stand": "ZB32",
+      "website": "https://www.ravansolutions.com/"
+    },
+    {
+      "name": "RCL",
+      "pavilion": "3",
+      "stand": "N45",
+      "website": "https://www.rclmangueiras.com.br/"
+    },
+    {
+      "name": "RDM",
+      "pavilion": "4",
+      "stand": "V47",
+      "website": "https://www.rdm.ind.br/"
+    },
+    {
+      "name": "Realtec",
+      "pavilion": "3",
+      "stand": "O69",
+      "website": "https://www.realtec.ind.br/"
+    },
+    {
+      "name": "RED Engenharia",
+      "pavilion": "6",
+      "stand": "ZC27",
+      "website": "https://www.redengenharia.com.br/"
+    },
+    {
+      "name": "RegalRexnord",
+      "pavilion": "3",
+      "stand": "K14 - Ilha Abimaq",
+      "website": "http://www.regalrexnord.com/"
+    },
+    {
+      "name": "Relimpp",
+      "pavilion": "2",
+      "stand": "G62",
+      "website": "https://www.relimpp.com.br/home"
+    },
+    {
+      "name": "Relyon",
+      "pavilion": "4",
+      "stand": "U48 - UK Pavilion",
+      "website": "https://relyon.com/pt/home"
+    },
+    {
+      "name": "RENA DO BRASIL",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://eagletechnology.no/"
+    },
+    {
+      "name": "REP",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.rep.fr/en/"
+    },
+    {
+      "name": "Repsol Sinopec",
+      "pavilion": "4",
+      "stand": "W52",
+      "website": "https://repsolsinopec.com.br/"
+    },
+    {
+      "name": "RINA",
+      "pavilion": "3",
+      "stand": "L44",
+      "website": "https://www.rina.org/br"
+    },
+    {
+      "name": "Ringspann",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.ringspann.com.br/pt"
+    },
+    {
+      "name": "Rioflow – Conaut",
+      "pavilion": "3",
+      "stand": "K06",
+      "website": "https://www.trescal.com/"
+    },
+    {
+      "name": "ROCK FLOW DYNAMICS",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://rfdyn.com/"
+    },
+    {
+      "name": "Rock Petroleum",
+      "pavilion": "2",
+      "stand": "F46",
+      "website": "http://www.cnrock.com.cn/"
+    },
+    {
+      "name": "Rockwell Automation",
+      "pavilion": "2",
+      "stand": "C15",
+      "website": "https://www.rockwellautomation.com/pt-br.html"
+    },
+    {
+      "name": "Romao",
+      "pavilion": "2",
+      "stand": "D11",
+      "website": "https://romaotecnologias.com.br/"
+    },
+    {
+      "name": "Ropo GmbH",
+      "pavilion": "6",
+      "stand": "ZA31",
+      "website": "https://ropovalve.com/"
+    },
+    {
+      "name": "Rosen",
+      "pavilion": "4",
+      "stand": "S11",
+      "website": "https://www.rosen-group.com/"
+    },
+    {
+      "name": "Rotex",
+      "pavilion": "6",
+      "stand": "ZD35",
+      "website": "https://www.rotexautomation.com/"
+    },
+    {
+      "name": "Roxtec",
+      "pavilion": "2",
+      "stand": "E11",
+      "website": "https://www.roxtec.com/"
+    },
+    {
+      "name": "RUD",
+      "pavilion": "4",
+      "stand": "V86",
+      "website": "https://www.rud.com.br/"
+    },
+    {
+      "name": "S&P Global",
+      "pavilion": "2",
+      "stand": "B30",
+      "website": "https://www.spglobal.com/"
+    },
+    {
+      "name": "SAGTA",
+      "pavilion": "6",
+      "stand": "ZC31",
+      "website": "https://www.sagta.com/"
+    },
+    {
+      "name": "Samson",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.samsongroup.com/en/"
+    },
+    {
+      "name": "SBM",
+      "pavilion": "2",
+      "stand": "F24",
+      "website": "https://www.sbmoffshore.com/"
+    },
+    {
+      "name": "Scafom",
+      "pavilion": "4",
+      "stand": "S61",
+      "website": "https://www.scafom-rux.com.br/pt/Bem-vindo"
+    },
+    {
+      "name": "Schneider Electric",
+      "pavilion": "3",
+      "stand": "K48",
+      "website": "https://www.se.com/br/pt/"
+    },
+    {
+      "name": "Schroeder Valves",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.schroeder-valves.com/"
+    },
+    {
+      "name": "Secur",
+      "pavilion": "3",
+      "stand": "I14",
+      "website": "https://www.secur.com.br/"
+    },
+    {
+      "name": "SHANDONG HAIWANG CHEMICAL",
+      "pavilion": "2",
+      "stand": "G11 - 2",
+      "website": "https://www.haiwangchemical.com/"
+    },
+    {
+      "name": "SHANDONG WANDA CABLE",
+      "pavilion": "6",
+      "stand": "ZB06",
+      "website": "https://www.wandaespcable.com/"
+    },
+    {
+      "name": "Shandong Weima",
+      "pavilion": "3",
+      "stand": "Q06 - 1",
+      "website": "https://en.weimagroup.com/"
+    },
+    {
+      "name": "Shandong Wintech Technology Co.,Ltd",
+      "pavilion": "2",
+      "stand": "G10 - 9",
+      "website": "https://www.china-heatexchanger.net/"
+    },
+    {
+      "name": "SHANGHAI BAOSHAN PACIFIC CONTAINER",
+      "pavilion": "3",
+      "stand": "I06 - 14",
+      "website": "https://www.singamas-sbpc.com/"
+    },
+    {
+      "name": "Shanghai EHO Valve Co., Ltd",
+      "pavilion": "2",
+      "stand": "A44",
+      "website": ""
+    },
+    {
+      "name": "Shell",
+      "pavilion": "4",
+      "stand": "T38",
+      "website": "https://www.shell.com/"
+    },
+    {
+      "name": "SHENG JI",
+      "pavilion": "2",
+      "stand": "D06",
+      "website": "https://www.sjpec.com/"
+    },
+    {
+      "name": "SHENZHEN AKA ROBOTICS",
+      "pavilion": "2",
+      "stand": "E14 - 3",
+      "website": "https://www.akarobotics.com/"
+    },
+    {
+      "name": "SHENZHEN XUYONG INDUSTRY CO., LTD",
+      "pavilion": "6",
+      "stand": "ZC42 - 30",
+      "website": "https://www.xyiconex.com/"
+    },
+    {
+      "name": "SHIJIAZHUANG SIPAITUO INTERNATIONAL",
+      "pavilion": "3",
+      "stand": "I45",
+      "website": "http://www.spt-seals.com/"
+    },
+    {
+      "name": "Shinda",
+      "pavilion": "2",
+      "stand": "A60",
+      "website": "https://www.shindatubing.com/"
+    },
+    {
+      "name": "SICHUAN JINGLEI SCIENCE AND TECHNOLOGY",
+      "pavilion": "2",
+      "stand": "G29 - 7",
+      "website": "https://www.jinglei-china.com/"
+    },
+    {
+      "name": "Sichuan Xinwei",
+      "pavilion": "3",
+      "stand": "Q06 - 3",
+      "website": "https://global.boprubber.com/"
+    },
+    {
+      "name": "Siemens",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.siemens.com/pt-br/"
+    },
+    {
+      "name": "Siemens Energy",
+      "pavilion": "3",
+      "stand": "P52",
+      "website": "https://www.siemens-energy.com/br/pt.html"
+    },
+    {
+      "name": "SIF",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://sif.org.br/"
+    },
+    {
+      "name": "Siga",
+      "pavilion": "6",
+      "stand": "ZC15",
+      "website": "https://roge.energy/www.sigafuso.com.br"
+    },
+    {
+      "name": "Sino Atlantico",
+      "pavilion": "2",
+      "stand": "E40",
+      "website": "https://www.dmdl.com.br/"
+    },
+    {
+      "name": "Siva Cabos",
+      "pavilion": "3",
+      "stand": "Q10",
+      "website": "https://www.siva.com.br/"
+    },
+    {
+      "name": "SJS",
+      "pavilion": "2",
+      "stand": "G29 - 11",
+      "website": "https://en.sjs.servacorp.com/?lang=em"
+    },
+    {
+      "name": "SLB",
+      "pavilion": "3",
+      "stand": "P40",
+      "website": "https://www.slb.com/"
+    },
+    {
+      "name": "Smar",
+      "pavilion": "2",
+      "stand": "F06",
+      "website": "https://www.smar.com.br/"
+    },
+    {
+      "name": "Smart Control",
+      "pavilion": "2",
+      "stand": "C39",
+      "website": "https://smartcontrol.ind.br/"
+    },
+    {
+      "name": "SMART SUPPLY",
+      "pavilion": "4",
+      "stand": "Y10",
+      "website": "https://supplybr.com/"
+    },
+    {
+      "name": "SMD",
+      "pavilion": "2",
+      "stand": "C64",
+      "website": ""
+    },
+    {
+      "name": "SMS",
+      "pavilion": "3",
+      "stand": "I24",
+      "website": "https://www.smsresistencias.com.br/"
+    },
+    {
+      "name": "SNF",
+      "pavilion": "3",
+      "stand": "P66",
+      "website": "https://roge.energy/www.snf.com"
+    },
+    {
+      "name": "Soldor",
+      "pavilion": "2",
+      "stand": "F30",
+      "website": "https://www.soldor.com.br/"
+    },
+    {
+      "name": "Sonardyne",
+      "pavilion": "4",
+      "stand": "Y51",
+      "website": "https://www.sonardyne.com/"
+    },
+    {
+      "name": "Sonda",
+      "pavilion": "3",
+      "stand": "H65",
+      "website": "https://www.sonda.com/pt/inicio"
+    },
+    {
+      "name": "Sotreq",
+      "pavilion": "4",
+      "stand": "Y69",
+      "website": "https://www.sotreq.com.br/"
+    },
+    {
+      "name": "Soultech",
+      "pavilion": "4",
+      "stand": "S12",
+      "website": "https://www.soultecheng.com.br/"
+    },
+    {
+      "name": "SPE",
+      "pavilion": "4",
+      "stand": "S66",
+      "website": "https://www.spebrasil.org/pt/"
+    },
+    {
+      "name": "SSE do Brasil",
+      "pavilion": "4",
+      "stand": "W10",
+      "website": "https://ssebrasil.com.br/"
+    },
+    {
+      "name": "StarEdge do Brasil Ltda",
+      "pavilion": "4",
+      "stand": "U07",
+      "website": "http://mtnsat.com/"
+    },
+    {
+      "name": "State of Texas",
+      "pavilion": "4",
+      "stand": "Y32",
+      "website": "https://www.texas.gov/"
+    },
+    {
+      "name": "STATS GROUP",
+      "pavilion": "4",
+      "stand": "U48 - UK Pavilion",
+      "website": "https://www.statsgroup.com/"
+    },
+    {
+      "name": "Stauff",
+      "pavilion": "4",
+      "stand": "V15",
+      "website": "https://stauff.com.br/pt/"
+    },
+    {
+      "name": "Step Oil",
+      "pavilion": "4",
+      "stand": "X80",
+      "website": "https://pt.step-og.com/"
+    },
+    {
+      "name": "Stocktotal",
+      "pavilion": "6",
+      "stand": "ZD04",
+      "website": "https://www.stocktotal.com.br/"
+    },
+    {
+      "name": "Stress Engineering Services",
+      "pavilion": "4",
+      "stand": "W47",
+      "website": "https://www.stress.com/"
+    },
+    {
+      "name": "Strohm",
+      "pavilion": "4",
+      "stand": "U03",
+      "website": "https://strohm.eu/"
+    },
+    {
+      "name": "Subsea Distribution",
+      "pavilion": "2",
+      "stand": "D15",
+      "website": "https://www.connectorsubsea.com/"
+    },
+    {
+      "name": "Sulzer",
+      "pavilion": "4",
+      "stand": "R42",
+      "website": "https://www.sulzer.com/"
+    },
+    {
+      "name": "Superflow",
+      "pavilion": "4",
+      "stand": "Y84",
+      "website": "https://superflow.com.br/"
+    },
+    {
+      "name": "Superior Energy",
+      "pavilion": "3",
+      "stand": "K40",
+      "website": "https://www.superiorenergy.com/"
+    },
+    {
+      "name": "Superquip",
+      "pavilion": "3",
+      "stand": "Q26",
+      "website": "https://www.superquip.com.br/"
+    },
+    {
+      "name": "Superway",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z04",
+      "website": "https://www.superwaygroup.cn/"
+    },
+    {
+      "name": "Supply Marine",
+      "pavilion": "4",
+      "stand": "R52",
+      "website": "https://www.supplymarine.com.br/"
+    },
+    {
+      "name": "SUZHOU HAILU HEAVY INDUSTRY CO",
+      "pavilion": "2",
+      "stand": "G58 - 1",
+      "website": "https://www.hailu-boiler.cn/"
+    },
+    {
+      "name": "Sverdrup Steel AS",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.sverdrupsteel.com/"
+    },
+    {
+      "name": "SVT",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.connexsvt.com/"
+    },
+    {
+      "name": "SWT",
+      "pavilion": "4",
+      "stand": "Y59",
+      "website": "https://swt.cn/"
+    },
+    {
+      "name": "SWT – SHANDONG SUPERWATT POWER TECH CO",
+      "pavilion": "4",
+      "stand": "Y59 - 4",
+      "website": "https://www.swt.cn/"
+    },
+    {
+      "name": "T&R CLAD",
+      "pavilion": "2",
+      "stand": "G29 - 10",
+      "website": "http://www.trclad.com/"
+    },
+    {
+      "name": "T&T Sistemi",
+      "pavilion": "4",
+      "stand": "V80",
+      "website": "https://www.tetsistemi.com.br/"
+    },
+    {
+      "name": "TANKSBR",
+      "pavilion": "2",
+      "stand": "G43",
+      "website": "https://tanksbr.com.br/"
+    },
+    {
+      "name": "TE CONNECTIVITY",
+      "pavilion": "6",
+      "stand": "ZD23",
+      "website": "https://www.te.com/en/home.html"
+    },
+    {
+      "name": "TEAM",
+      "pavilion": "4",
+      "stand": "Y15",
+      "website": "https://www.teaminc.com/"
+    },
+    {
+      "name": "Tecflux",
+      "pavilion": "4",
+      "stand": "U74",
+      "website": "https://www.tecflux.com.br/"
+    },
+    {
+      "name": "Techcrane",
+      "pavilion": "4",
+      "stand": "Y44",
+      "website": "https://www.techcrane.com/"
+    },
+    {
+      "name": "Techflow",
+      "pavilion": "3",
+      "stand": "J49",
+      "website": "https://techflowmarine.com/"
+    },
+    {
+      "name": "Techfluid",
+      "pavilion": "2",
+      "stand": "A41",
+      "website": "https://tech-flexcn.com.br/"
+    },
+    {
+      "name": "TechnipFMC",
+      "pavilion": "3",
+      "stand": "N14",
+      "website": "https://www.technipfmc.com/"
+    },
+    {
+      "name": "Techocean",
+      "pavilion": "4",
+      "stand": "W81",
+      "website": "https://grupotechocean.com/"
+    },
+    {
+      "name": "Tecnofink",
+      "pavilion": "4",
+      "stand": "S02",
+      "website": "https://www.tecnofink.com/"
+    },
+    {
+      "name": "Tecnoil",
+      "pavilion": "3",
+      "stand": "M62",
+      "website": "https://www.tecnoil.com.br/"
+    },
+    {
+      "name": "Tecnotrat",
+      "pavilion": "6",
+      "stand": "ZD32",
+      "website": "https://www.tecnotrat.com.br/"
+    },
+    {
+      "name": "Tecnovolt",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://tecnovolt.com.br/"
+    },
+    {
+      "name": "Teledyne",
+      "pavilion": "3",
+      "stand": "J48",
+      "website": "https://www.teledynemarine.com/"
+    },
+    {
+      "name": "Tempermar",
+      "pavilion": "3",
+      "stand": "P53",
+      "website": "https://www.tempermar.com.br/"
+    },
+    {
+      "name": "Tenaris",
+      "pavilion": "4",
+      "stand": "V26",
+      "website": "https://www.tenaris.com/"
+    },
+    {
+      "name": "Terakalis",
+      "pavilion": "4",
+      "stand": "W42 - French Pavilion",
+      "website": "https://www.terakalis.com/"
+    },
+    {
+      "name": "Tercoflan",
+      "pavilion": "2",
+      "stand": "C58",
+      "website": "https://www.tercoflan.com.br/"
+    },
+    {
+      "name": "Termopump",
+      "pavilion": "3",
+      "stand": "O65",
+      "website": "https://www.termopump.com.br/"
+    },
+    {
+      "name": "Tess",
+      "pavilion": "4",
+      "stand": "U35",
+      "website": "https://www.tessbrazil.com.br/"
+    },
+    {
+      "name": "TGS | Nopec",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.tgs.com/"
+    },
+    {
+      "name": "Thermoflow",
+      "pavilion": "4",
+      "stand": "T10",
+      "website": "http://www.thermoflow.com.br/"
+    },
+    {
+      "name": "TIANCHANG FILET HIGH TECH METALS",
+      "pavilion": "2",
+      "stand": "G11 - 3",
+      "website": "http://www.filet-tubing.com/"
+    },
+    {
+      "name": "TIANJIN CRINTEK INTELLIGENCE TECHNOLOGY",
+      "pavilion": "4",
+      "stand": "Y59 - 5",
+      "website": "http://en.crintek.com/"
+    },
+    {
+      "name": "TIANJIN UNITED STEEL PIPE",
+      "pavilion": "3",
+      "stand": "I06 - 18",
+      "website": "https://en.tuspipe.cn/"
+    },
+    {
+      "name": "TIANJIN VICTORY OILFIELD EQUIPMENT",
+      "pavilion": "3",
+      "stand": "I06 - 16",
+      "website": "https://www.tvem.com.cn/"
+    },
+    {
+      "name": "Tidewise",
+      "pavilion": "3-4 (Interligação)",
+      "stand": "Área Externa",
+      "website": "https://www.tidewise.io/pt"
+    },
+    {
+      "name": "Tiger Rentank Do Brasil",
+      "pavilion": "4",
+      "stand": "V18",
+      "website": "https://www.tiger-rentank.com.br/"
+    },
+    {
+      "name": "Tintri",
+      "pavilion": "4",
+      "stand": "Y33",
+      "website": "https://tintri.com/"
+    },
+    {
+      "name": "Total Marine Technology (TMT)",
+      "pavilion": "6",
+      "stand": "Z6",
+      "website": "https://www.tmtrov.com/"
+    },
+    {
+      "name": "TotalEnergies",
+      "pavilion": "4",
+      "stand": "X48",
+      "website": "https://totalenergies.com.br/"
+    },
+    {
+      "name": "TPAR",
+      "pavilion": "3",
+      "stand": "N66",
+      "website": "https://www.tpar.com.br/"
+    },
+    {
+      "name": "TPM",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://tpmltd.com/"
+    },
+    {
+      "name": "Tractian",
+      "pavilion": "4",
+      "stand": "U15",
+      "website": "https://www.tractian.com/"
+    },
+    {
+      "name": "Tramontina",
+      "pavilion": "4",
+      "stand": "Y18",
+      "website": "https://www.tramontina.com.br/"
+    },
+    {
+      "name": "Tranter",
+      "pavilion": "4",
+      "stand": "S55",
+      "website": "https://www.tranter.com/pt/"
+    },
+    {
+      "name": "Triunfo",
+      "pavilion": "4",
+      "stand": "U68",
+      "website": "https://triunfologistica.com.br/"
+    },
+    {
+      "name": "Triveni Turbines",
+      "pavilion": "6",
+      "stand": "ZD20",
+      "website": ""
+    },
+    {
+      "name": "TSC",
+      "pavilion": "2",
+      "stand": "A40",
+      "website": "https://www.tscsubsea.com/"
+    },
+    {
+      "name": "Tubacex",
+      "pavilion": "3",
+      "stand": "L18",
+      "website": "https://www.tubacex.com/"
+    },
+    {
+      "name": "UBE",
+      "pavilion": "6",
+      "stand": "ZA12",
+      "website": "https://www.ube.com/ube/"
+    },
+    {
+      "name": "Uniphos",
+      "pavilion": "4",
+      "stand": "Y37",
+      "website": "https://uniphos-envirotronic.com/"
+    },
+    {
+      "name": "United Drilling Tools – UDT",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://www.udtltd.com/?ref=stakeville.com"
+    },
+    {
+      "name": "Unival",
+      "pavilion": "4",
+      "stand": "S57",
+      "website": "https://www.unival.com.br/"
+    },
+    {
+      "name": "Uzzala Bio Energy Brasil",
+      "pavilion": "4",
+      "stand": "R68a",
+      "website": "https://uzzalabio.com.br/"
+    },
+    {
+      "name": "Vallourec",
+      "pavilion": "3",
+      "stand": "M40",
+      "website": "https://www.vallourec.com/br"
+    },
+    {
+      "name": "Valman",
+      "pavilion": "3",
+      "stand": "J28",
+      "website": "https://www.valman.com.br/"
+    },
+    {
+      "name": "Valmet",
+      "pavilion": "3",
+      "stand": "M53",
+      "website": "https://www.valmet.com/"
+    },
+    {
+      "name": "VALPRO",
+      "pavilion": "6",
+      "stand": "ZC08",
+      "website": "https://www.valpro-usa.com/"
+    },
+    {
+      "name": "Value",
+      "pavilion": "4",
+      "stand": "Y71",
+      "website": "https://www.valuecomercial.com.br/"
+    },
+    {
+      "name": "Van Beest",
+      "pavilion": "3",
+      "stand": "J69",
+      "website": "https://www.vanbeest.com/"
+    },
+    {
+      "name": "Vanasa Multigás",
+      "pavilion": "3",
+      "stand": "J22",
+      "website": "https://www.vanasamultigas.com.br/"
+    },
+    {
+      "name": "VDM",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.vdm-metals.com/en/"
+    },
+    {
+      "name": "Vedatec",
+      "pavilion": "2",
+      "stand": "E46",
+      "website": "https://vedatec.com.br/"
+    },
+    {
+      "name": "Veolia",
+      "pavilion": "4",
+      "stand": "U48 - UK Pavilion",
+      "website": "https://www.veoliawatertechnologies.com/em"
+    },
+    {
+      "name": "Vertical Group",
+      "pavilion": "4",
+      "stand": "R26",
+      "website": "https://verticalgroup.com.br/"
+    },
+    {
+      "name": "Vextrom",
+      "pavilion": "4",
+      "stand": "U10",
+      "website": "https://www.vextrom.com.br/"
+    },
+    {
+      "name": "Viana Offshore",
+      "pavilion": "4",
+      "stand": "W18",
+      "website": "https://vianaoffshore.com.br/"
+    },
+    {
+      "name": "Vibropac",
+      "pavilion": "3",
+      "stand": "I30",
+      "website": "https://www.vibropac.com.br/"
+    },
+    {
+      "name": "Viewshine",
+      "pavilion": "6",
+      "stand": "ZA40-D",
+      "website": "https://en.viewshine.cn/"
+    },
+    {
+      "name": "Vision Marine",
+      "pavilion": "2",
+      "stand": "E44",
+      "website": "http://www.visionmarine.com.br/"
+    },
+    {
+      "name": "Vision Marine Nautical Training Center",
+      "pavilion": "2",
+      "stand": "E44",
+      "website": "https://visionmarinetraining.com.br/"
+    },
+    {
+      "name": "VOYIS",
+      "pavilion": "4",
+      "stand": "Y51",
+      "website": "https://voyis.com/"
+    },
+    {
+      "name": "VTE",
+      "pavilion": "3",
+      "stand": "J62",
+      "website": "https://www.vte.com/"
+    },
+    {
+      "name": "Wagner",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": ""
+    },
+    {
+      "name": "Walter Heuer",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://whac.com.br/"
+    },
+    {
+      "name": "Weatherford",
+      "pavilion": "4",
+      "stand": "Y31",
+      "website": "https://www.weatherford.com/"
+    },
+    {
+      "name": "Weford",
+      "pavilion": "6",
+      "stand": "ZA40-B",
+      "website": "http://en.weford.cn/"
+    },
+    {
+      "name": "WEG",
+      "pavilion": "4",
+      "stand": "U58",
+      "website": "https://www.weg.net/"
+    },
+    {
+      "name": "WellPartner",
+      "pavilion": "4",
+      "stand": "Y52",
+      "website": "https://www.wellpartner.no/"
+    },
+    {
+      "name": "Wenmazza",
+      "pavilion": "3",
+      "stand": "K14 - Ilha Abimaq",
+      "website": "https://www.wenmazza.com/"
+    },
+    {
+      "name": "Wenzhou Dongyi Machinery Manufacturing Co., Ltd",
+      "pavilion": "2",
+      "stand": "G10 - 4",
+      "website": "https://www.dycompressorparts.com/"
+    },
+    {
+      "name": "WENZHOU GROWTH FLUID EQUIPMENT",
+      "pavilion": "4",
+      "stand": "Y59 - 1",
+      "website": "https://growthfluid.com/"
+    },
+    {
+      "name": "WENZHOU YIYU SEALING MATERIAL CO.,LTD",
+      "pavilion": "6",
+      "stand": "ZA48",
+      "website": ""
+    },
+    {
+      "name": "Wika",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.wika.com/pt-br"
+    },
+    {
+      "name": "WILD WELL CONTROL",
+      "pavilion": "3",
+      "stand": "M34",
+      "website": "https://www.wildwell.com/"
+    },
+    {
+      "name": "William Gordon",
+      "pavilion": "6",
+      "stand": "ZA40",
+      "website": "http://www.wgbearings.com/"
+    },
+    {
+      "name": "WireCo",
+      "pavilion": "3",
+      "stand": "L69",
+      "website": "https://wireco.com/pt/"
+    },
+    {
+      "name": "Wison New Energies",
+      "pavilion": "4",
+      "stand": "R81",
+      "website": "http://www.wison-energies.com/"
+    },
+    {
+      "name": "Witzenmann",
+      "pavilion": "3",
+      "stand": "N40 + P34 - German Pavilion",
+      "website": "https://www.witzenmann.com.br/pt/"
+    },
+    {
+      "name": "WNH ELECTRIC HEATERS",
+      "pavilion": "2",
+      "stand": "G58 - 2",
+      "website": "https://www.wnheat.com/"
+    },
+    {
+      "name": "Woodward",
+      "pavilion": "2",
+      "stand": "C40",
+      "website": "https://www.woodward.com/"
+    },
+    {
+      "name": "Workship",
+      "pavilion": "2",
+      "stand": "C11",
+      "website": "https://www.workship.com.br/"
+    },
+    {
+      "name": "WUHAN LINMEI HEAD PLATE",
+      "pavilion": "3",
+      "stand": "I06 - 13",
+      "website": "https://www.glmhead.com/"
+    },
+    {
+      "name": "Wuxi Huali",
+      "pavilion": "6",
+      "stand": "ZA3",
+      "website": "https://whuali.com/"
+    },
+    {
+      "name": "Xinhai Valve",
+      "pavilion": "6",
+      "stand": "ZA44",
+      "website": "https://www.xhvalves.com/"
+    },
+    {
+      "name": "Yinson Production",
+      "pavilion": "4",
+      "stand": "V60",
+      "website": "https://www.yinson.com/"
+    },
+    {
+      "name": "Yoke",
+      "pavilion": "6",
+      "stand": "ZC23",
+      "website": "https://www.yoke.net/"
+    },
+    {
+      "name": "Yongjia South Trading Co.,Ltd",
+      "pavilion": "2",
+      "stand": "G10 - 3",
+      "website": "https://www.n-lvalve.com/"
+    },
+    {
+      "name": "ZCM",
+      "pavilion": "6",
+      "stand": "ZA45",
+      "website": "https://www.thvow.com/listed/cyjt_sztwkjgfyxgs_wmdqy/"
+    },
+    {
+      "name": "Zerust",
+      "pavilion": "4",
+      "stand": "S80",
+      "website": "https://zerustbrasil.com.br/"
+    },
+    {
+      "name": "ZHEJIANG DEHE",
+      "pavilion": "2",
+      "stand": "G29 - 8",
+      "website": "https://www.foamglass.net/"
+    },
+    {
+      "name": "Zhejiang Hengnuo Valve Manufacturing Co.,ltd",
+      "pavilion": "2",
+      "stand": "G10 - 2",
+      "website": "https://www.hannovalve.com/"
+    },
+    {
+      "name": "ZHEJIANG SANHE SPRING",
+      "pavilion": "3",
+      "stand": "P29 - 2",
+      "website": "https://www.siplee-spring.com/"
+    },
+    {
+      "name": "Zhejiang Tewincryo",
+      "pavilion": "6",
+      "stand": "ZA40-A",
+      "website": "https://www.tewincryo.com/"
+    },
+    {
+      "name": "Zhejiang Yongyuan Valve",
+      "pavilion": "2",
+      "stand": "A50",
+      "website": "https://www.valveszg.com/"
+    },
+    {
+      "name": "ZHEJIANG ZHIJU PIPELINE INDUSTRY CO., LTD.",
+      "pavilion": "6",
+      "stand": "ZA48",
+      "website": "https://www.zhiju-steel.com/"
+    },
+    {
+      "name": "ZHEJIANG ZHONGWU STEEL TUBE MFG.CO.,LTD",
+      "pavilion": "6",
+      "stand": "ZC42 - 28",
+      "website": "https://www.zhongwuguanye.com/en/"
+    },
+    {
+      "name": "Zhongda",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z02",
+      "website": "https://www.zhongdasteel.com/em"
+    },
+    {
+      "name": "ZHONGQUAN GROUP VALVE TECHNOLOGY",
+      "pavilion": "4",
+      "stand": "Y59 - 3",
+      "website": "https://www.jochtechvalve.com/"
+    },
+    {
+      "name": "Zyfire",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://www.zyfire.com/"
     }
   ]
 }
