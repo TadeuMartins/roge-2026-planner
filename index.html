@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07141d" />
+  <title>ROG.e 2026 | Strategic Planner</title>
+  <meta name="description" content="Planner estratégico ROG.e 2026 com agenda oficial, priorização de stakeholders, tecnologia e desafios da indústria." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-strip">
+      <div class="siemens-logo-wrap" aria-label="Siemens">
+        <img class="siemens-logo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Siemens-logo.svg" alt="Siemens" />
+      </div>
+      <div class="brand-divider"></div>
+      <img class="roge-logo" src="https://roge.energy/images/Rog.e_2026.png" alt="ROG.e 2026" />
+    </div>
+    <div class="top-actions">
+      <button id="installBtn" class="ghost-btn hidden">Instalar</button>
+      <button id="calendarBtn" class="ghost-btn">Baixar minha agenda .ics</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">STRATEGIC EVENT INTELLIGENCE</div>
+      <h1>ROG.e 2026 <span>Strategic Planner</span></h1>
+      <p>Transforme centenas de sessões em uma agenda de alto valor: quem encontrar, quais tecnologias acompanhar e quais desafios da indústria merecem atenção.</p>
+    </div>
+    <div class="sync-card">
+      <span class="pulse"></span>
+      <div><strong id="syncState">Carregando agenda…</strong><small id="lastUpdate">Fonte oficial ROG.e</small></div>
+    </div>
+  </section>
+
+  <main>
+    <section class="kpis" id="kpis"></section>
+
+    <section class="radar-panel">
+      <div class="radar-title">
+        <div><span class="section-kicker">RADAR ESTRATÉGICO</span><h2>Prioridade não é só horário</h2></div>
+        <button id="editRadarBtn" class="text-btn">⚙ Personalizar radar</button>
+      </div>
+      <div class="radar-grid">
+        <button class="radar-card active" data-radar="all"><b>Visão geral</b><span>Ranking ponderado</span></button>
+        <button class="radar-card" data-radar="stakeholder"><b>Stakeholders</b><span>Empresas + senioridade</span></button>
+        <button class="radar-card" data-radar="technology"><b>Tecnologia</b><span>IA, Digital Twin, OT, dados…</span></button>
+        <button class="radar-card" data-radar="challenge"><b>Desafios da indústria</b><span>Eficiência, confiabilidade, transição…</span></button>
+        <button class="radar-card" data-radar="networking"><b>Networking</b><span>Meetings, fóruns e FEST</span></button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div class="search-wrap"><span>⌕</span><input id="search" placeholder="Buscar tema, palestrante, empresa, sala, tecnologia…" /></div>
+      <select id="dayFilter"><option value="">Todos os dias</option></select>
+      <select id="typeFilter"><option value="">Todos os formatos</option></select>
+      <select id="priorityFilter">
+        <option value="">Todas as prioridades</option>
+        <option value="P1">P1 • Imperdível</option>
+        <option value="P2">P2 • Alta</option>
+        <option value="P3">P3 • Relevante</option>
+        <option value="P4">P4 • Geral</option>
+      </select>
+      <select id="locationFilter"><option value="">Todos os locais</option></select>
+      <label class="toggle"><input type="checkbox" id="onlyMine" /><span></span> Minha agenda</label>
+    </section>
+
+    <section class="smart-chips" id="smartChips"></section>
+
+    <section class="content-grid">
+      <div>
+        <div class="result-head"><div><span id="resultCount">0 eventos</span><small id="resultHint"></small></div><select id="sort"><option value="priority">Ordenar: prioridade</option><option value="time">Ordenar: horário</option><option value="stakeholder">Ordenar: stakeholder</option><option value="technology">Ordenar: tecnologia</option></select></div>
+        <div id="events" class="events"></div>
+      </div>
+      <aside>
+        <div class="aside-card sticky">
+          <div class="aside-title"><h3>Minha agenda</h3><span id="mineCount" class="badge">0</span></div>
+          <div id="conflictAlert"></div>
+          <div id="mineList" class="mine-list"></div>
+          <button id="downloadMine" class="primary-btn">Baixar para Outlook</button>
+        </div>
+        <div class="aside-card">
+          <h3>Expositores estratégicos</h3>
+          <p class="muted">Encontre rapidamente pavilhão e estande de empresas relevantes.</p>
+          <input id="exhibitorSearch" class="aside-input" placeholder="Buscar empresa…" />
+          <div id="exhibitors" class="exhibitor-list"></div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <dialog id="eventModal" class="modal"><div id="modalContent"></div></dialog>
+  <dialog id="radarModal" class="modal radar-modal">
+    <form method="dialog" id="radarForm">
+      <div class="modal-head"><div><span class="section-kicker">PERSONALIZAÇÃO</span><h2>Seu radar estratégico</h2></div><button class="icon-btn" value="cancel">×</button></div>
+      <p class="muted">Defina empresas e temas que devem pesar mais no ranking. As preferências ficam somente no seu navegador.</p>
+      <label>Stakeholders prioritários <small>(separados por vírgula)</small><textarea id="stakeholderPrefs"></textarea></label>
+      <label>Tecnologias prioritárias <small>(separadas por vírgula)</small><textarea id="technologyPrefs"></textarea></label>
+      <label>Desafios prioritários <small>(separados por vírgula)</small><textarea id="challengePrefs"></textarea></label>
+      <div class="modal-actions"><button class="ghost-btn" type="button" id="resetRadar">Restaurar padrão</button><button class="primary-btn" value="default">Salvar radar</button></div>
+    </form>
+  </dialog>
+
+  <footer>Dados de programação e exposição sincronizados a partir das páginas oficiais da ROG.e 2026. Este planner é uma ferramenta independente de organização de agenda.</footer>
+  <script src="js/core.js" defer></script>
+  <script src="js/render.js" defer></script>
+  <script src="js/init.js" defer></script>
+</body>
+</html>

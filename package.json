@@ -1,0 +1,7 @@
+{
+  "name":"roge-2026-strategic-planner",
+  "private":true,
+  "type":"module",
+  "scripts":{"scrape":"node scripts/scrape-roge.mjs","check":"node --check js/core.js && node --check js/render.js && node --check js/init.js && node --check scripts/scrape-roge.mjs"},
+  "dependencies":{"playwright":"^1.55.0"}
+}
