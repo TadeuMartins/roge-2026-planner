@@ -1,6 +1,107 @@
 {
-  "generated_at": null,
+  "generated_at": "2026-09-14T18:50:54.654Z",
   "source": "https://roge.energy/expositores",
-  "count": 0,
-  "exhibitors": []
+  "count": 20,
+  "exhibitors": [
+    {
+      "name": "2Solve",
+      "pavilion": "2",
+      "stand": "G47"
+    },
+    {
+      "name": "4pipe",
+      "pavilion": "4",
+      "stand": "X74"
+    },
+    {
+      "name": "4tube",
+      "pavilion": "6",
+      "stand": "ZB04"
+    },
+    {
+      "name": "6XPHERE",
+      "pavilion": "4",
+      "stand": "S69"
+    },
+    {
+      "name": "Abb",
+      "pavilion": "4",
+      "stand": "R10"
+    },
+    {
+      "name": "ABC Drives",
+      "pavilion": "6",
+      "stand": "ZA27"
+    },
+    {
+      "name": "Abeemar",
+      "pavilion": "3",
+      "stand": "J05"
+    },
+    {
+      "name": "ABH2",
+      "pavilion": "4",
+      "stand": "R70"
+    },
+    {
+      "name": "Abimaq",
+      "pavilion": "3",
+      "stand": "J13 - Ilha Abimaq"
+    },
+    {
+      "name": "Abiogás",
+      "pavilion": "4",
+      "stand": "R71"
+    },
+    {
+      "name": "Abix",
+      "pavilion": "3",
+      "stand": "I28"
+    },
+    {
+      "name": "Abpip",
+      "pavilion": "2",
+      "stand": "G46"
+    },
+    {
+      "name": "ABS",
+      "pavilion": "4",
+      "stand": "T52"
+    },
+    {
+      "name": "Acelen",
+      "pavilion": "4",
+      "stand": "S47"
+    },
+    {
+      "name": "Açokorte",
+      "pavilion": "3",
+      "stand": "M69"
+    },
+    {
+      "name": "AÇOS TORRES",
+      "pavilion": "2",
+      "stand": "B50"
+    },
+    {
+      "name": "Actemium",
+      "pavilion": "3",
+      "stand": "Q22"
+    },
+    {
+      "name": "Actreg",
+      "pavilion": "3",
+      "stand": "N52"
+    },
+    {
+      "name": "ACTREG",
+      "pavilion": "3",
+      "stand": "N53"
+    },
+    {
+      "name": "Aepio",
+      "pavilion": "3",
+      "stand": "I40"
+    }
+  ]
 }
