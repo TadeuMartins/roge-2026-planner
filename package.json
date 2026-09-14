@@ -2,6 +2,6 @@
   "name":"roge-2026-strategic-planner",
   "private":true,
   "type":"module",
-  "scripts":{"scrape":"node scripts/scrape-roge.mjs","check":"node --check js/core.js && node --check js/render.js && node --check js/init.js && node --check scripts/scrape-roge.mjs"},
+  "scripts":{"scrape":"node scripts/scrape-roge.mjs && node scripts/scrape-exhibitors.mjs","check":"node --check js/core.js && node --check js/render.js && node --check js/init.js && node --check scripts/scrape-roge.mjs && node --check scripts/scrape-exhibitors.mjs"},
   "dependencies":{"playwright":"^1.55.0"}
 }
