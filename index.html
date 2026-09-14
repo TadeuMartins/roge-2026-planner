@@ -40,12 +40,12 @@
 
     <section class="radar-panel">
       <div class="radar-title">
-        <div><span class="section-kicker">RADAR ESTRATÉGICO</span><h2>Maior FIT em cada conflito real da agenda</h2><p class="muted">O destaque compara somente eventos que realmente se sobrepõem no mesmo intervalo de horário.</p></div>
+        <div><span class="section-kicker">RADAR ESTRATÉGICO</span><h2>Eventos relevantes em cada conflito real da agenda</h2><p class="muted">O FIT agora combina stakeholder, cargo, sala/palco, tecnologia, desafio da indústria, formato estratégico e networking.</p></div>
         <button id="editRadarBtn" class="text-btn">⚙ Personalizar radar</button>
       </div>
       <div class="radar-grid">
         <button class="radar-card active" data-radar="all"><b>Visão geral</b><span>Ranking ponderado</span></button>
-        <button class="radar-card" data-radar="stakeholder"><b>Stakeholders</b><span>Empresas + senioridade</span></button>
+        <button class="radar-card" data-radar="stakeholder"><b>Stakeholders</b><span>Empresas estratégicas</span></button>
         <button class="radar-card" data-radar="technology"><b>Tecnologia</b><span>IA, Digital Twin, OT, dados…</span></button>
         <button class="radar-card" data-radar="challenge"><b>Desafios da indústria</b><span>Eficiência, confiabilidade, transição…</span></button>
         <button class="radar-card" data-radar="networking"><b>Networking</b><span>Meetings, fóruns e FEST</span></button>
@@ -58,7 +58,7 @@
       <select id="typeFilter"><option value="">Todos os formatos</option></select>
       <select id="priorityFilter">
         <option value="">Todas as relevâncias</option>
-        <option value="P1">Evento mais relevante</option>
+        <option value="P1">Evento Relevante</option>
         <option value="P2">P2 • Alta</option>
         <option value="P3">P3 • Relevante</option>
         <option value="P4">P4 • Geral</option>
@@ -92,13 +92,16 @@
   </main>
 
   <dialog id="eventModal" class="modal"><div id="modalContent"></div></dialog>
-  <dialog id="radarModal" class="modal radar-modal">
+  <dialog id="radarModal" class="modal radar-modal" style="max-height:90vh;overflow:auto">
     <form method="dialog" id="radarForm">
       <div class="modal-head"><div><span class="section-kicker">PERSONALIZAÇÃO</span><h2>Seu radar estratégico</h2></div><button class="icon-btn" value="cancel">×</button></div>
-      <p class="muted">Defina empresas e temas que devem pesar mais no ranking. As preferências ficam somente no seu navegador.</p>
+      <p class="muted">Defina empresas, temas, salas e cargos que devem pesar mais no ranking. As preferências ficam somente no seu navegador.</p>
       <label>Stakeholders prioritários <small>(separados por vírgula)</small><textarea id="stakeholderPrefs"></textarea></label>
       <label>Tecnologias prioritárias <small>(separadas por vírgula)</small><textarea id="technologyPrefs"></textarea></label>
       <label>Desafios prioritários <small>(separados por vírgula)</small><textarea id="challengePrefs"></textarea></label>
+      <label>Salas / palcos prioritários <small>(separados por vírgula; ordem = maior peso primeiro)</small><textarea id="roomPrefs"></textarea></label>
+      <label>Cargos prioritários <small>(separados por vírgula; ordem = maior peso primeiro)</small><textarea id="rolePrefs"></textarea></label>
+      <p class="muted">Em Salas / palcos e Cargos, os primeiros itens da lista recebem mais peso. Isso permite diferenciar, por exemplo, Plenária A de um Technical Stage e CEO/Presidente de Gerente/Coordenador.</p>
       <div class="modal-actions"><button class="ghost-btn" type="button" id="resetRadar">Restaurar padrão</button><button class="primary-btn" value="default">Salvar radar</button></div>
     </form>
   </dialog>
