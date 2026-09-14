@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-14T19:40:35.139Z",
+  "generated_at": "2026-09-14T20:21:19.033Z",
   "source": [
     "https://roge.energy/programacao",
     "https://roge.energy/roge-fest",
     "https://roge.energy/expositores"
   ],
-  "count": 462,
+  "count": 460,
   "events": [
     {
       "title": "CERIMÔNIA DE ABERTURA",
@@ -9910,7 +9910,7 @@
       "id": "baf04f85934d866a7e",
       "date": "2026-09-22",
       "start": "17:30",
-      "end": "18:00",
+      "end": "19:20",
       "title": "Abertura + DJ com música ambiente",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
@@ -10059,20 +10059,6 @@
       "changed": false
     },
     {
-      "id": "a6988011ae00ee6e79",
-      "date": "2026-09-22",
-      "start": "18:00",
-      "end": "19:20",
-      "title": "Galp apresenta: Orquestra Maré do Amanhã",
-      "location": "ROG.e FEST • Riocentro",
-      "type": "ROG.e FEST",
-      "track": "Happy Hour +",
-      "speakers": [],
-      "speakers_raw": "",
-      "source_url": "https://roge.energy/roge-fest",
-      "changed": false
-    },
-    {
       "title": "NETWORKING - PREMIAÇÃO DO EMBARQUE ESTUDANTIL",
       "start": "18:30",
       "end": "19:00",
@@ -10184,11 +10170,11 @@
       "changed": false
     },
     {
-      "id": "f38cc2686ac8954a11",
+      "id": "6c433d57524b4844f7",
       "date": "2026-09-22",
       "start": "19:20",
       "end": "21:00",
-      "title": "Xande de Pilares",
+      "title": "Toni Garrido",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -15489,11 +15475,11 @@
       "changed": false
     },
     {
-      "id": "31d66f7ae1181728bb",
+      "id": "a779854c2c9ed3d2c4",
       "date": "2026-09-23",
       "start": "18:00",
       "end": "19:20",
-      "title": "Galp apresenta: Orquestra Maré do Amanhã",
+      "title": "Galp apresenta: Orquestra Chiquinha Gonzaga | Patrocínio: PETRONAS",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -15614,11 +15600,11 @@
       "changed": false
     },
     {
-      "id": "b882809ab008d4d3fa",
+      "id": "819b48c04c44ba878f",
       "date": "2026-09-23",
       "start": "19:20",
       "end": "21:00",
-      "title": "Xande de Pilares",
+      "title": "Elba Ramalho",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -19502,20 +19488,6 @@
       "changed": false
     },
     {
-      "id": "2965155430aa693a13",
-      "date": "2026-09-24",
-      "start": "17:30",
-      "end": "18:00",
-      "title": "Abertura + DJ com música ambiente",
-      "location": "ROG.e FEST • Riocentro",
-      "type": "ROG.e FEST",
-      "track": "Happy Hour +",
-      "speakers": [],
-      "speakers_raw": "",
-      "source_url": "https://roge.energy/roge-fest",
-      "changed": false
-    },
-    {
       "title": "CCUS, DACCS E BECCS — TECNOLOGIAS PARA REDUÇÃO E REMOÇÃO DE GASES DE EFEITO ESTUFA",
       "start": "17:30",
       "end": "18:30",
@@ -19543,11 +19515,11 @@
       "changed": false
     },
     {
-      "id": "78ac8e76fe0470fc3b",
+      "id": "c43a51bb49e48a5d80",
       "date": "2026-09-24",
       "start": "18:00",
       "end": "19:20",
-      "title": "Galp apresenta: Orquestra Maré do Amanhã",
+      "title": "Abertura + DJ com música ambiente",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -19557,11 +19529,11 @@
       "changed": false
     },
     {
-      "id": "6797572bdd36c9415b",
+      "id": "a8a162b4fb52271c8d",
       "date": "2026-09-24",
       "start": "19:20",
       "end": "21:00",
-      "title": "Xande de Pilares",
+      "title": "Monobloco",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
