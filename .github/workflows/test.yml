@@ -1,0 +1,24 @@
+name: Validate planner
+on:
+  pull_request:
+    paths-ignore:
+      - 'data/**'
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-audit --no-fund
+      - run: npm run check
+      - run: npm test
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser

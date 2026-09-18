@@ -7,6 +7,7 @@
   <title>ROG.e 2026 | Strategic Planner</title>
   <meta name="description" content="Planner estratégico ROG.e 2026 com agenda oficial, priorização de stakeholders, tecnologia e desafios da indústria." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="calendar.css" />
 </head>
 <body>
   <header class="topbar">
@@ -69,7 +70,15 @@
 
     <section class="smart-chips" id="smartChips"></section>
 
-    <section class="content-grid">
+    <section class="team-bar" aria-label="Escala compartilhada">
+      <div><span class="section-kicker">PLANEJAMENTO DA EQUIPE</span><p id="teamSync" role="status">Carregando escala compartilhada…</p></div>
+      <div class="team-actions"><button id="refreshTeam" class="ghost-btn">Atualizar escala</button><button id="connectTeam" class="primary-btn">Habilitar edição</button><button id="disconnectTeam" class="ghost-btn" hidden>Encerrar edição</button></div>
+    </section>
+    <nav class="view-tabs" aria-label="Visualização da programação">
+      <button class="view-tab active" data-view="list" aria-pressed="true">☷ Lista de eventos</button>
+      <button class="view-tab" data-view="calendar" aria-pressed="false">▦ Calendário da equipe</button>
+    </nav>
+    <section class="content-grid" id="listView">
       <div>
         <div class="result-head"><div><span id="resultCount">0 eventos</span><small id="resultHint"></small></div><select id="sort"><option value="time">Ordenar: Início</option><option value="priority">Ordenar: FIT</option><option value="stakeholder">Ordenar: stakeholder</option><option value="technology">Ordenar: tecnologia</option></select></div>
         <div id="events" class="events"></div>
@@ -89,6 +98,22 @@
         </div>
       </aside>
     </section>
+    <section id="calendarView" hidden aria-label="Calendário da equipe">
+      <div class="calendar-toolbar">
+        <div><h2>Quem vai estar onde</h2><p class="muted">21–24 setembro 2026 · Horário de Brasília (UTC−3)</p></div>
+        <label>Visão<select id="calendarMode"><option value="week">4 dias do evento</option><option value="day">Dia</option></select></label>
+        <label>Dia<select id="calendarDay"></select></label>
+        <label>Participante<select id="personFilter"><option value="">Toda a equipe</option></select></label>
+        <label>Eventos<select id="calendarScope"><option value="team">Com participantes</option><option value="all">Toda a programação</option><option value="mine">Minha agenda</option></select></label>
+        <button id="exportTeam" class="primary-btn">Baixar esta visão .ics</button>
+      </div>
+      <p class="muted"><span id="calendarCount"></span> · Os filtros e o radar acima também se aplicam ao calendário. Toque em um evento para ver os detalhes e distribuir a equipe.</p>
+      <div id="teamConflicts" class="team-conflicts"></div>
+      <div id="teamOrphans" class="team-conflicts"></div>
+      <div id="calendarEmpty" class="calendar-empty">Nenhum evento nesta visão. Selecione <b>Toda a programação</b> ou use <b>Equipe</b> nos cartões da lista para atribuir participantes.</div>
+      <div class="calendar-scroll" tabindex="0" role="region" aria-label="Grade de horários. Role para ver todos os dias e horários."><div id="calendarGrid" class="calendar-grid"></div></div>
+      <div id="calendarUntimed"></div>
+    </section>
   </main>
 
   <dialog id="eventModal" class="modal"><div id="modalContent"></div></dialog>
@@ -106,9 +131,37 @@
     </form>
   </dialog>
 
+  <dialog id="assignmentModal" class="modal team-modal" aria-labelledby="assignmentTitle">
+    <form id="assignmentForm">
+      <div class="modal-head"><div><span class="section-kicker">PARTICIPANTES DA EQUIPE</span><h2 id="assignmentTitle"></h2></div><button type="button" class="icon-btn" data-close-dialog="assignmentModal" aria-label="Fechar participantes">×</button></div>
+      <p id="assignmentTime" class="muted"></p>
+      <label for="participantInput">Quem vai estar neste evento?</label>
+      <textarea id="participantInput" rows="5" placeholder="Ana Souza&#10;Bruno Lima" aria-describedby="participantHelp"></textarea>
+      <p id="participantHelp" class="muted">Um nome por linha, ou separados por vírgulas. Use o mesmo nome em todos os eventos para conferir os conflitos. Deixe vazio para remover a escala deste evento.</p>
+      <div id="assignmentConflicts" class="team-conflicts"></div>
+      <p id="assignmentMessage" role="status"></p>
+      <div class="modal-actions"><button type="button" id="assignmentAuth" class="ghost-btn">Habilitar edição</button><button type="button" id="reloadAssignment" class="ghost-btn">Recarregar participantes</button><button id="saveParticipants" class="primary-btn">Salvar para todos</button></div>
+    </form>
+  </dialog>
+  <dialog id="teamAuthModal" class="modal team-modal" aria-labelledby="teamAuthTitle">
+    <form id="teamAuthForm">
+      <div class="modal-head"><h2 id="teamAuthTitle">Editar a escala compartilhada</h2><button type="button" class="icon-btn" data-close-dialog="teamAuthModal" aria-label="Fechar autorização">×</button></div>
+      <p>Todos podem consultar a escala. Para editar, use uma conta com acesso de escrita ao repositório <b>TadeuMartins/roge-2026-planner</b>.</p>
+      <details><summary>Como habilitar a edição no GitHub</summary><ol><li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">a criação de token no GitHub</a>.</li><li>Escolha um token de acesso refinado (fine-grained), uma validade curta e somente o repositório <b>roge-2026-planner</b>.</li><li>Em Repository permissions, habilite <b>Contents: Read and write</b>. Copie o token e cole abaixo.</li></ol></details>
+      <p class="muted">O token é usado apenas nesta aba e não é salvo no navegador. Os nomes ficam públicos no repositório e no histórico do GitHub. Não inclua informações confidenciais.</p>
+      <label for="githubToken">Token do GitHub</label><input id="githubToken" class="aside-input" type="password" autocomplete="off" spellcheck="false" required />
+      <p id="authMessage" role="status"></p>
+      <button id="authorizeTeam" class="primary-btn">Conectar para editar</button>
+    </form>
+  </dialog>
+
   <footer>Dados de programação e exposição sincronizados a partir das páginas oficiais da ROG.e 2026. Este planner é uma ferramenta independente de organização de agenda.</footer>
+  <script src="js/planner-model.js" defer></script>
+  <script src="js/team-config.js" defer></script>
+  <script src="js/team-store.js" defer></script>
   <script src="js/core.js" defer></script>
   <script src="js/render.js" defer></script>
+  <script src="js/team.js" defer></script>
   <script src="js/init.js" defer></script>
 </body>
 </html>
