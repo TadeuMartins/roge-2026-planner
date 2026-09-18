@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "scrape": "node scripts/scrape-roge.mjs && node scripts/scrape-exhibitors.mjs && node scripts/stabilize-data.mjs",
-    "check": "node --check js/core.js && node --check js/render.js && node --check js/init.js && node --check scripts/scrape-roge.mjs && node --check scripts/scrape-exhibitors.mjs && node --check scripts/stabilize-data.mjs && node --check js/planner-model.js && node --check js/team-store.js && node --check js/team.js && node --check js/team-config.js",
-    "test": "node --test tests/*.test.mjs",
+    "check": "node --check js/core.js && node --check js/render.js && node --check js/init.js && node --check scripts/scrape-roge.mjs && node --check scripts/scrape-exhibitors.mjs && node --check scripts/stabilize-data.mjs && node --check js/planner-model.js && node --check js/team-store.js && node --check js/team.js && node --check js/team-config.js && node --check js/map-data.js && node --check js/maps.js",
+    "test": "node --test tests/planner.test.mjs tests/sync-team-events.test.mjs",
     "test:browser": "node tests/browser.mjs"
   },
   "dependencies": {

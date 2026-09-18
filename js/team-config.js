@@ -1,7 +1,6 @@
-// Public repository coordinates only. Never put a GitHub token in this file.
+// Supabase project URL and public publishable key (or legacy anon key) only.
+// Never put a secret key or service-role key in frontend files.
 globalThis.ROGE_TEAM_CONFIG = {
-  owner: 'TadeuMartins',
-  repo: 'roge-2026-planner',
-  branch: 'main',
-  path: 'data/team.json'
+  url: 'https://hhrsansjccdmkwngarpe.supabase.co',
+  publishableKey: 'sb_publishable_YJd7Y5NgwrFDsLYo2tqDcQ_pZTgAiwr'
 };

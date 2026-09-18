@@ -32,6 +32,11 @@ jobs:
       - run: npm run check && npm test
       - name: Scrape official ROG.e sources
         run: npm run scrape
+      - name: Sync event metadata without changing participants
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/sync-team-events.mjs
       - name: Commit refreshed data when changed
         run: |
           git config user.name "roge-planner-bot"
@@ -63,11 +68,18 @@ jobs:
       - name: Configure Pages
         if: steps.pages_state.outputs.enabled == 'true'
         uses: actions/configure-pages@v5
+      - name: Prepare public files only
+        if: steps.pages_state.outputs.enabled == 'true'
+        run: |
+          mkdir -p _site/data
+          cp index.html styles.css calendar.css maps.css _site/
+          cp -r js assets _site/
+          cp data/events.json data/exhibitors.json _site/data/
       - name: Upload Pages artifact
         if: steps.pages_state.outputs.enabled == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - name: Deploy to GitHub Pages
         if: steps.pages_state.outputs.enabled == 'true'
         id: deployment

@@ -8,15 +8,16 @@
   <meta name="description" content="Planner estratégico ROG.e 2026 com agenda oficial, priorização de stakeholders, tecnologia e desafios da indústria." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="calendar.css" />
+  <link rel="stylesheet" href="maps.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="brand-strip">
       <div class="siemens-logo-wrap" aria-label="Siemens">
-        <img class="siemens-logo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Siemens-logo.svg" alt="Siemens" />
+        <span class="brand-wordmark">SIEMENS</span>
       </div>
       <div class="brand-divider"></div>
-      <img class="roge-logo" src="https://roge.energy/images/Rog.e_2026.png" alt="ROG.e 2026" />
+      <span class="roge-wordmark" aria-label="ROG.e 2026">ROG.e<small>2026</small></span>
     </div>
     <div class="top-actions">
       <button id="installBtn" class="ghost-btn hidden">Instalar</button>
@@ -55,28 +56,33 @@
 
     <section class="toolbar">
       <div class="search-wrap"><span>⌕</span><input id="search" placeholder="Buscar tema, palestrante, empresa, sala, tecnologia…" /></div>
-      <select id="dayFilter"><option value="">Todos os dias</option></select>
-      <select id="typeFilter"><option value="">Todos os formatos</option></select>
-      <select id="priorityFilter">
+      <select id="dayFilter" aria-label="Dia da programação"><option value="">Todos os dias</option></select>
+      <select id="typeFilter" aria-label="Formato do evento"><option value="">Todos os formatos</option></select>
+      <select id="priorityFilter" aria-label="Relevância do evento">
         <option value="">Todas as relevâncias</option>
         <option value="P1">Evento Relevante</option>
         <option value="P2">P2 • Alta</option>
         <option value="P3">P3 • Relevante</option>
         <option value="P4">P4 • Geral</option>
       </select>
-      <select id="locationFilter"><option value="">Todos os locais</option></select>
+      <select id="locationFilter" aria-label="Local do evento"><option value="">Todos os locais</option></select>
+      <select id="personFilter" aria-label="Participante Siemens"><option value="">Toda a equipe Siemens</option></select>
+      <select id="coverageFilter" aria-label="Situação da escala"><option value="">Toda a escala</option><option value="assigned">Com participantes</option><option value="unassigned">Sem participantes</option><option value="conflicts">Com conflito na equipe</option></select>
+      <button id="clearFilters" class="ghost-btn">Limpar filtros</button>
       <label class="toggle"><input type="checkbox" id="onlyMine" /><span></span> Minha agenda</label>
     </section>
 
     <section class="smart-chips" id="smartChips"></section>
 
     <section class="team-bar" aria-label="Escala compartilhada">
-      <div><span class="section-kicker">PLANEJAMENTO DA EQUIPE</span><p id="teamSync" role="status">Carregando escala compartilhada…</p></div>
-      <div class="team-actions"><button id="refreshTeam" class="ghost-btn">Atualizar escala</button><button id="connectTeam" class="primary-btn">Habilitar edição</button><button id="disconnectTeam" class="ghost-btn" hidden>Encerrar edição</button></div>
+      <div><span class="section-kicker">EQUIPE SIEMENS · PLANEJAMENTO COMPARTILHADO</span><p>Qualquer visitante pode editar, sem login. Na lista, use <b>Equipe</b> no próprio evento e <b>Salvar para todos</b>. Os nomes são públicos; não inclua dados confidenciais.</p><p id="teamSync" role="status">Verificando configuração da escala compartilhada…</p></div>
+      <div class="team-actions"><button id="refreshTeam" class="ghost-btn">Atualizar escala</button></div>
     </section>
+    <div id="teamSummary" class="team-summary" aria-label="Resumo da escala"></div>
     <nav class="view-tabs" aria-label="Visualização da programação">
       <button class="view-tab active" data-view="list" aria-pressed="true">☷ Lista de eventos</button>
       <button class="view-tab" data-view="calendar" aria-pressed="false">▦ Calendário da equipe</button>
+      <button class="view-tab" data-view="map" aria-pressed="false">⌖ Mapas do evento</button>
     </nav>
     <section class="content-grid" id="listView">
       <div>
@@ -103,16 +109,37 @@
         <div><h2>Quem vai estar onde</h2><p class="muted">21–24 setembro 2026 · Horário de Brasília (UTC−3)</p></div>
         <label>Visão<select id="calendarMode"><option value="week">4 dias do evento</option><option value="day">Dia</option></select></label>
         <label>Dia<select id="calendarDay"></select></label>
-        <label>Participante<select id="personFilter"><option value="">Toda a equipe</option></select></label>
-        <label>Eventos<select id="calendarScope"><option value="team">Com participantes</option><option value="all">Toda a programação</option><option value="mine">Minha agenda</option></select></label>
         <button id="exportTeam" class="primary-btn">Baixar esta visão .ics</button>
       </div>
       <p class="muted"><span id="calendarCount"></span> · Os filtros e o radar acima também se aplicam ao calendário. Toque em um evento para ver os detalhes e distribuir a equipe.</p>
       <div id="teamConflicts" class="team-conflicts"></div>
       <div id="teamOrphans" class="team-conflicts"></div>
-      <div id="calendarEmpty" class="calendar-empty">Nenhum evento nesta visão. Selecione <b>Toda a programação</b> ou use <b>Equipe</b> nos cartões da lista para atribuir participantes.</div>
+      <div id="calendarEmpty" class="calendar-empty">Nenhum evento nesta visão. Revise o dia, a pessoa e a situação da escala nos filtros acima, ou use <b>Limpar filtros</b>.</div>
       <div class="calendar-scroll" tabindex="0" role="region" aria-label="Grade de horários. Role para ver todos os dias e horários."><div id="calendarGrid" class="calendar-grid"></div></div>
       <div id="calendarUntimed"></div>
+    </section>
+    <section id="mapView" hidden aria-label="Mapas do evento">
+      <div class="map-heading"><div><span class="section-kicker">EXPLORE O RIOCENTRO</span><h2>Encontre seu próximo evento</h2><p class="muted">Escolha o andar, encontre a sala e veja quem vai estar em cada sessão. Os filtros da programação também se aplicam aqui.</p></div><a id="mapOriginal" class="ghost-btn" target="_blank" rel="noopener">Abrir planta original ↗</a></div>
+      <div id="mapFloorButtons" class="floor-switch" aria-label="Andar do evento"></div>
+      <p id="mapNotice" class="map-notice" role="status"></p>
+      <p id="mapCoverage" class="muted" role="status"></p>
+      <div class="map-layout">
+        <aside class="map-sidebar">
+          <label for="mapSearch">Encontre um local</label><input id="mapSearch" class="aside-input" placeholder="Sala, tema ou participante…" type="search" />
+          <label for="mapDay">Programação do dia</label><select id="mapDay" class="aside-input"></select>
+          <div id="mapPlaces" class="map-places"></div>
+        </aside>
+        <div class="map-main">
+          <div class="map-canvas-head"><b id="mapFloorTitle"></b><label><input id="mapShowPins" type="checkbox" checked /> Mostrar locais</label></div>
+          <div id="mapViewport" class="map-viewport" tabindex="0" role="region" aria-label="Planta interativa. Use mais e menos para zoom, setas para navegar e zero para ajustar.">
+            <div id="mapPlane" class="map-plane"><img id="mapImage" alt="" draggable="false" loading="lazy" decoding="async" /><div id="mapPins"></div></div>
+          </div>
+          <div class="map-controls" aria-label="Controles do mapa"><span class="muted">Amplie e deslize para explorar</span><div><button id="mapZoomOut" class="map-control" aria-label="Diminuir zoom">−</button><output id="mapZoomLabel">100%</output><button id="mapZoomIn" class="map-control" aria-label="Aumentar zoom">+</button><button id="mapFit" class="map-control">Ajustar</button></div></div>
+          <p id="mapSource" class="map-source"></p>
+          <section id="mapSelection" class="map-selection" hidden><div class="map-selection-heading"><h3 id="mapPlaceName"></h3><span id="mapPlaceCount" class="muted"></span></div><p id="mapPlaceNote" class="muted"></p><div id="mapSchedule" class="map-schedule"></div></section>
+          <details id="mapUnmapped" class="map-unmapped" hidden><summary id="mapUnmappedSummary"></summary><p class="muted">A planta não confirma a posição destes locais. Nenhum marcador foi inventado; consulte a organização e a sinalização do evento.</p><div id="mapUnmappedEvents" class="map-schedule"></div></details>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -136,22 +163,11 @@
       <div class="modal-head"><div><span class="section-kicker">PARTICIPANTES DA EQUIPE</span><h2 id="assignmentTitle"></h2></div><button type="button" class="icon-btn" data-close-dialog="assignmentModal" aria-label="Fechar participantes">×</button></div>
       <p id="assignmentTime" class="muted"></p>
       <label for="participantInput">Quem vai estar neste evento?</label>
-      <textarea id="participantInput" rows="5" placeholder="Ana Souza&#10;Bruno Lima" aria-describedby="participantHelp"></textarea>
+      <textarea id="participantInput" rows="5" placeholder="Ana Souza&#10;Bruno Lima" aria-describedby="participantHelp assignmentMessage" readonly></textarea>
       <p id="participantHelp" class="muted">Um nome por linha, ou separados por vírgulas. Use o mesmo nome em todos os eventos para conferir os conflitos. Deixe vazio para remover a escala deste evento.</p>
-      <div id="assignmentConflicts" class="team-conflicts"></div>
+      <div id="assignmentConflicts" class="team-conflicts" aria-live="polite"></div>
       <p id="assignmentMessage" role="status"></p>
-      <div class="modal-actions"><button type="button" id="assignmentAuth" class="ghost-btn">Habilitar edição</button><button type="button" id="reloadAssignment" class="ghost-btn">Recarregar participantes</button><button id="saveParticipants" class="primary-btn">Salvar para todos</button></div>
-    </form>
-  </dialog>
-  <dialog id="teamAuthModal" class="modal team-modal" aria-labelledby="teamAuthTitle">
-    <form id="teamAuthForm">
-      <div class="modal-head"><h2 id="teamAuthTitle">Editar a escala compartilhada</h2><button type="button" class="icon-btn" data-close-dialog="teamAuthModal" aria-label="Fechar autorização">×</button></div>
-      <p>Todos podem consultar a escala. Para editar, use uma conta com acesso de escrita ao repositório <b>TadeuMartins/roge-2026-planner</b>.</p>
-      <details><summary>Como habilitar a edição no GitHub</summary><ol><li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">a criação de token no GitHub</a>.</li><li>Escolha um token de acesso refinado (fine-grained), uma validade curta e somente o repositório <b>roge-2026-planner</b>.</li><li>Em Repository permissions, habilite <b>Contents: Read and write</b>. Copie o token e cole abaixo.</li></ol></details>
-      <p class="muted">O token é usado apenas nesta aba e não é salvo no navegador. Os nomes ficam públicos no repositório e no histórico do GitHub. Não inclua informações confidenciais.</p>
-      <label for="githubToken">Token do GitHub</label><input id="githubToken" class="aside-input" type="password" autocomplete="off" spellcheck="false" required />
-      <p id="authMessage" role="status"></p>
-      <button id="authorizeTeam" class="primary-btn">Conectar para editar</button>
+      <div class="modal-actions"><button id="saveParticipants" class="primary-btn" disabled>Salvar para todos</button><button type="button" class="ghost-btn" data-close-dialog="assignmentModal">Cancelar</button><button type="button" id="reloadAssignment" class="ghost-btn">Recarregar participantes</button></div>
     </form>
   </dialog>
 
@@ -162,6 +178,8 @@
   <script src="js/core.js" defer></script>
   <script src="js/render.js" defer></script>
   <script src="js/team.js" defer></script>
+  <script src="js/map-data.js" defer></script>
+  <script src="js/maps.js" defer></script>
   <script src="js/init.js" defer></script>
 </body>
 </html>
