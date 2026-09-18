@@ -103,7 +103,8 @@ export async function runBrowserTests({ chromium, root = process.cwd(), executab
     return page.locator(selector).evaluateAll((elements,key)=>elements.map(el=>el.getAttribute(key)).sort(),attribute);
   }
   async function checkExport(page,expected) {
-    const selected=await renderedIds(page,'#teamAgenda [data-agenda-event]','data-agenda-event');
+    const summary=await page.locator('#calendarMode').inputValue()==='summary';
+    const selected=await renderedIds(page,summary?'#teamAgenda [data-agenda-event]':'#calendarGrid [data-event-id], #calendarUntimed [data-event-id]',summary?'data-agenda-event':'data-event-id');
     assert.deepEqual([...new Set(selected)].sort(),[...expected].sort(),'Rendered personal/team agenda matches expected events');
     const downloadPromise=page.waitForEvent('download');
     await page.locator('#exportTeam').click();
@@ -139,6 +140,14 @@ export async function runBrowserTests({ chromium, root = process.cwd(), executab
     const minimum=Math.min(...widths);
     if(minimum<150)regressions.push(`${label}: calendar button minimum width ${minimum.toFixed(2)}px, expected >=150px (${count} events)`);
     if(!await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth))regressions.push(label+': calendar causes page overflow');
+  }
+  async function checkDefaultCalendar(page,count) {
+    assert.equal(await page.locator('#calendarMode').inputValue(),'week');
+    assert.deepEqual(await page.locator('#calendarMode option').evaluateAll(options=>options.map(option=>option.value)),['week','day','summary']);
+    assert.equal(await page.locator('#calendarView').isVisible(),true);
+    assert.equal(await page.locator('#calendarGrid').isVisible(),true,'Default agenda is a visible time grid');
+    assert.equal(await page.locator('#teamAgenda').isVisible(),false,'Person list is not the default agenda');
+    assert.equal(await page.locator('.calendar-event:visible').count(),count);
   }
   async function screenshot(page,name,selector) {
     if(!process.env.PLANNER_SCREENSHOT_DIR)return;
@@ -203,12 +212,13 @@ export async function runBrowserTests({ chromium, root = process.cwd(), executab
     assert.deepEqual(shared.writes.at(-1),{p_event_id:assignedId,p_names:['Ana Souza','Bruno Lima'],p_expected_names:[]});
     await page.reload();await page.waitForFunction(()=>document.querySelectorAll('.participant-badge').length===2);assert.equal(await page.locator('#mineCount').innerText(),'1');
     await page.locator('button[data-view=calendar]').click();
-    assert.equal(await page.locator('#calendarMode').inputValue(),'summary');
+    await checkDefaultCalendar(page,1);
+    assert.deepEqual(await page.locator('.calendar-event .calendar-person').allTextContents(),['Ana Souza','Bruno Lima']);
     await page.locator('#schedulePerson').selectOption('ana souza');
     const ics=await checkExport(page,[assignedId]);
     assert.match(ics,/Equipe: Ana Souza/);assert.match(ics,/DTSTART:20260921T124500Z/);
-    await page.locator('[data-agenda-event]').click();assert.equal(await page.locator('#eventModal').isVisible(),true);await page.locator('#modalClose').click();
-    await page.locator('#calendarMode').selectOption('week');await checkCalendarWidths(page,1,'Desktop assigned-only calendar');
+    await page.locator('.calendar-event').click();assert.equal(await page.locator('#eventModal').isVisible(),true);await page.locator('#modalClose').click();
+    await checkCalendarWidths(page,1,'Desktop assigned-only calendar');
     await page.locator('button[data-view=map]').click();
     for(const floor of ['ground','upper']) {
       await checkFloor(page,floor);
@@ -216,7 +226,8 @@ export async function runBrowserTests({ chromium, root = process.cwd(), executab
     const mobile=await open({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
     assert.deepEqual(await card(mobile,assignedId).locator('.participant-badge').allTextContents(),['Ana Souza','Bruno Lima']);
     assert.equal(await mobile.locator('#mineCount').innerText(),'0','New device sees shared names, not another device favorites');
-    await mobile.locator('button[data-view=calendar]').click();assert.equal(await mobile.locator('#calendarMode').inputValue(),'summary');assert.match(await mobile.locator('#teamAgenda').innerText(),/Ana Souza/);
+    await mobile.locator('button[data-view=calendar]').click();await checkDefaultCalendar(mobile,1);
+    assert.deepEqual(await mobile.locator('.calendar-event .calendar-person').allTextContents(),['Ana Souza','Bruno Lima']);
     assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
     for(const width of [390,320]) {
       await mobile.setViewportSize({width,height:844});
@@ -245,6 +256,85 @@ export async function runBrowserTests({ chromium, root = process.cwd(), executab
     assert.equal(await card(mobile,assignedId).locator('.team-participant-input').inputValue(),'<img src=x onerror=alert(1)>');
     assert.equal(await card(mobile,assignedId).locator('img').count(),0);
     await mobile.context().close();await page.context().close();
+
+    // Different attendees still need separate lanes; equal times on another date need a separate day column.
+    const gridFixtures=[
+      {id:'grid-a',date:'2026-09-21',title:'Test Session Alpha',location:'Test Room A'},
+      {id:'grid-b',date:'2026-09-21',title:'Test Session Beta',location:'Test Room B'},
+      {id:'grid-c',date:'2026-09-22',title:'Test Session Gamma',location:'Test Room C'},
+      {id:'grid-free',date:'2026-09-22',title:'Test Unassigned',location:'Test Room D'}
+    ].map(e=>({...e,start:'12:00',end:'13:00',type:'Congresso',speakers:[]}));
+    seed({'grid-a':{names:['Test Alpha']},'grid-b':{names:['Test Beta']},'grid-c':{names:['Test Alpha']}});
+    for(const width of [1440,390]) {
+      const grid=await open({viewport:{width,height:width===1440?1000:844},...(width===390?{isMobile:true,hasTouch:true}:{})},gridFixtures);
+      await grid.locator('button[data-view=calendar]').click();
+      await checkDefaultCalendar(grid,3);
+      await checkCalendarWidths(grid,3,`${width}px simultaneous events`);
+      const geometry=await grid.locator('.calendar-event').evaluateAll(elements=>elements.map(el=>{
+        const rect=el.getBoundingClientRect(), column=el.closest('.calendar-column');
+        return {id:el.dataset.eventId,x:rect.x,y:rect.y,width:rect.width,height:rect.height,column:[...column.parentElement.children].indexOf(column),bodyTop:column.querySelector('.calendar-day-body').getBoundingClientRect().top};
+      }));
+      const [a,b,c]=['grid-a','grid-b','grid-c'].map(id=>geometry.find(e=>e.id===id));
+      assert.equal(a.column,b.column,`${width}px simultaneous events share a date column`);
+      assert.notEqual(a.column,c.column,`${width}px second date has a different column`);
+      for(const other of [b,c]) {
+        assert.ok(Math.abs(a.y-other.y)<1,`${width}px equal start times align vertically`);
+        assert.ok(Math.abs(a.height-other.height)<1,`${width}px equal durations have equal heights`);
+      }
+      assert.ok(a.x+a.width<=b.x || b.x+b.width<=a.x,`${width}px simultaneous events are side-by-side, not overlapping`);
+      assert.ok(c.x>=Math.max(a.x+a.width,b.x+b.width),`${width}px next date is to the right of both lanes`);
+      assert.equal(await grid.locator('.calendar-event.has-conflict').count(),0,'Different attendees are not a participant conflict');
+      const ticks=await grid.locator('.calendar-ticks span').evaluateAll(elements=>elements.map(el=>({text:el.textContent,y:el.getBoundingClientRect().y,half:el.classList.contains('half-hour')})));
+      assert.deepEqual(ticks.slice(0,3).map(t=>t.text),['09:00','09:30','10:00']);
+      assert.equal(ticks.length,20,'09:00-19:00 grid labels every half hour');
+      for(let i=1;i<ticks.length;i++) {
+        assert.ok(Math.abs(ticks[i].y-ticks[i-1].y-60)<1,`${width}px half-hour ticks are 60px apart`);
+        assert.equal(ticks[i].half,i%2===1);
+      }
+      assert.ok(Math.abs(a.y-a.bodyTop-360)<1,'Noon starts three 120px hours below 09:00');
+      assert.ok(Math.abs(a.height-117)<1,'One-hour event fills its 120px slot with a 3px gap');
+      const lines=await grid.locator('.calendar-column').evaluateAll(columns=>columns.map(el=>{
+        const border=getComputedStyle(el), body=getComputedStyle(el.querySelector('.calendar-day-body'));
+        return {width:parseFloat(border.borderLeftWidth),style:border.borderLeftStyle,color:border.borderLeftColor,background:body.backgroundImage};
+      }));
+      for(const line of lines) {
+        assert.ok(line.width>=1 && line.style==='solid' && line.color!=='rgba(0, 0, 0, 0)',`${width}px visible vertical day boundary`);
+        assert.match(line.background,/repeating-linear-gradient/);
+        for(const stop of [59,60,119,120])assert.ok(line.background.includes(`${stop}px`),`${width}px half-hour/hour grid line at ${stop}px`);
+      }
+      for(const [id,name] of [['grid-a','Test Alpha'],['grid-b','Test Beta'],['grid-c','Test Alpha']]) {
+        const event=grid.locator(`.calendar-event[data-event-id="${id}"]`);
+        await event.scrollIntoViewIfNeeded();
+        assert.deepEqual(await event.locator('.calendar-person').allTextContents(),[name]);
+        assert.equal(await event.locator('.calendar-person').isVisible(),true);
+        const content=await event.evaluate(el=>{
+          const box=el.getBoundingClientRect();
+          const rows=[...el.children].slice(0,4).map(child=>{const r=child.getBoundingClientRect();return {top:r.top,bottom:r.bottom,left:r.left,right:r.right};});
+          const dot=getComputedStyle(el.querySelector('.calendar-person'),'::before');
+          return {rows,bottom:box.bottom,right:box.right,left:box.left,dot:{color:dot.backgroundColor,width:parseFloat(dot.width),height:parseFloat(dot.height)}};
+        });
+        for(let i=1;i<content.rows.length;i++)assert.ok(content.rows[i].top>=content.rows[i-1].bottom-1,'Time, named participants, location and title stack without overlap');
+        for(const row of content.rows)assert.ok(row.bottom<=content.bottom && row.left>=content.left && row.right<=content.right,'Event content fits inside its time block');
+        assert.ok(content.dot.width>0 && content.dot.height>0 && content.dot.color!=='rgba(0, 0, 0, 0)','Named participant has a visible colored marker');
+      }
+      await checkExport(grid,['grid-a','grid-b','grid-c']);
+      for(const [person,expected] of [['test alpha',['grid-a','grid-c']],['test beta',['grid-b']],['',['grid-a','grid-b','grid-c']]]) {
+        await grid.locator('#schedulePerson').selectOption(person);
+        await checkExport(grid,expected);
+      }
+      await grid.locator('button[data-view=list]').click();
+      await grid.locator('#search').fill('no matching discovery event');
+      assert.equal(await grid.locator('.event').count(),0);
+      await grid.locator('button[data-view=calendar]').click();
+      await checkDefaultCalendar(grid,3);
+      await checkExport(grid,['grid-a','grid-b','grid-c']);
+      await grid.locator('#schedulePerson').selectOption('test beta');
+      await checkExport(grid,['grid-b']);
+      await grid.locator('#schedulePerson').selectOption('');
+      await grid.locator('.calendar-scroll').evaluate(el=>{el.scrollLeft=0;el.scrollTop=0;});
+      await screenshot(grid,`${width}-calendar-week-fixture`,'#calendarView');
+      await grid.context().close();
+    }
 
     // Fixed locations, dates and overlaps make expected coverage independent of production assignments.
     const fixtures=[
@@ -276,7 +366,9 @@ export async function runBrowserTests({ chromium, root = process.cwd(), executab
       }
     }
     await fixturePage.locator('button[data-view=calendar]').click();
-    assert.equal(await fixturePage.locator('#calendarMode').inputValue(),'summary');
+    await checkDefaultCalendar(fixturePage,scheduled.length);
+    await checkExport(fixturePage,scheduled);
+    await fixturePage.locator('#calendarMode').selectOption('summary');
     assert.deepEqual(await fixturePage.locator('.agenda-person > h3').allTextContents(),['Ana Souza','Bruno Lima']);
     assert.equal(await fixturePage.locator('[data-agenda-event="fixture-b"]').count(),2,'Shared event appears under each attending person');
     await checkExport(fixturePage,scheduled);
@@ -428,6 +520,8 @@ export async function runBrowserTests({ chromium, root = process.cwd(), executab
       await screenshot(visual,`${width}-expanded-editor`,'.event[data-id="fixture-a"]');
       await card(visual,'fixture-a').locator('.team-cancel').click();
       await visual.locator('button[data-view=calendar]').click();
+      await checkDefaultCalendar(visual,scheduled.length);
+      await visual.locator('#calendarMode').selectOption('summary');
       await checkExport(visual,scheduled);
       assert.equal(await visual.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`${width}px summary overflow`);
       await screenshot(visual,`${width}-team-summary`,'#calendarView');

@@ -80,7 +80,7 @@ function teamVisibleEvents() {
 function renderCalendar() {
   if (!$('#calendarGrid')) return;
   const days = uniq(events.map(e => e.date)).sort();
-  const mode = $('#calendarMode').value || 'summary';
+  const mode = $('#calendarMode').value || 'week';
   const selectedDay = $('#scheduleDay').value;
   const currentDay = selectedDay || $('#calendarDay').value || days[0] || '';
   if (mode === 'day') $('#calendarDay').value = currentDay;
@@ -122,7 +122,7 @@ function renderCalendar() {
   const latest = Math.ceil(Math.max(19 * 60, ...timed.map(e => PlannerModel.minutes(e.end))) / 60) * 60;
   const pixels = 2, height = (latest - earliest) * pixels;
   const ticks = [];
-  for (let t = earliest; t < latest; t += 60) ticks.push('<span style="top:' + ((t-earliest)*pixels) + 'px">' + minutesToTime(t) + '</span>');
+  for (let t = earliest; t < latest; t += 30) ticks.push('<span class="' + (t % 60 ? 'half-hour' : 'full-hour') + '" style="top:' + ((t-earliest)*pixels) + 'px">' + minutesToTime(t) + '</span>');
   const widths = [];
   const columns = shownDays.map(date => {
     const daily = timed.filter(e => e.date === date);
@@ -131,8 +131,12 @@ function renderCalendar() {
     return '<div class="calendar-column"><div class="calendar-day-head"><b>' + escapeHtml(fmtDate(date)) + '</b><small>' + daily.length + ' eventos</small></div><div class="calendar-day-body" style="height:' + height + 'px">' +
       layout.map(item => {
         const e = item.event, people = assignedNames(e.id);
+        const badges = people.map(name => {
+          const color = [...PlannerModel.key(name)].reduce((hash, char) => (hash * 31 + char.codePointAt(0)) >>> 0, 0) % 6;
+          return '<span class="calendar-person person-color-' + color + '">' + escapeHtml(name) + '</span>';
+        }).join('');
         const label = e.start + '–' + e.end + ' · ' + e.title + ' · ' + (e.location || '') + ' · ' + (people.join(', ') || 'Sem participantes');
-        return '<button class="calendar-event ' + (conflictIds.has(e.id) ? 'has-conflict' : '') + '" data-event-id="' + escapeHtml(e.id) + '" title="' + escapeHtml(label) + '" aria-label="' + escapeHtml(label) + '" style="top:' + ((item.start-earliest)*pixels) + 'px;height:' + Math.max(22,(item.end-item.start)*pixels-3) + 'px;left:calc(' + (item.lane/item.lanes*100) + '% + 2px);width:calc(' + (100/item.lanes) + '% - 4px)"><strong>' + e.start + '–' + e.end + '</strong><b>' + escapeHtml(e.title) + '</b><small>' + escapeHtml(e.location) + '</small><span>' + escapeHtml(people.join(' · ') || 'Sem participantes') + '</span>' + (conflictIds.has(e.id) ? '<em>⚠ Conflito na equipe</em>' : '') + '</button>';
+        return '<button class="calendar-event ' + (conflictIds.has(e.id) ? 'has-conflict' : '') + '" data-event-id="' + escapeHtml(e.id) + '" title="' + escapeHtml(label) + '" aria-label="' + escapeHtml(label) + '" style="top:' + ((item.start-earliest)*pixels) + 'px;height:' + Math.max(22,(item.end-item.start)*pixels-3) + 'px;left:calc(' + (item.lane/item.lanes*100) + '% + 2px);width:calc(' + (100/item.lanes) + '% - 4px)"><strong>' + e.start + '–' + e.end + '</strong><span class="calendar-people">' + badges + '</span><small class="calendar-location">' + escapeHtml(e.location) + '</small><b>' + escapeHtml(e.title) + '</b>' + (conflictIds.has(e.id) ? '<em>⚠ Conflito na equipe</em>' : '') + '</button>';
       }).join('') + '</div></div>';
   }).join('');
   $('#calendarGrid').innerHTML = '<div class="calendar-time"><div class="calendar-day-head">BRT</div><div class="calendar-ticks" style="height:' + height + 'px">' + ticks.join('') + '</div></div>' + columns;
@@ -280,7 +284,7 @@ function wireTeam() {
   const days = uniq(events.map(e => e.date)).sort();
   $('#calendarDay').innerHTML = days.map(d => '<option value="' + escapeHtml(d) + '">' + escapeHtml(fmtDate(d)) + '</option>').join('');
   $('#scheduleDay').innerHTML = '<option value="">Todos os dias</option>' + days.map(d => '<option value="' + escapeHtml(d) + '">' + escapeHtml(fmtDate(d)) + '</option>').join('');
-  $('#calendarMode').value = 'summary';
+  $('#calendarMode').value = 'week';
   document.body.dataset.view = plannerView;
   $$('.view-tab').forEach(button => button.onclick = () => setPlannerView(button.dataset.view));
   $('#calendarMode').addEventListener('change', () => {

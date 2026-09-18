@@ -30,7 +30,7 @@ O workflow `.github/workflows/refresh-and-deploy.yml` executa o scraper em Playw
 ## Calendário e escala compartilhada
 
 - Lista original preservada, incluindo radar, filtros, favoritos, expositores e exportação individual.
-- Agenda resumida por pessoa e dia, com toda a equipe ou uma pessoa selecionada. Grades diária e dos quatro dias continuam disponíveis.
+- Calendário dos quatro dias como visão inicial: dias nas colunas, linhas a cada meia hora e eventos simultâneos lado a lado, com participantes e locais nos blocos. Filtro para toda a equipe ou uma pessoa, calendário diário e lista resumida por pessoa também disponíveis.
 - Participantes da equipe nos cartões; vários nomes no mesmo evento.
 - Busca e dia sempre acessíveis; botão **Filtros** abre formato, local, relevância, participante, favoritos, radar e situação da escala. Filtros ativos ficam visíveis e podem ser removidos individualmente.
 - A agenda inclui somente eventos com participantes e tem filtros próprios. Busca, radar, favoritos e filtros de descoberta nunca escondem os compromissos da equipe. Exportar a agenda usa exatamente a pessoa, o dia e os conflitos selecionados, sem duplicar eventos compartilhados.
