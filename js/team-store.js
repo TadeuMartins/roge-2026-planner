@@ -1,68 +1,51 @@
-/* GitHub is the shared source of truth. Credentials are held in memory only. */
+/* Public Supabase RPCs are the shared source of truth; no user credentials. */
 globalThis.TeamStore = class TeamStore {
-  constructor(config, request = globalThis.fetch.bind(globalThis)) {
-    this.config = config; this.request = request; this.token = '';
-    this.endpoint = 'https://api.github.com/repos/' + encodeURIComponent(config.owner) + '/' + encodeURIComponent(config.repo) + '/contents/' + config.path.split('/').map(encodeURIComponent).join('/');
+  constructor(config = {}, request = globalThis.fetch.bind(globalThis)) {
+    this.config = config; this.request = request;
+    this.configured = typeof config.url === 'string' && !!config.url.trim() &&
+      typeof config.publishableKey === 'string' && !!config.publishableKey.trim();
+    this.endpoint = this.configured ? config.url.trim().replace(/\/+$/, '') + '/rest/v1/rpc/' : '';
   }
-  headers() {
-    return { Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', ...(this.token ? { Authorization: 'Bearer ' + this.token } : {}) };
-  }
-  async call(url, options = {}) {
-    const response = await this.request(url, { ...options, signal: AbortSignal.timeout(20000), cache: 'no-store', headers: { ...this.headers(), ...options.headers } });
+  async call(rpc, params = {}) {
+    if (!this.configured) throw new Error('Supabase não configurado. Preencha url e publishableKey em js/team-config.js.');
+    const key = this.config.publishableKey.trim();
+    const response = await this.request(this.endpoint + rpc, {
+      method: 'POST', body: JSON.stringify(params), signal: AbortSignal.timeout(20000), cache: 'no-store',
+      // New publishable keys are not JWTs. Only legacy anon JWTs use Bearer.
+      headers: { apikey: key, ...(key.startsWith('eyJ') ? { Authorization: 'Bearer ' + key } : {}),
+        'Content-Type': 'application/json', Accept: 'application/json' }
+    });
     if (!response.ok) {
-      const error = new Error(response.status === 401 ? 'Autorização inválida ou expirada. Conecte novamente.' :
-        response.status === 403 || response.status === 429 ? 'GitHub indisponível por limite de acesso ou falta de permissão. Aguarde ou confira a autorização.' :
-        response.status === 404 ? 'Escala não encontrada. Confira o repositório e a publicação da atualização.' :
-        'Não foi possível salvar ou carregar a escala (GitHub ' + response.status + '). Tente atualizar.');
+      const error = new Error(response.status === 409 ? 'Outra pessoa alterou este evento. Atualize os participantes antes de salvar novamente.' :
+        response.status === 401 || response.status === 403 ? 'Sem permissão para acessar a escala. Confira a chave pública e as permissões do Supabase.' :
+        response.status === 400 || response.status === 404 ? 'Evento ou dados inválidos. Confira a programação e a configuração do Supabase.' :
+        'Não foi possível salvar ou carregar a escala (Supabase ' + response.status + '). Atualize antes de tentar novamente.');
       error.status = response.status; throw error;
     }
-    return response.json();
+    return this.validate(await response.json());
   }
-  decode(content) { return new TextDecoder().decode(Uint8Array.from(atob(content.replace(/\s/g,'')), c => c.charCodeAt(0))); }
-  encode(content) { return btoa(Array.from(new TextEncoder().encode(content), b => String.fromCharCode(b)).join('')); }
+  names(input) {
+    if (!Array.isArray(input) || input.length > 30 || Array.from(input).some(n => typeof n !== 'string')) throw new Error('Participantes inválidos na escala (máximo de 30 nomes).');
+    const names = PlannerModel.names(input);
+    if (names.some(n => /[\u0000-\u001f\u007f-\u009f]/.test(n))) throw new Error('Participantes inválidos na escala.');
+    return names;
+  }
   validate(data) {
-    if (data.version !== 1 || !data.assignments || typeof data.assignments !== 'object' || Array.isArray(data.assignments)) throw new Error('Formato da escala inválido. Nenhum dado foi alterado.');
+    if (!data || data.version !== 1 || !data.assignments || typeof data.assignments !== 'object' || Array.isArray(data.assignments)) throw new Error('Formato da escala inválido.');
     for (const [id, record] of Object.entries(data.assignments)) {
-      if (!/^[a-zA-Z0-9_-]{1,100}$/.test(id) || !record || !Array.isArray(record.names) || record.names.some(n => typeof n !== 'string')) throw new Error('Participantes inválidos na escala.');
-      PlannerModel.names(record.names);
+      if (!/^[a-zA-Z0-9_-]{1,100}$/.test(id) || !record || Array.isArray(record) ||
+          JSON.stringify(this.names(record.names)) !== JSON.stringify(record.names)) throw new Error('Participantes inválidos na escala.');
     }
     return data;
   }
   async read() {
-    const file = await this.call(this.endpoint + '?ref=' + encodeURIComponent(this.config.branch));
-    return { sha: file.sha, data: this.validate(JSON.parse(this.decode(file.content))) };
+    return { data: await this.call('get_team_schedule') };
   }
-  async authorize(token) {
-    this.token = token.trim();
-    try {
-      const info = await this.call('https://api.github.com/repos/' + encodeURIComponent(this.config.owner) + '/' + encodeURIComponent(this.config.repo));
-      if (!info.permissions?.push) throw new Error('Esta conta não pode editar o repositório. Solicite acesso ao responsável.');
-    } catch (error) { this.token = ''; throw error; }
-  }
-  async save(event, input, expected) {
-    if (!this.token) throw new Error('Conecte seu GitHub para editar a escala.');
-    const people = PlannerModel.names(input);
-    const equal = (a,b) => JSON.stringify(a || []) === JSON.stringify(b || []);
-    for (let attempt = 0; attempt < 3; attempt++) {
-      const latest = await this.read();
-      if (!equal(latest.data.assignments[event.id]?.names, expected)) {
-        const error = new Error('Outra pessoa alterou este evento. Atualize os participantes antes de salvar novamente.');
-        error.latest = latest.data; throw error;
-      }
-      const data = structuredClone(latest.data);
-      if (people.length) data.assignments[event.id] = {
-        names: people, event: { id: event.id, title: event.title, date: event.date, start: event.start || '', end: event.end || '', location: event.location || '' },
-        updated_at: new Date().toISOString()
-      };
-      else delete data.assignments[event.id];
-      data.updated_at = new Date().toISOString();
-      try {
-        await this.call(this.endpoint, {
-          method: 'PUT', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: 'data: update team assignments', branch: this.config.branch, sha: latest.sha, content: this.encode(JSON.stringify(data, null, 2) + '\n') })
-        });
-        return data;
-      } catch (error) { if (error.status !== 409 || attempt === 2) throw error; }
-    }
+  async save(event, input, expectedNames) {
+    if (!this.configured) throw new Error('Supabase não configurado. Preencha url e publishableKey em js/team-config.js.');
+    if (!event || typeof event.id !== 'string' || !/^[a-zA-Z0-9_-]{1,100}$/.test(event.id)) throw new Error('Evento inválido.');
+    return this.call('save_team_assignment', {
+      p_event_id: event.id, p_names: this.names(input), p_expected_names: this.names(expectedNames)
+    });
   }
 };
