@@ -40,7 +40,7 @@ function fixture(events, assignments) {
     events, $: node, $$: () => [],
     uniq: values => [...new Set(values)], byId: id => events.find(e => e.id === id),
     escapeHtml: value => String(value ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;'),
-    fmtDate: value => value, minutesToTime: value => String(Math.floor(value / 60)).padStart(2, '0') + ':00',
+    fmtDate: value => value, minutesToTime: value => String(Math.floor(value / 60)).padStart(2, '0') + ':' + String(value % 60).padStart(2, '0'),
     filtered() { throw new Error('Schedule must not use discovery filtered()'); },
     render() { renders++; context.renderCalendar(); },
     document: { body: { dataset: {} } },
@@ -65,11 +65,33 @@ function fixture(events, assignments) {
   };
 }
 
-test('summary defaults to assigned-only, chronological person/day rows independent of discovery', () => {
+test('week defaults and fallback show assigned events with named participants in a time grid', () => {
+  const f = fixture([event('a', '12:00', '2026-09-21', '13:00'), event('b', '12:00', '2026-09-21', '13:00'), event('c', '12:00', '2026-09-22', '13:00'), event('free')], {
+    a: { names: ['Test Alpha'] }, b: { names: ['Test Beta'] }, c: { names: ['Test Alpha'] },
+  });
+  assert.equal(f.node('#calendarMode').value, 'week');
+  for (const mode of ['week', '']) {
+    f.change('#calendarMode', mode);
+    assert.equal(f.node('#calendarGrid').hidden, false);
+    assert.equal(f.node('#teamAgenda').hidden, true);
+    assert.equal(f.node('#teamAgenda').innerHTML, '');
+    const html = f.node('#calendarGrid').innerHTML;
+    assert.equal((html.match(/class="calendar-column"/g) || []).length, 2);
+    assert.deepEqual([...html.matchAll(/data-event-id="([^"]+)"/g)].map(m => m[1]), ['a', 'b', 'c']);
+    assert.match(html, /<strong>12:00\u201313:00<\/strong><span class="calendar-people"><span class="calendar-person person-color-\d">Test Alpha<\/span><\/span><small class="calendar-location">Room a<\/small><b>Session a<\/b>/);
+    assert.match(html, /class="calendar-person person-color-\d">Test Beta<\/span>/);
+    assert.match(html, /class="full-hour" style="top:0px">09:00/);
+    assert.match(html, /class="half-hour" style="top:60px">09:30/);
+    assert.match(html, /class="full-hour" style="top:120px">10:00/);
+    assert.deepEqual(f.ids(), ['a', 'b', 'c']);
+  }
+});
+
+test('explicit summary shows assigned-only, chronological person/day rows independent of discovery', () => {
   const f = fixture([event('late', '14:00', '2026-09-22', '15:00'), event('b'), event('early', '9:00'), event('free'), event('unknown', '', '2026-09-21', '')], {
     late: { names: ['Ana'] }, b: { names: ['Ana', 'Bruno'] }, early: { names: ['ana'] }, unknown: { names: ['Ana'] },
   });
-  assert.equal(f.node('#calendarMode').value, 'summary');
+  f.change('#calendarMode', 'summary');
   for (const id of ['search', 'personFilter', 'coverageFilter', 'dayFilter', 'priorityFilter', 'locationFilter', 'mapDay']) f.node('#' + id).value = 'unrelated';
   f.node('#onlyMine').checked = true;
   f.context.radar = 'irrelevant';
@@ -105,6 +127,7 @@ test('conflicts and conflict-only rows belong to each person, not their co-parti
   const f = fixture([event('a'), event('b', '10:30', '2026-09-21', '11:30'), event('c', '12:00', '2026-09-21', '13:00')], {
     a: { names: ['Ana', 'Bruno'] }, b: { names: ['ANA'] }, c: { names: ['Bruno'] },
   });
+  f.change('#calendarMode', 'summary');
   const sections = f.node('#teamAgenda').innerHTML.split('<section class="agenda-person">');
   assert.match(sections[1], /has-conflict/);
   assert.doesNotMatch(sections[2], /has-conflict|participant-conflict/);
@@ -167,6 +190,7 @@ test('ICS exports exactly the visible schedule with unique event IDs', () => {
 
 test('agenda delegates details, map and assignment actions without changing schedule filters', () => {
   const f = fixture([event('a')], { a: { names: ['Ana'] } });
+  f.change('#calendarMode', 'summary');
   f.context.openAssignment = e => f.actions.push(['edit', e.id]);
   f.change('#schedulePerson', 'ana');
   f.change('#scheduleDay', '2026-09-21');

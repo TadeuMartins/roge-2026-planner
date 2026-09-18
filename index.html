@@ -96,16 +96,16 @@
     </section>
 
     <section id="calendarView" hidden aria-label="Calendário da equipe">
-      <div class="section-heading"><h2>Agenda da equipe</h2><p class="muted">Veja quem vai a cada evento. Horários de Brasília (UTC−3).</p></div>
+      <div class="section-heading"><h2>Calendário da equipe</h2><p class="muted">Dias nas colunas, horários nas linhas. Veja quem estará em cada evento, inclusive nos horários simultâneos.</p></div>
       <div class="calendar-toolbar">
         <label for="schedulePerson">Pessoa<select id="schedulePerson"><option value="">Todas as pessoas</option></select></label>
         <label for="scheduleDay">Dia<select id="scheduleDay"><option value="">Todos os dias</option></select></label>
-        <label for="calendarMode">Visualização<select id="calendarMode"><option value="summary" selected>Por pessoa</option><option value="day">Grade do dia</option><option value="week">Grade dos 4 dias</option></select></label>
+        <label for="calendarMode">Visualização<select id="calendarMode"><option value="week" selected>Calendário · 4 dias</option><option value="day">Calendário · dia</option><option value="summary">Lista por pessoa</option></select></label>
         <label for="calendarDay">Dia da grade<select id="calendarDay"></select></label>
         <label class="toggle" for="scheduleConflicts"><input type="checkbox" id="scheduleConflicts" /> Apenas conflitos</label>
         <button id="exportTeam" class="ghost-btn">Exportar esta agenda</button>
       </div>
-      <p class="calendar-caption muted"><span id="calendarCount" role="status"></span> · Esta agenda tem filtros próprios, independentes da busca de eventos.</p>
+      <p class="calendar-caption muted"><span id="calendarCount" role="status"></span> · Horários de Brasília. Toque em um bloco para os detalhes. Deslize a grade para ver os demais dias e horários.</p>
       <div id="teamConflicts" class="team-conflicts"></div>
       <div id="teamOrphans" class="team-conflicts"></div>
       <div id="calendarEmpty" class="calendar-empty">Nenhum evento nesta agenda. Escolha outra pessoa ou dia, ou adicione participantes usando o botão Equipe nos eventos.</div>
