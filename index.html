@@ -3,139 +3,145 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#07141d" />
-  <title>ROG.e 2026 | Strategic Planner</title>
-  <meta name="description" content="Planner estratégico ROG.e 2026 com agenda oficial, priorização de stakeholders, tecnologia e desafios da indústria." />
+  <meta name="theme-color" content="#f6f7f5" />
+  <title>ROG.e 2026 | Agenda Siemens</title>
+  <meta name="description" content="Explore a programação da ROG.e 2026, organize a agenda da equipe Siemens e encontre salas e expositores." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="calendar.css" />
   <link rel="stylesheet" href="maps.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
   <header class="topbar">
     <div class="brand-strip">
-      <div class="siemens-logo-wrap" aria-label="Siemens">
-        <span class="brand-wordmark">SIEMENS</span>
-      </div>
-      <div class="brand-divider"></div>
-      <span class="roge-wordmark" aria-label="ROG.e 2026">ROG.e<small>2026</small></span>
+      <img class="roge-logo" src="assets/roge-logo.png" alt="ROG.e" width="100" height="44" />
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="brand-wordmark" aria-label="Siemens">SIEMENS</span>
     </div>
     <div class="top-actions">
       <button id="installBtn" class="ghost-btn hidden">Instalar</button>
-      <button id="calendarBtn" class="ghost-btn">Baixar minha agenda .ics</button>
+      <button id="calendarBtn" class="ghost-btn">Exportar favoritos</button>
     </div>
   </header>
 
-  <section class="hero">
-    <div>
-      <div class="eyebrow">STRATEGIC EVENT INTELLIGENCE</div>
-      <h1>ROG.e 2026 <span>Strategic Planner</span></h1>
-      <p>Transforme centenas de sessões em uma agenda de alto valor: quem encontrar, quais tecnologias acompanhar e quais desafios da indústria merecem atenção.</p>
-    </div>
-    <div class="sync-card">
-      <span class="pulse"></span>
-      <div><strong id="syncState">Carregando agenda…</strong><small id="lastUpdate">Fonte oficial ROG.e</small></div>
-    </div>
-  </section>
-
-  <main>
-    <section class="kpis" id="kpis"></section>
-
-    <section class="radar-panel">
-      <div class="radar-title">
-        <div><span class="section-kicker">RADAR ESTRATÉGICO</span><h2>Eventos relevantes em cada conflito real da agenda</h2><p class="muted">O FIT agora combina stakeholder, cargo, sala/palco, tecnologia, desafio da indústria, formato estratégico e networking.</p></div>
-        <button id="editRadarBtn" class="text-btn">⚙ Personalizar radar</button>
-      </div>
-      <div class="radar-grid">
-        <button class="radar-card active" data-radar="all"><b>Visão geral</b><span>Ranking ponderado</span></button>
-        <button class="radar-card" data-radar="stakeholder"><b>Stakeholders</b><span>Empresas estratégicas</span></button>
-        <button class="radar-card" data-radar="technology"><b>Tecnologia</b><span>IA, Digital Twin, OT, dados…</span></button>
-        <button class="radar-card" data-radar="challenge"><b>Desafios da indústria</b><span>Eficiência, confiabilidade, transição…</span></button>
-        <button class="radar-card" data-radar="networking"><b>Networking</b><span>Meetings, fóruns e FEST</span></button>
+  <main id="main">
+    <section class="page-heading" aria-labelledby="pageTitle">
+      <div><h1 id="pageTitle">ROG.e 2026</h1><p>21–24 setembro · Riocentro · Agenda Siemens</p></div>
+      <div class="sync-status" role="status">
+        <span id="syncState">Carregando agenda…</span>
+        <small id="lastUpdate">Fonte oficial ROG.e</small>
       </div>
     </section>
+    <nav class="view-tabs" aria-label="Visualização da programação">
+      <button class="view-tab active" data-view="list" aria-pressed="true" aria-controls="listView">Eventos</button>
+      <button class="view-tab" data-view="calendar" aria-pressed="false" aria-controls="calendarView">Agenda da equipe</button>
+      <button class="view-tab" data-view="map" aria-pressed="false" aria-controls="mapView">Mapa</button>
+    </nav>
 
-    <section class="toolbar">
-      <div class="search-wrap"><span>⌕</span><input id="search" placeholder="Buscar tema, palestrante, empresa, sala, tecnologia…" /></div>
-      <select id="dayFilter" aria-label="Dia da programação"><option value="">Todos os dias</option></select>
-      <select id="typeFilter" aria-label="Formato do evento"><option value="">Todos os formatos</option></select>
-      <select id="priorityFilter" aria-label="Relevância do evento">
-        <option value="">Todas as relevâncias</option>
-        <option value="P1">Evento Relevante</option>
-        <option value="P2">P2 • Alta</option>
-        <option value="P3">P3 • Relevante</option>
-        <option value="P4">P4 • Geral</option>
-      </select>
-      <select id="locationFilter" aria-label="Local do evento"><option value="">Todos os locais</option></select>
-      <select id="personFilter" aria-label="Participante Siemens"><option value="">Toda a equipe Siemens</option></select>
-      <select id="coverageFilter" aria-label="Situação da escala"><option value="">Toda a escala</option><option value="assigned">Com participantes</option><option value="unassigned">Sem participantes</option><option value="conflicts">Com conflito na equipe</option></select>
-      <button id="clearFilters" class="ghost-btn">Limpar filtros</button>
-      <label class="toggle"><input type="checkbox" id="onlyMine" /><span></span> Minha agenda</label>
-    </section>
-
-    <section class="smart-chips" id="smartChips"></section>
-
-    <section class="team-bar" aria-label="Escala compartilhada">
-      <div><span class="section-kicker">EQUIPE SIEMENS · PLANEJAMENTO COMPARTILHADO</span><p>Qualquer visitante pode editar, sem login. Na lista, use <b>Equipe</b> no próprio evento e <b>Salvar para todos</b>. Os nomes são públicos; não inclua dados confidenciais.</p><p id="teamSync" role="status">Verificando configuração da escala compartilhada…</p></div>
-      <div class="team-actions"><button id="refreshTeam" class="ghost-btn">Atualizar escala</button></div>
+    <section class="team-bar" aria-label="Sincronização da equipe">
+      <p id="teamSync" role="status">Verificando escala compartilhada…</p>
+      <button id="refreshTeam" class="text-btn">Atualizar escala</button>
     </section>
     <div id="teamSummary" class="team-summary" aria-label="Resumo da escala"></div>
-    <nav class="view-tabs" aria-label="Visualização da programação">
-      <button class="view-tab active" data-view="list" aria-pressed="true">☷ Lista de eventos</button>
-      <button class="view-tab" data-view="calendar" aria-pressed="false">▦ Calendário da equipe</button>
-      <button class="view-tab" data-view="map" aria-pressed="false">⌖ Mapas do evento</button>
-    </nav>
-    <section class="content-grid" id="listView">
-      <div>
-        <div class="result-head"><div><span id="resultCount">0 eventos</span><small id="resultHint"></small></div><select id="sort"><option value="time">Ordenar: Início</option><option value="priority">Ordenar: FIT</option><option value="stakeholder">Ordenar: stakeholder</option><option value="technology">Ordenar: tecnologia</option></select></div>
-        <div id="events" class="events"></div>
+    <section class="kpis" id="kpis" hidden aria-label="Resumo da programação"></section>
+
+    <section id="listView" aria-labelledby="discoveryTitle">
+      <div class="section-heading"><h2 id="discoveryTitle">Explore a programação</h2><p class="muted">Encontre eventos e organize sua participação.</p></div>
+      <section class="discovery-controls" aria-label="Filtros de eventos">
+        <div class="toolbar">
+          <label class="search-wrap" for="search"><span class="sr-only">Buscar eventos</span><input id="search" type="search" placeholder="Buscar tema, empresa ou sala" /></label>
+          <label for="dayFilter"><span class="sr-only">Dia</span><select id="dayFilter"><option value="">Todos os dias</option></select></label>
+        </div>
+        <details id="advancedFilters" class="advanced-filters">
+          <summary>Filtros <span id="filterCount" class="filter-count" hidden>0</span></summary>
+          <div class="filter-grid">
+            <label for="typeFilter">Formato<select id="typeFilter"><option value="">Todos os formatos</option></select></label>
+            <label for="priorityFilter">Relevância<select id="priorityFilter"><option value="">Todas as relevâncias</option><option value="P1">Destaque no horário</option><option value="P2">Alta</option><option value="P3">Relevante</option><option value="P4">Geral</option></select></label>
+            <label for="locationFilter">Local<select id="locationFilter"><option value="">Todos os locais</option></select></label>
+            <label for="personFilter">Pessoa da equipe<select id="personFilter"><option value="">Toda a equipe Siemens</option></select></label>
+            <label for="coverageFilter">Participação<select id="coverageFilter"><option value="">Toda a escala</option><option value="assigned">Com participantes</option><option value="unassigned">Sem participantes</option><option value="conflicts">Com conflito na equipe</option></select></label>
+            <label class="toggle" for="onlyMine"><input type="checkbox" id="onlyMine" /> Somente meus favoritos</label>
+          </div>
+          <div class="radar-panel">
+            <div class="radar-title"><h3>Interesses</h3><button id="editRadarBtn" class="text-btn">Personalizar radar</button></div>
+            <div class="radar-grid" role="group" aria-label="Foco dos eventos">
+              <button class="radar-card active" data-radar="all">Todos</button>
+              <button class="radar-card" data-radar="stakeholder">Empresas</button>
+              <button class="radar-card" data-radar="technology">Tecnologia</button>
+              <button class="radar-card" data-radar="challenge">Desafios da indústria</button>
+              <button class="radar-card" data-radar="networking">Networking</button>
+            </div>
+            <div class="smart-chips" id="smartChips" role="group" aria-label="Temas de interesse"></div>
+          </div>
+        </details>
+        <div class="filter-reset"><button id="clearFilters" class="text-btn" hidden>Limpar filtros</button></div>
+        <div id="activeFilters" class="active-filters" aria-label="Filtros ativos" hidden></div>
+      </section>
+      <div class="content-grid">
+        <div class="event-results">
+          <div class="result-head"><div role="status"><span id="resultCount">0 eventos</span><small id="resultHint"></small></div><label class="sort-control" for="sort"><span class="sr-only">Ordenar eventos</span><select id="sort"><option value="time">Por horário</option><option value="priority">Por relevância</option><option value="stakeholder">Por empresa</option><option value="technology">Por tecnologia</option></select></label></div>
+          <div id="events" class="events"></div>
+        </div>
+        <aside class="discovery-aside" aria-label="Sua agenda e expositores">
+          <details class="aside-card">
+            <summary>Meus favoritos <span id="mineCount" class="badge">0</span></summary>
+            <div class="aside-body"><p class="muted">Salvos apenas neste navegador.</p><div id="conflictAlert"></div><div id="mineList" class="mine-list"></div><button id="downloadMine" class="primary-btn">Exportar para Outlook</button></div>
+          </details>
+          <details class="aside-card">
+            <summary>Expositores</summary>
+            <div class="aside-body"><label for="exhibitorSearch">Buscar empresa</label><input id="exhibitorSearch" type="search" class="aside-input" placeholder="Nome do expositor" /><div id="exhibitors" class="exhibitor-list"></div></div>
+          </details>
+        </aside>
       </div>
-      <aside>
-        <div class="aside-card sticky">
-          <div class="aside-title"><h3>Minha agenda</h3><span id="mineCount" class="badge">0</span></div>
-          <div id="conflictAlert"></div>
-          <div id="mineList" class="mine-list"></div>
-          <button id="downloadMine" class="primary-btn">Baixar para Outlook</button>
-        </div>
-        <div class="aside-card">
-          <h3>Expositores estratégicos</h3>
-          <p class="muted">Encontre rapidamente pavilhão e estande de empresas relevantes.</p>
-          <input id="exhibitorSearch" class="aside-input" placeholder="Buscar empresa…" />
-          <div id="exhibitors" class="exhibitor-list"></div>
-        </div>
-      </aside>
     </section>
+
     <section id="calendarView" hidden aria-label="Calendário da equipe">
+      <div class="section-heading"><h2>Agenda da equipe</h2><p class="muted">Veja quem vai a cada evento. Horários de Brasília (UTC−3).</p></div>
       <div class="calendar-toolbar">
-        <div><h2>Quem vai estar onde</h2><p class="muted">21–24 setembro 2026 · Horário de Brasília (UTC−3)</p></div>
-        <label>Visão<select id="calendarMode"><option value="week">4 dias do evento</option><option value="day">Dia</option></select></label>
-        <label>Dia<select id="calendarDay"></select></label>
-        <button id="exportTeam" class="primary-btn">Baixar esta visão .ics</button>
+        <label for="schedulePerson">Pessoa<select id="schedulePerson"><option value="">Todas as pessoas</option></select></label>
+        <label for="scheduleDay">Dia<select id="scheduleDay"><option value="">Todos os dias</option></select></label>
+        <label for="calendarMode">Visualização<select id="calendarMode"><option value="summary" selected>Por pessoa</option><option value="day">Grade do dia</option><option value="week">Grade dos 4 dias</option></select></label>
+        <label for="calendarDay">Dia da grade<select id="calendarDay"></select></label>
+        <label class="toggle" for="scheduleConflicts"><input type="checkbox" id="scheduleConflicts" /> Apenas conflitos</label>
+        <button id="exportTeam" class="ghost-btn">Exportar esta agenda</button>
       </div>
-      <p class="muted"><span id="calendarCount"></span> · Os filtros e o radar acima também se aplicam ao calendário. Toque em um evento para ver os detalhes e distribuir a equipe.</p>
+      <p class="calendar-caption muted"><span id="calendarCount" role="status"></span> · Esta agenda tem filtros próprios, independentes da busca de eventos.</p>
       <div id="teamConflicts" class="team-conflicts"></div>
       <div id="teamOrphans" class="team-conflicts"></div>
-      <div id="calendarEmpty" class="calendar-empty">Nenhum evento nesta visão. Revise o dia, a pessoa e a situação da escala nos filtros acima, ou use <b>Limpar filtros</b>.</div>
+      <div id="calendarEmpty" class="calendar-empty">Nenhum evento nesta agenda. Escolha outra pessoa ou dia, ou adicione participantes usando o botão Equipe nos eventos.</div>
+      <div id="teamAgenda" class="team-agenda"></div>
       <div class="calendar-scroll" tabindex="0" role="region" aria-label="Grade de horários. Role para ver todos os dias e horários."><div id="calendarGrid" class="calendar-grid"></div></div>
       <div id="calendarUntimed"></div>
     </section>
+
     <section id="mapView" hidden aria-label="Mapas do evento">
-      <div class="map-heading"><div><span class="section-kicker">EXPLORE O RIOCENTRO</span><h2>Encontre seu próximo evento</h2><p class="muted">Escolha o andar, encontre a sala e veja quem vai estar em cada sessão. Os filtros da programação também se aplicam aqui.</p></div><a id="mapOriginal" class="ghost-btn" target="_blank" rel="noopener">Abrir planta original ↗</a></div>
+      <div class="map-heading"><div><h2>Encontre seu caminho</h2><p class="muted">Salas, eventos e expositores no Riocentro.</p></div><a id="mapOriginal" class="ghost-btn" target="_blank" rel="noopener noreferrer">Abrir planta original</a></div>
       <div id="mapFloorButtons" class="floor-switch" aria-label="Andar do evento"></div>
       <p id="mapNotice" class="map-notice" role="status"></p>
       <p id="mapCoverage" class="muted" role="status"></p>
       <div class="map-layout">
         <aside class="map-sidebar">
-          <label for="mapSearch">Encontre um local</label><input id="mapSearch" class="aside-input" placeholder="Sala, tema ou participante…" type="search" />
-          <label for="mapDay">Programação do dia</label><select id="mapDay" class="aside-input"></select>
-          <div id="mapPlaces" class="map-places"></div>
+          <section class="map-search-section" aria-labelledby="mapRoomsTitle">
+            <h3 id="mapRoomsTitle">Salas e eventos</h3>
+            <label for="mapSearch">Buscar local ou evento</label><input id="mapSearch" class="aside-input" placeholder="Sala, tema ou pessoa" type="search" />
+            <label for="mapDay">Dia</label><select id="mapDay" class="aside-input"></select>
+            <div id="mapPlaces" class="map-places"></div>
+          </section>
+          <section class="map-search-section" aria-labelledby="mapCompaniesTitle">
+            <h3 id="mapCompaniesTitle">Expositores</h3>
+            <label for="mapCompanySearch">Buscar empresa</label><input id="mapCompanySearch" class="aside-input" placeholder="Nome ou estande" type="search" />
+            <div id="mapCompanies" class="map-companies"></div>
+          </section>
         </aside>
         <div class="map-main">
           <div class="map-canvas-head"><b id="mapFloorTitle"></b><label><input id="mapShowPins" type="checkbox" checked /> Mostrar locais</label></div>
           <div id="mapViewport" class="map-viewport" tabindex="0" role="region" aria-label="Planta interativa. Use mais e menos para zoom, setas para navegar e zero para ajustar.">
-            <div id="mapPlane" class="map-plane"><img id="mapImage" alt="" draggable="false" loading="lazy" decoding="async" /><div id="mapPins"></div></div>
+            <div id="mapPlane" class="map-plane"><img id="mapImage" alt="" draggable="false" loading="lazy" decoding="async" /><div id="mapPins"></div><div id="mapBoothPins"></div></div>
           </div>
           <div class="map-controls" aria-label="Controles do mapa"><span class="muted">Amplie e deslize para explorar</span><div><button id="mapZoomOut" class="map-control" aria-label="Diminuir zoom">−</button><output id="mapZoomLabel">100%</output><button id="mapZoomIn" class="map-control" aria-label="Aumentar zoom">+</button><button id="mapFit" class="map-control">Ajustar</button></div></div>
           <p id="mapSource" class="map-source"></p>
+          <div id="mapEventFocus" class="map-event-focus" hidden></div>
+          <section id="mapExhibitorSelection" class="map-selection" hidden aria-labelledby="mapExhibitorName"><h3 id="mapExhibitorName"></h3><p id="mapExhibitorNote" class="muted"></p><div id="mapExhibitorStands" class="map-exhibitor-stands"></div></section>
           <section id="mapSelection" class="map-selection" hidden><div class="map-selection-heading"><h3 id="mapPlaceName"></h3><span id="mapPlaceCount" class="muted"></span></div><p id="mapPlaceNote" class="muted"></p><div id="mapSchedule" class="map-schedule"></div></section>
           <details id="mapUnmapped" class="map-unmapped" hidden><summary id="mapUnmappedSummary"></summary><p class="muted">A planta não confirma a posição destes locais. Nenhum marcador foi inventado; consulte a organização e a sinalização do evento.</p><div id="mapUnmappedEvents" class="map-schedule"></div></details>
         </div>
@@ -143,10 +149,10 @@
     </section>
   </main>
 
-  <dialog id="eventModal" class="modal"><div id="modalContent"></div></dialog>
-  <dialog id="radarModal" class="modal radar-modal" style="max-height:90vh;overflow:auto">
+  <dialog id="eventModal" class="modal" aria-labelledby="eventModalTitle"><div id="modalContent"></div></dialog>
+  <dialog id="radarModal" class="modal radar-modal" aria-labelledby="radarTitle">
     <form method="dialog" id="radarForm">
-      <div class="modal-head"><div><span class="section-kicker">PERSONALIZAÇÃO</span><h2>Seu radar estratégico</h2></div><button class="icon-btn" value="cancel">×</button></div>
+      <div class="modal-head"><div><span class="section-kicker">PREFERÊNCIAS</span><h2 id="radarTitle">Seu radar de interesses</h2></div><button class="icon-btn" value="cancel" aria-label="Fechar preferências">×</button></div>
       <p class="muted">Defina empresas, temas, salas e cargos que devem pesar mais no ranking. As preferências ficam somente no seu navegador.</p>
       <label>Stakeholders prioritários <small>(separados por vírgula)</small><textarea id="stakeholderPrefs"></textarea></label>
       <label>Tecnologias prioritárias <small>(separadas por vírgula)</small><textarea id="technologyPrefs"></textarea></label>

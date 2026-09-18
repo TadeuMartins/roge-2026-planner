@@ -1,53 +1,111 @@
+/* Team status, schedules and editors. Shared controls live in styles.css. */
+.team-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 10px; font-size: 11px; }
+.team-bar p { margin: 0; color: var(--muted); overflow-wrap: anywhere; }
+.team-bar .text-btn { flex-shrink: 0; font-size: 11px; }
+.team-bar .sync-error { color: var(--orange); }
+.team-summary { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 18px; color: var(--muted); font-size: 11px; margin: 0 0 16px; }
+.team-summary b { font-size: 12px; font-weight: 600; color: var(--text); margin-right: 3px; }
+.team-summary > span:last-child { display: none; }
+.participant-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; font-size: 12px; line-height: 1.5; }
+.participant-badges > .muted { font-size: 11px; }
+.participant-badge { padding: 3px 8px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: #445550; overflow-wrap: anywhere; }
+.participant-conflict { color: var(--orange); font-size: 11px; font-style: normal; }
 
-/* Shared team calendar */
-[hidden]{display:none!important}
-.team-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;background:var(--panel);border:1px solid var(--border);border-radius:16px;margin:20px 0 14px}
-.team-bar p{margin:6px 0 0;font-size:13px;color:var(--muted)}.team-bar .sync-error{color:var(--orange)}
-.team-actions,.view-tabs{display:flex;gap:8px;flex-wrap:wrap}
-.view-tabs{border-bottom:1px solid var(--border);margin-bottom:20px}
-.view-tab{border:0;border-bottom:3px solid transparent;background:transparent;color:var(--muted);padding:16px 20px;font:inherit;font-weight:700;cursor:pointer}
-.view-tab.active{border-bottom-color:var(--teal);color:var(--text)}
-.participant-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;font-size:12px}
-.participant-badge{padding:5px 9px;border-radius:20px;background:#173f46;border:1px solid #267b7e;color:#bcfff4;overflow-wrap:anywhere}
-.team-card-editor{margin-top:12px;min-width:0}.team-inline-form{padding:14px;border:1px solid #267b7e;border-radius:10px;background:#0b1d28;min-width:0}
-.team-inline-form label{display:block;font-size:13px;font-weight:700;margin-bottom:8px}
-.team-inline-form textarea{display:block;width:100%;min-height:80px;resize:vertical;background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:10px;font:inherit;font-size:14px;line-height:1.5}
-.team-inline-form textarea[readonly]{color:var(--muted);border-style:dashed}
-.event .team-editor-help{font-size:12px;color:var(--muted);line-height:1.5;margin:8px 0}
-.event .team-editor-status{font-size:13px;color:var(--text);line-height:1.55;margin:10px 0;overflow-wrap:anywhere}
-.team-editor-actions{display:flex;flex-wrap:wrap;gap:8px}.team-editor-actions button{font-size:12px;padding:9px 12px;white-space:normal}
-.team-editor-actions button:disabled,.team-actions button:disabled,.team-modal button:disabled{opacity:.55;cursor:not-allowed}
-.event .event-main{min-width:0}.team-bar .team-actions{flex-shrink:0}
-.event-actions{flex-wrap:wrap}.calendar-toolbar{display:flex;flex-wrap:wrap;gap:14px;align-items:end}
-.calendar-toolbar>div{flex:1 1 260px}.calendar-toolbar h2{margin:0;font-size:25px}.calendar-toolbar p{margin:6px 0 0}
-.calendar-toolbar label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}
-.calendar-toolbar select{background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:10px;max-width:220px}
-.calendar-scroll{overflow:auto;max-height:740px;border:1px solid var(--border);border-radius:14px;background:#0b1d28}
-.calendar-grid{display:grid;grid-template-columns:58px repeat(var(--days),minmax(270px,1fr));min-width:100%;align-items:start}
-.calendar-column{border-left:1px solid var(--border);min-width:0}
-.calendar-day-head{height:56px;padding:10px 12px;background:#153340;position:sticky;top:0;z-index:3;display:flex;flex-direction:column;gap:4px}
-.calendar-day-head small{font-size:11px;color:var(--muted)}
-.calendar-day-body{position:relative;background:repeating-linear-gradient(to bottom,transparent 0,transparent 59px,#183440 59px,#183440 60px,transparent 60px,transparent 119px,#2c4853 119px,#2c4853 120px)}
-.calendar-time{position:sticky;left:0;z-index:4;background:#0b1d28}.calendar-time .calendar-day-head{font-size:11px;padding:20px 8px}
-.calendar-ticks{position:relative}.calendar-ticks span{position:absolute;right:8px;font-size:11px;color:var(--muted);padding-top:4px}
-.calendar-event{position:absolute;display:flex;flex-direction:column;gap:5px;text-align:left;padding:8px;border:1px solid #2e847f;border-left:3px solid var(--teal);border-radius:6px;background:#153e46;color:var(--text);cursor:pointer;overflow:hidden;font-family:inherit;min-width:0}
-.calendar-event:hover,.calendar-event:focus-visible{background:#23545b;outline:2px solid var(--yellow);z-index:2}
-.calendar-event strong{font-size:10px;color:#b0e8e2}.calendar-event b{font-size:12px;line-height:1.35}.calendar-event small{font-size:10px;color:#a9c8cb}.calendar-event span{font-size:11px;font-weight:700;color:#dcff87}.calendar-event em{font-size:10px;font-style:normal;color:#ffd8ab}
-.calendar-event.has-conflict{border-left-color:var(--orange)}
-.calendar-empty{padding:24px;border:1px dashed var(--border);border-radius:12px;color:var(--muted);margin:16px 0;line-height:1.6}
-.team-conflicts{color:#ffd0a0;font-size:13px;white-space:pre-line;line-height:1.5}
-.team-conflicts details{padding:12px 15px;border:1px solid #81552c;border-radius:10px;margin:12px 0;background:#332b23}
-.team-conflicts summary{cursor:pointer}.team-conflicts p{padding-top:8px;border-top:1px solid #55432e}
-.team-modal{max-height:90dvh;overflow:auto;width:min(660px,94vw)}.team-modal p{line-height:1.55}
-.team-modal textarea{margin-top:8px;resize:vertical}
-.team-modal .modal-actions{flex-wrap:wrap;margin-top:16px}.team-modal label{font-weight:700}
-button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
-@media(max-width:700px){
- .team-bar{align-items:stretch;flex-direction:column;padding:16px}
- .team-editor-actions>*{flex:1 1 130px}.team-inline-form{padding:10px}
- .team-actions>*{flex:1}.view-tabs{flex-wrap:nowrap}.view-tab{flex:1;padding:13px 8px;font-size:13px}
- .calendar-toolbar{gap:10px}.calendar-toolbar label{flex:1 1 44%;min-width:0}
- .calendar-toolbar select{width:100%;max-width:none}.calendar-toolbar>button{width:100%}
-  .calendar-grid{--time-column:46px;grid-template-columns:46px repeat(var(--days),minmax(260px,1fr))}
- .calendar-scroll{max-height:68dvh}.team-modal .modal-actions>*{flex:1 1 100%}
+.calendar-toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: 14px; padding: 18px; border: 1px solid var(--border); border-radius: 8px; background: white; }
+.calendar-toolbar > label:not(.toggle) { flex: 1 1 150px; min-width: 0; }
+.calendar-toolbar > label:has(#calendarDay:disabled) { display: none; }
+.calendar-toolbar select { width: 100%; }
+.calendar-toolbar .toggle { font-size: 12px; }
+.calendar-toolbar > button { font-size: 12px; }
+.calendar-caption { margin: 16px 0; font-size: 12px; }
+.calendar-empty { padding: 28px; margin: 18px 0; color: var(--muted); background: white; border: 1px solid var(--border); border-radius: 8px; line-height: 1.6; font-size: 13px; }
+.team-agenda { display: grid; gap: 20px; }
+.agenda-person { min-width: 0; border: 1px solid var(--border); border-radius: 8px; background: white; overflow: hidden; }
+.agenda-person > h3, .agenda-person > h2, .agenda-person > header { padding: 18px 20px; margin: 0; font-size: 17px; font-weight: 600; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.agenda-person header h3 { margin: 0; }
+.agenda-person header p { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
+.agenda-day { padding: 0 20px; }
+.agenda-day > h3, .agenda-day > h4, .agenda-day > header { font-size: 12px; font-weight: 600; color: var(--muted); padding: 16px 0 10px; margin: 0; }
+.agenda-day:last-child { padding-bottom: 10px; }
+.agenda-row { display: grid; grid-template-columns: 100px minmax(0, 1fr) auto; align-items: center; gap: 6px 18px; padding: 14px 0; border-top: 1px solid var(--border); background: white; }
+.agenda-time { grid-column: 1; grid-row: 1 / span 2; align-self: start; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.agenda-time strong, .agenda-time b { color: var(--text); font-weight: 600; }
+.agenda-title { grid-column: 2; grid-row: 1; color: var(--text); font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.agenda-title button, button.agenda-title { background: transparent; border: 0; text-align: left; padding: 0; min-height: 44px; }
+.agenda-place { grid-column: 2; grid-row: 2; color: var(--teal2); font-size: 12px; overflow-wrap: anywhere; }
+.agenda-place button, button.agenda-place { border: 0; background: transparent; text-align: left; padding: 6px 0; min-height: 44px; }
+.agenda-actions { grid-column: 3; grid-row: 1 / span 2; display: flex; flex-wrap: wrap; gap: 6px; }
+.agenda-actions button { min-height: 44px; padding: 8px 10px; font-size: 12px; }
+.agenda-row > .participant-conflict { grid-column: 2 / -1; }
+.agenda-row.has-conflict { background: #fffcf7; }
+
+.calendar-scroll { max-height: 740px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; background: white; overscroll-behavior: contain; }
+.calendar-scroll:has(#calendarGrid[hidden]) { display: none; }
+.calendar-grid { display: grid; grid-template-columns: 58px repeat(var(--days), minmax(270px, 1fr)); min-width: 100%; align-items: start; }
+.calendar-column { min-width: 0; border-left: 1px solid var(--border); }
+.calendar-day-head { height: 56px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; background: var(--bg2); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 3; font-size: 12px; }
+.calendar-day-head small { font-size: 10px; color: var(--muted); }
+.calendar-day-body { position: relative; background: #fcfdfc; }
+.calendar-time { position: sticky; left: 0; z-index: 4; background: white; }
+.calendar-time .calendar-day-head { font-size: 10px; padding: 20px 8px; }
+.calendar-ticks { position: relative; }
+.calendar-ticks span { position: absolute; right: 0; left: 0; padding: 4px 8px; border-top: 1px solid var(--border); text-align: right; font-size: 10px; color: var(--muted); }
+.calendar-event { position: absolute; display: flex; flex-direction: column; gap: 4px; text-align: left; padding: 8px; border: 1px solid #a9c9c0; border-radius: 4px; background: #eaf3ef; color: var(--text); overflow: hidden; min-width: 0; }
+.calendar-event:hover { border-color: var(--teal); background: #dfede7; z-index: 2; }
+.calendar-event:focus-visible { z-index: 5; }
+.calendar-event strong { font-size: 10px; font-weight: 600; color: var(--teal2); }
+.calendar-event b { font-size: 12px; line-height: 1.35; }
+.calendar-event small { font-size: 10px; color: var(--muted); }
+.calendar-event span { font-size: 11px; }
+.calendar-event em { font-size: 10px; color: var(--orange); font-style: normal; }
+.calendar-event.has-conflict { border-color: #c6a573; background: #faf4e9; }
+#calendarUntimed { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+#calendarUntimed:empty { display: none; }
+#calendarUntimed h3 { flex-basis: 100%; margin: 0; }
+#calendarUntimed button { text-align: left; justify-content: start; }
+
+.team-conflicts { color: var(--orange); font-size: 12px; line-height: 1.6; white-space: pre-line; overflow-wrap: anywhere; }
+.team-conflicts details { padding: 2px 16px; border: 1px solid #e4d6bf; border-radius: 6px; margin: 12px 0; background: #fffcf7; }
+.team-conflicts summary { font-size: 12px; }
+.team-conflicts p { padding-top: 10px; border-top: 1px solid #e4d6bf; }
+.team-card-editor { max-width: 680px; min-width: 0; margin-top: 16px; }
+.team-inline-form { padding: 18px; border: 1px solid #b9cec7; background: #f7faf8; border-radius: 6px; }
+.team-inline-form label { color: var(--text); font-size: 13px; margin-bottom: 8px; }
+.team-inline-form textarea { display: block; min-height: 104px; line-height: 1.5; }
+.team-inline-form textarea[readonly] { color: var(--muted); background: var(--bg2); }
+.team-editor-help { font-size: 11px; color: var(--muted); margin: 8px 0; }
+.team-editor-status { font-size: 12px; color: var(--text); margin: 12px 0; overflow-wrap: anywhere; }
+.team-editor-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.team-editor-actions button { font-size: 12px; white-space: normal; }
+.team-modal { width: min(660px, calc(100% - 32px)); }
+.team-modal textarea { margin-top: 8px; }
+.team-modal label { color: var(--text); font-size: 13px; }
+.team-modal #assignmentMessage { font-size: 13px; overflow-wrap: anywhere; }
+
+@media (max-width: 760px) {
+  .calendar-toolbar > label:not(.toggle) { flex-basis: 40%; }
+  .agenda-row { grid-template-columns: 84px minmax(0, 1fr); gap: 6px 12px; }
+  .agenda-actions { grid-column: 2; grid-row: auto; }
+  .calendar-scroll { max-height: 68dvh; }
+  .calendar-grid { --time-column: 46px; }
+}
+@media (max-width: 520px) {
+  .team-bar { gap: 6px; align-items: flex-start; }
+  .team-bar p { padding-top: 12px; font-size: 10px; }
+  .team-bar .text-btn { padding-inline: 0; font-size: 10px; }
+  .team-summary { gap: 4px 12px; font-size: 10px; }
+  .team-summary > span:last-child { flex-basis: 100%; }
+  .calendar-toolbar { padding: 14px; gap: 12px; }
+  .calendar-toolbar > label:not(.toggle) { flex-basis: 40%; }
+  .calendar-toolbar > button { width: 100%; }
+  .calendar-caption { font-size: 11px; }
+  .agenda-person > h3, .agenda-person > h2, .agenda-person > header { padding: 14px; font-size: 16px; }
+  .agenda-day { padding: 0 14px; }
+  .agenda-row { grid-template-columns: 1fr; gap: 3px; padding: 12px 0; }
+  .agenda-time, .agenda-title, .agenda-place, .agenda-actions, .agenda-row > .participant-conflict { grid-column: 1; grid-row: auto; }
+  .agenda-time { font-size: 11px; }
+  .agenda-actions { margin-top: 6px; }
+  .team-inline-form { padding: 12px; }
+  .team-editor-actions > * { flex: 1 1 140px; }
+  .team-modal .modal-actions > * { flex-basis: 100%; }
 }

@@ -74,7 +74,7 @@ jobs:
           mkdir -p _site/data
           cp index.html styles.css calendar.css maps.css _site/
           cp -r js assets _site/
-          cp data/events.json data/exhibitors.json _site/data/
+          cp data/events.json data/exhibitors.json data/booth-locations.json _site/data/
       - name: Upload Pages artifact
         if: steps.pages_state.outputs.enabled == 'true'
         uses: actions/upload-pages-artifact@v3

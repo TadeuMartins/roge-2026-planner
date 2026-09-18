@@ -24,6 +24,12 @@ function refreshTeamUI() {
   // More than 30 people in the whole team is valid (limit applies per event only).
   $('#personFilter').innerHTML = '<option value="">Toda a equipe Siemens</option>' + people.map(n => '<option value="' + escapeHtml(n) + '">' + escapeHtml(n) + '</option>').join('');
   $('#personFilter').value = people.find(n => PlannerModel.key(n) === PlannerModel.key(selected)) || '';
+  const schedulePerson = $('#schedulePerson'), scheduleKey = PlannerModel.key(schedulePerson.value);
+  const schedulePeople = new Map(people.map(n => [PlannerModel.key(n), n]));
+  // A removed participant stays selected rather than silently showing the whole team.
+  if (scheduleKey && !schedulePeople.has(scheduleKey)) schedulePeople.set(scheduleKey, schedulePerson.selectedOptions[0]?.textContent || schedulePerson.value);
+  schedulePerson.innerHTML = '<option value="">Toda a equipe Siemens</option>' + [...schedulePeople].map(([key, name]) => '<option value="' + escapeHtml(key) + '">' + escapeHtml(name) + '</option>').join('');
+  schedulePerson.value = scheduleKey;
   render();
 }
 async function refreshTeam(force = false) {
@@ -45,6 +51,7 @@ async function refreshTeam(force = false) {
 }
 function setPlannerView(view) {
   plannerView = view;
+  document.body.dataset.view = view;
   $$('.view-tab').forEach(button => { button.classList.toggle('active', button.dataset.view === view); button.setAttribute('aria-pressed', String(button.dataset.view === view)); });
   $('#listView').hidden = view !== 'list'; $('#calendarView').hidden = view !== 'calendar'; $('#mapView').hidden = view !== 'map';
   if (view === 'map' && mapReady) { renderMapSidebar(); requestAnimationFrame(fitMap); }
@@ -52,30 +59,68 @@ function setPlannerView(view) {
 }
 function setPlannerDay(value) {
   $('#dayFilter').value = value;
-  const day = $('#dayFilter').value;
-  $('#mapDay').value = day;
-  $('#calendarDay').value = day || uniq(events.map(e => e.date)).sort()[0] || '';
   render();
 }
-function teamVisibleEvents() { return filtered(); }
+function teamScheduleConflicts(person = $('#schedulePerson').value) {
+  const key = PlannerModel.key(person);
+  const planned = [...new Map(events.filter(e => assignedNames(e.id).length).map(e => [e.id, e])).values()];
+  return PlannerModel.conflicts(planned, teamData.assignments).map(c => ({ ...c, names: c.names.filter(n => !key || PlannerModel.key(n) === key) })).filter(c => c.names.length);
+}
+function teamVisibleEvents() {
+  const person = PlannerModel.key($('#schedulePerson').value);
+  const day = $('#scheduleDay').value || ($('#calendarMode').value === 'day' ? $('#calendarDay').value : '');
+  const conflictIds = $('#scheduleConflicts').checked ? new Set(teamScheduleConflicts(person).flatMap(c => [c.a.id, c.b.id])) : null;
+  return [...new Map(events.filter(e => {
+    const people = assignedNames(e.id);
+    return people.length && (!person || people.some(n => PlannerModel.key(n) === person)) && (!day || e.date === day) && (!conflictIds || conflictIds.has(e.id));
+  }).map(e => [e.id, e])).values()].sort((a,b) => a.date.localeCompare(b.date) ||
+    (Number.isFinite(PlannerModel.minutes(a.start)) ? PlannerModel.minutes(a.start) : Infinity) - (Number.isFinite(PlannerModel.minutes(b.start)) ? PlannerModel.minutes(b.start) : Infinity) ||
+    a.title.localeCompare(b.title, 'pt-BR') || a.id.localeCompare(b.id));
+}
 function renderCalendar() {
   if (!$('#calendarGrid')) return;
   const days = uniq(events.map(e => e.date)).sort();
-  const mode = $('#calendarMode').value;
-  const selectedDay = $('#dayFilter').value;
-  const currentDay = selectedDay || days[0] || '';
-  $('#calendarDay').value = currentDay;
+  const mode = $('#calendarMode').value || 'summary';
+  const selectedDay = $('#scheduleDay').value;
+  const currentDay = selectedDay || $('#calendarDay').value || days[0] || '';
+  if (mode === 'day') $('#calendarDay').value = currentDay;
   const shownDays = mode === 'day' || selectedDay ? (currentDay ? [currentDay] : []) : days;
   $('#calendarDay').disabled = mode !== 'day';
-  const visible = teamVisibleEvents().filter(e => shownDays.includes(e.date));
+  const visible = teamVisibleEvents();
   $('#calendarCount').textContent = visible.length + ' eventos nesta visão';
   $('#exportTeam').disabled = visible.length === 0;
+  $('#calendarEmpty').hidden = visible.length !== 0;
+  $('#calendarEmpty').textContent = events.some(e => assignedNames(e.id).length) ? 'Nenhum evento atribuído corresponde aos filtros desta agenda.' : 'Nenhum evento tem participantes atribuídos. Defina a equipe nos eventos para montar a agenda.';
+  const conflicts = teamScheduleConflicts();
+  const conflictIds = new Set(conflicts.flatMap(c => [c.a.id, c.b.id]));
+  const visibleIds = new Set(visible.map(e => e.id));
+  const relevant = conflicts.filter(c => visibleIds.has(c.a.id) || visibleIds.has(c.b.id));
+  $('#teamConflicts').innerHTML = relevant.length ? '<details><summary>⚠ ' + relevant.length + ' conflitos de participantes — revisar revezamento</summary>' + relevant.map(c => '<p><b>' + escapeHtml(c.names.join(', ')) + '</b> · ' + escapeHtml(fmtDate(c.a.date)) + '<br>' + escapeHtml(c.a.start + ' ' + c.a.title) + ' ↔ ' + escapeHtml(c.b.start + ' ' + c.b.title) + '</p>').join('') + '</details>' : '';
+  const missing = Object.entries(teamData.assignments).filter(([id]) => !byId(id));
+  $('#teamOrphans').innerHTML = missing.length ? '<details><summary>' + missing.length + ' eventos da escala não estão mais na programação atual</summary><p>Os nomes foram preservados. Confira mudanças na fonte oficial antes de redistribuir a equipe.</p>' + missing.map(([,r]) => '<p>' + escapeHtml((r.event?.date || '') + ' · ' + (r.event?.title || 'Evento anterior') + ' — ' + r.names.join(', ')) + '</p>').join('') + '</details>' : '';
+  $('#teamAgenda').hidden = mode !== 'summary';
+  $('#calendarGrid').hidden = mode === 'summary';
+  $('#calendarUntimed').hidden = mode === 'summary';
+  $('#teamAgenda').innerHTML = '';
+  if (mode === 'summary') {
+    const selectedPerson = PlannerModel.key($('#schedulePerson').value);
+    const people = [...new Map(visible.flatMap(e => assignedNames(e.id)).map(n => [PlannerModel.key(n), n]))].filter(([key]) => !selectedPerson || key === selectedPerson).sort((a,b) => a[1].localeCompare(b[1], 'pt-BR'));
+    $('#teamAgenda').innerHTML = people.map(([key, name]) => {
+      const personalConflicts = new Set(conflicts.filter(c => c.names.some(n => PlannerModel.key(n) === key)).flatMap(c => [c.a.id, c.b.id]));
+      const personal = visible.filter(e => assignedNames(e.id).some(n => PlannerModel.key(n) === key) && (!$('#scheduleConflicts').checked || personalConflicts.has(e.id)));
+      if (!personal.length) return '';
+      return '<section class="agenda-person"><h3>' + escapeHtml(name) + '</h3>' + uniq(personal.map(e => e.date)).map(date => '<section class="agenda-day"><h4>' + escapeHtml(fmtDate(date)) + '</h4>' + personal.filter(e => e.date === date).map(e => {
+        const time = PlannerModel.timed(e) ? e.start + '–' + e.end : (Number.isFinite(PlannerModel.minutes(e.start)) ? e.start + ' · Término a confirmar' : 'Horário a confirmar');
+        return '<div class="agenda-row' + (personalConflicts.has(e.id) ? ' has-conflict' : '') + '"><strong class="agenda-time">' + escapeHtml(time) + '</strong><strong class="agenda-place">' + escapeHtml(e.location || 'Local a confirmar') + '</strong><span class="agenda-title">' + escapeHtml(e.title) + '</span>' + (personalConflicts.has(e.id) ? '<span class="participant-conflict">⚠ Conflito de horário</span>' : '') + '<div class="agenda-actions"><button type="button" class="ghost-btn" data-agenda-event="' + escapeHtml(e.id) + '" aria-label="Detalhes: ' + escapeHtml(e.title) + '">Detalhes</button><button type="button" class="ghost-btn" data-agenda-map="' + escapeHtml(e.id) + '" aria-label="Mapa: ' + escapeHtml(e.title) + '">Mapa</button><button type="button" class="ghost-btn" data-agenda-edit="' + escapeHtml(e.id) + '" aria-label="Equipe: ' + escapeHtml(e.title) + '">Equipe</button></div></div>';
+      }).join('') + '</section>').join('') + '</section>';
+    }).join('');
+    $('#calendarGrid').innerHTML = ''; $('#calendarUntimed').innerHTML = '';
+    return;
+  }
   const timed = visible.filter(PlannerModel.timed), untimed = visible.filter(e => !PlannerModel.timed(e));
   const earliest = Math.floor(Math.min(9 * 60, ...timed.map(e => PlannerModel.minutes(e.start))) / 60) * 60;
   const latest = Math.ceil(Math.max(19 * 60, ...timed.map(e => PlannerModel.minutes(e.end))) / 60) * 60;
   const pixels = 2, height = (latest - earliest) * pixels;
-  const conflicts = PlannerModel.conflicts(events, teamData.assignments);
-  const conflictIds = new Set(conflicts.flatMap(c => [c.a.id, c.b.id]));
   const ticks = [];
   for (let t = earliest; t < latest; t += 60) ticks.push('<span style="top:' + ((t-earliest)*pixels) + 'px">' + minutesToTime(t) + '</span>');
   const widths = [];
@@ -90,15 +135,10 @@ function renderCalendar() {
         return '<button class="calendar-event ' + (conflictIds.has(e.id) ? 'has-conflict' : '') + '" data-event-id="' + escapeHtml(e.id) + '" title="' + escapeHtml(label) + '" aria-label="' + escapeHtml(label) + '" style="top:' + ((item.start-earliest)*pixels) + 'px;height:' + Math.max(22,(item.end-item.start)*pixels-3) + 'px;left:calc(' + (item.lane/item.lanes*100) + '% + 2px);width:calc(' + (100/item.lanes) + '% - 4px)"><strong>' + e.start + '–' + e.end + '</strong><b>' + escapeHtml(e.title) + '</b><small>' + escapeHtml(e.location) + '</small><span>' + escapeHtml(people.join(' · ') || 'Sem participantes') + '</span>' + (conflictIds.has(e.id) ? '<em>⚠ Conflito na equipe</em>' : '') + '</button>';
       }).join('') + '</div></div>';
   }).join('');
-  $('#calendarEmpty').hidden = visible.length !== 0;
   $('#calendarGrid').innerHTML = '<div class="calendar-time"><div class="calendar-day-head">BRT</div><div class="calendar-ticks" style="height:' + height + 'px">' + ticks.join('') + '</div></div>' + columns;
   $('#calendarGrid').style.setProperty('--days', shownDays.length);
   $('#calendarGrid').style.gridTemplateColumns = 'var(--time-column, 58px) ' + widths.join(' ');
   $('#calendarUntimed').innerHTML = untimed.length ? '<h3>Horário a confirmar</h3>' + untimed.map(e => '<button class="ghost-btn" data-event-id="' + escapeHtml(e.id) + '">' + escapeHtml(fmtDate(e.date) + ' · ' + e.title) + '</button>').join('') : '';
-  const relevant = conflicts.filter(c => visible.some(e => e.id === c.a.id || e.id === c.b.id));
-  $('#teamConflicts').innerHTML = relevant.length ? '<details><summary>⚠ ' + relevant.length + ' conflitos de participantes — revisar revezamento</summary>' + relevant.map(c => '<p><b>' + escapeHtml(c.names.join(', ')) + '</b> · ' + escapeHtml(fmtDate(c.a.date)) + '<br>' + escapeHtml(c.a.start + ' ' + c.a.title) + ' ↔ ' + escapeHtml(c.b.start + ' ' + c.b.title) + '</p>').join('') + '</details>' : '';
-  const missing = Object.entries(teamData.assignments).filter(([id]) => !byId(id));
-  $('#teamOrphans').innerHTML = missing.length ? '<details><summary>' + missing.length + ' eventos da escala não estão mais na programação atual</summary><p>Os nomes foram preservados. Confira mudanças na fonte oficial antes de redistribuir a equipe.</p>' + missing.map(([,r]) => '<p>' + escapeHtml((r.event?.date || '') + ' · ' + (r.event?.title || 'Evento anterior') + ' — ' + r.names.join(', ')) + '</p>').join('') + '</details>' : '';
 }
 function teamEditMessage(draft) {
   if (!teamStore?.configured) return 'Edição indisponível: configure a URL e a chave pública do Supabase em js/team-config.js e publique o serviço de participantes.';
@@ -239,19 +279,42 @@ function wireTeam() {
   if (!teamStore.configured) teamStatus(teamEditMessage(), true);
   const days = uniq(events.map(e => e.date)).sort();
   $('#calendarDay').innerHTML = days.map(d => '<option value="' + escapeHtml(d) + '">' + escapeHtml(fmtDate(d)) + '</option>').join('');
-  $('#calendarMode').value = matchMedia('(max-width: 700px)').matches ? 'day' : 'week';
+  $('#scheduleDay').innerHTML = '<option value="">Todos os dias</option>' + days.map(d => '<option value="' + escapeHtml(d) + '">' + escapeHtml(fmtDate(d)) + '</option>').join('');
+  $('#calendarMode').value = 'summary';
+  document.body.dataset.view = plannerView;
   $$('.view-tab').forEach(button => button.onclick = () => setPlannerView(button.dataset.view));
-  $('#calendarMode').addEventListener('change', render);
-  // wire() installs a generic day listener; replace it so every view sees the same day before rendering.
+  $('#calendarMode').addEventListener('change', () => {
+    if ($('#calendarMode').value === 'week') $('#scheduleDay').value = '';
+    if ($('#calendarMode').value === 'day') {
+      $('#calendarDay').value = $('#scheduleDay').value || $('#calendarDay').value || days[0] || '';
+      $('#scheduleDay').value = $('#calendarDay').value;
+    }
+    renderCalendar();
+  });
+  ['schedulePerson','scheduleConflicts'].forEach(id => $('#'+id).addEventListener('change', renderCalendar));
+  $('#scheduleDay').addEventListener('change', () => {
+    if ($('#scheduleDay').value) $('#calendarDay').value = $('#scheduleDay').value;
+    else if ($('#calendarMode').value === 'day') $('#calendarMode').value = 'week';
+    renderCalendar();
+  });
+  $('#calendarDay').addEventListener('change', () => { $('#scheduleDay').value = $('#calendarDay').value; renderCalendar(); });
+  // Discovery/map dates never own the team's schedule date.
   $('#dayFilter').removeEventListener('change', render);
-  ['dayFilter','calendarDay'].forEach(id => $('#'+id).addEventListener('change', e => setPlannerDay(e.target.value)));
-  $('#calendarView').addEventListener('click', e => { const target = e.target.closest('[data-event-id]'); if(target) openEvent(byId(target.dataset.eventId)); });
-  $('#exportTeam').onclick = () => downloadICS(teamVisibleEvents().filter(e => $('#calendarMode').value !== 'day' || e.date === $('#calendarDay').value), 'Equipe-ROGe-2026.ics');
+  $('#dayFilter').addEventListener('change', e => setPlannerDay(e.target.value));
+  $('#calendarView').addEventListener('click', e => {
+    const target = e.target.closest('[data-agenda-event], [data-agenda-map], [data-agenda-edit], [data-event-id]');
+    if (!target) return;
+    const event = byId(target.dataset.agendaEvent || target.dataset.agendaMap || target.dataset.agendaEdit || target.dataset.eventId);
+    if (!event) return;
+    if (target.dataset.agendaMap) showEventOnMap(event);
+    else if (target.dataset.agendaEdit) openAssignment(event);
+    else openEvent(event);
+  });
+  $('#exportTeam').onclick = () => downloadICS(teamVisibleEvents(), 'Equipe-ROGe-2026.ics');
   $('#refreshTeam').onclick = () => refreshTeam(true);
   ['personFilter','coverageFilter'].forEach(id => $('#'+id).addEventListener('change',render));
   $('#clearFilters').onclick = () => {
-    ['search','typeFilter','priorityFilter','locationFilter','personFilter','coverageFilter','mapSearch'].forEach(id => $('#'+id).value = '');
-    $('#mapNotice').textContent = '';
+    ['search','typeFilter','priorityFilter','locationFilter','personFilter','coverageFilter'].forEach(id => $('#'+id).value = '');
     $('#onlyMine').checked = false; radar = 'all'; chip = '';
     $$('.radar-card').forEach(b => b.classList.toggle('active', b.dataset.radar === 'all'));
     $$('.chip').forEach(b => b.classList.remove('active'));
@@ -281,5 +344,5 @@ function updateTeamSummary() {
   const conflicts=PlannerModel.conflicts(planned,teamData.assignments);
   teamConflictIds=new Set(conflicts.flatMap(c=>[c.a.id,c.b.id]));
   const people=new Set(planned.flatMap(e=>assignedNames(e.id)).map(PlannerModel.key));
-  $('#teamSummary').innerHTML='<span><b>'+people.size+'</b> pessoas na escala</span><span><b>'+planned.length+'</b> eventos cobertos</span><span><b>'+conflicts.length+'</b> conflitos de horário</span><span class="muted">Filtros compartilhados entre as três abas</span>';
+  $('#teamSummary').innerHTML='<span><b>'+people.size+'</b> pessoas na escala</span><span><b>'+planned.length+'</b> eventos cobertos</span><span><b>'+conflicts.length+'</b> conflitos de horário</span><span class="muted">Agenda da equipe: somente eventos com participantes, com filtros próprios de pessoa, dia e conflitos</span>';
 }
