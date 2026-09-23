@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-23T18:27:40.650Z",
+  "generated_at": "2026-09-23T18:46:39.366Z",
   "source": [
     "https://roge.energy/programacao",
     "https://roge.energy/roge-fest",
     "https://roge.energy/expositores"
   ],
-  "count": 480,
+  "count": 481,
   "events": [
     {
       "title": "CERIMÔNIA DE ABERTURA",
@@ -88,7 +88,7 @@
       "id": "efc9ce5f36def577bd",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "id": "2d4bf435c43560eda3",
@@ -121,7 +121,7 @@
       "id": "d76de465249c469e8a",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DIGITALIZAÇÃO DE PROCESSOS E ATIVOS INDUSTRIAIS",
@@ -152,7 +152,7 @@
       "id": "50e041e78ec64cdd26",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DOWNSTREAM",
@@ -193,7 +193,7 @@
       "id": "c88a85d772eb2ee08e",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FORMAÇÃO PARA LIDERANÇAS OFFSHORE",
@@ -283,7 +283,7 @@
       "id": "fb7ba45f808ef42036",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "INFRAESTRUTURA - DESENVOLVIMENTO DE PROJETOS",
@@ -306,7 +306,7 @@
       "id": "e1d476fad5b6cbf4ff",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "POÇOS",
@@ -333,7 +333,7 @@
       "id": "91295846b5b28b765d",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "RESERVATÓRIOS",
@@ -356,7 +356,7 @@
       "id": "b9cbe8c1c881044b78",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "CONFIABILIDADE, RAM E ESTRATÉGIAS DE MANUTENÇÃO OFFSHORE",
@@ -667,7 +667,7 @@
       "id": "affb332d4a5cfdeadb",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "LIÇÕES APRENDIDAS NA OPERAÇÃO DE CAMPOS MADUROS PELAS “JUNIOR OIL COMPANIES”",
@@ -974,7 +974,7 @@
       "id": "efeb6772115756d763",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "VETORES DE EXPANSÃO DA DEMANDA DE GÁS NO BRASIL EM UM MUNDO EM TRANSIÇÃO ENERGÉTICA",
@@ -1258,7 +1258,7 @@
       "id": "d9ffb53670d583f306",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SESSÃO DE ABERTURA",
@@ -1389,7 +1389,7 @@
       "id": "c3d3605caa6569b348",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FINANCIAMENTO E COMPETITIVIDADE NA CADEIA DE PETRÓLEO E GÁS NO BRASIL",
@@ -2211,7 +2211,7 @@
       "id": "a2c65641f883035d2d",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "HSE/SMS",
@@ -2262,7 +2262,7 @@
       "id": "dc07aab9b2d4367760",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "IMPACTO DAS POLÍTICAS PÚBLICAS NA ATRATIVIDADE DOS INVESTIMENTOS EM INFRAESTRUTURAS NO DOWNSTREAM",
@@ -2454,7 +2454,7 @@
       "id": "48a213a6de023b8aae",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SUPPLY CHAIN PREPARADA PARA OPERAÇÕES EM UMA REALIDADE DE BRENT BAIXO",
@@ -2746,7 +2746,7 @@
       "id": "297596d359bf087f9c",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "MONITORAMENTO PREDITIVO DE LUBRIFICANTES INDUSTRIAIS",
@@ -2785,7 +2785,7 @@
       "id": "fc7eaf22e4a75af39f",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ESTRATÉGIA EM TRANSIÇÃO ENERGÉTICA",
@@ -2936,7 +2936,7 @@
       "id": "b32d16233488fe6604",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FINALISTAS PRÊMIO PLÍNIO CANTANHEDE - PESSOAS, CULTURA E SOCIEDADE",
@@ -2967,7 +2967,7 @@
       "id": "38b33faaa1325eb46a",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "IA, ANALYTICS E MACHINE LEARNING",
@@ -3076,7 +3076,7 @@
       "id": "c8b3d7585d09ed1e26",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "STRATEGIC TALKS - GALP",
@@ -3376,7 +3376,7 @@
       "id": "38aff8a71d6f2e6dac",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DESAFIO DA REPOSIÇÃO DE RESERVAS OFFSHORE – NOVAS FRONTEIRAS E AUMENTO DO FATOR DE RECUPERAÇÃO",
@@ -3451,7 +3451,7 @@
       "id": "6b60cbfa7e0cc7a391",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FORTALECENDO A CADEIA DE SUPRIMENTOS PARA VIABILIZAR OS PRÓXIMOS PROJETOS OFFSHORE: COMPETITIVIDADE, INOVAÇÃO E COLABORAÇÃO",
@@ -3514,7 +3514,7 @@
       "id": "2b0a45c8a5b363a30b",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "GÁS EM TRANSFORMAÇÃO: ABERTURA DE MERCADO, COMPETIÇÃO E O NOVO JOGO DA ENERGIA NO BRASIL",
@@ -3652,7 +3652,7 @@
       "id": "2fe02b78afa463e34d",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ROADMAP DE DESCARBONIZAÇÃO DO UPSTREAM",
@@ -3773,7 +3773,7 @@
       "id": "7403ee1dec814f34a1",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "GERENCIAMENTO DE PROJETOS E MODELO ECONÔMICO",
@@ -3800,7 +3800,7 @@
       "id": "ffe4331afcbe6d6a55",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "HIDROGÊNIO E DESCARBONIZAÇÃO",
@@ -4285,7 +4285,7 @@
       "id": "0154e5da9c0103ed47",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "id": "0ae15d86dfd115f4cd",
@@ -4457,7 +4457,7 @@
           "detail": "Patrocinadores"
         }
       ],
-      "speakers_raw": "Área do Autor • Lista de Expositores • Pavilhões Internacionais • Área do Expositor • Arena de Lubrificantes • Arena de Multienergia & Decarb • Energia Literária • Fórum DE&I • Fórum de Produtores Independentes • Fórum de Supply Chain • iUP Innovation Connections • Young Summit • Energy Run • Leadership Luncheon • MasterClasses by UnIBP • Programação • ROG.e Fest • Como Chegar • Informações Gerais • Global Access Program • Planeje sua Viagem • Imprensa • Acessibilidade • Patrocinadores • Código de Ética • Canal de Ética • 2026 © Todos os direitos reservados ao IBP - Instituto Brasileiro de Petróleo e Gás • Termos de Uso • Política de Privacidade",
+      "speakers_raw": "Área do Autor • Lista de Expositores • Pavilhões Internacionais • Área do Expositor • Arena de Lubrificantes • Arena de Multienergia & Decarb • Energia Literária • Fórum DE&I • Fórum de Produtores Independentes • Fórum de Supply Chain • iUP Innovation Connections • Young Summit • Energy Run • Leadership Luncheon • MasterClasses by UnIBP • Programação • ROG.e Fest • Como Chegar • Informações Gerais • Global Access Program • Planeje sua Viagem • Imprensa • Acessibilidade • Patrocinadores • Código de Ética • Canal de Ética • 2026 © Todos os direitos reservados ao IBP - Instituto Brasileiro de Petróleo e Gás • Termos de Uso • Política de Privacidade • Plugin de acessibilidade da Hand Talk. • Recursos Assistivos • Acessível em Libras",
       "id": "03456baaad680d2019",
       "date": "2026-09-21",
       "source_url": "https://roge.energy/programacao",
@@ -4571,7 +4571,7 @@
       "id": "b077d28273dbf9eab9",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "COMPETITIVIDADE OFFSHORE – DESTRAVANDO FIDS EM UM CENÁRIO DE ESTRANGULAMENTO DA CADEIA DE FORNECIMENTO DE BENS E SERVIÇOS",
@@ -4972,7 +4972,7 @@
       "id": "96630616dc9e610277",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "OPERAÇÃO E MANUTENÇÃO",
@@ -5023,7 +5023,7 @@
       "id": "0bbdb0f5b42183cbc3",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "PANORAMA DA INDÚSTRIA DE GÁS NATURAL NO BRASIL",
@@ -5109,7 +5109,7 @@
       "id": "7c22db9da2b39a5f98",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "RESPONSABILIDADE E INOVAÇÃO SOCIAL",
@@ -5164,7 +5164,7 @@
       "id": "4de7aac18812b5dc3f",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "REVITALIZAÇÃO DE CAMPOS MADUROS",
@@ -5254,7 +5254,7 @@
       "id": "22f4e4e7d26b6b895a",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SEGURANÇA DE PROCESSO E RISCO",
@@ -5418,7 +5418,7 @@
       "id": "1d1bd29299303d6917",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ROBÓTICA, DRONES E AUTOMAÇÃO INTELIGENTE",
@@ -5645,7 +5645,7 @@
       "id": "c94ca1c289786c8ffa",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ATRAÇÃO E FORMAÇÃO DE JOVENS PROFISSIONAIS",
@@ -6008,7 +6008,7 @@
       "id": "d51449fb2ce8d204c2",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "EVOLUÇÃO DA SEGURANÇA DAS OPERAÇÕES OFFSHORE",
@@ -6694,7 +6694,7 @@
       "id": "9afb7e9788f1d4bf99",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ABERTURA DA ARENA",
@@ -6899,7 +6899,7 @@
       "id": "2fcc81fc81dfcd77ae",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "LANÇAMENTO DO CADERNO DE RESPONSABILIDADE SOCIAL",
@@ -6952,7 +6952,7 @@
       "id": "74153738a9c9b9853b",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SUSTENTABILIDADE NA INDÚSTRIA DE LUBRIFICANTES",
@@ -7336,7 +7336,7 @@
       "id": "74725143aea14e3cd5",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DESCARBONIZAÇÃO E REDUÇÃO DE EMISSÕES",
@@ -7448,7 +7448,7 @@
       "id": "a525a8890f75682475",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "OPERAÇÃO E MANUTENÇÃO",
@@ -7487,7 +7487,7 @@
       "id": "5b7a6929782b744101",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "OPERAÇÃO E MANUTENÇÃO",
@@ -7593,7 +7593,7 @@
       "id": "b8096b8777fc7b9792",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "PERSPECTIVAS DOS CAMPOS ONSHORE NA AMÉRICA DO SUL",
@@ -7829,7 +7829,7 @@
       "id": "f971fdbf3e4f4e652a",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SUPPLY CHAIN, PROCUREMENT E MRO",
@@ -7970,7 +7970,7 @@
       "id": "8f5e98690b9b57c94f",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SESSÃO PODCAST - CENÁRIOS FUTUROS",
@@ -8048,7 +8048,7 @@
       "id": "f55526231c12df3410",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "O PAPEL DOS BIOCOMBUSTÍVEIS NA DESCARBONIZAÇÃO DO SETOR DE O&G",
@@ -8150,7 +8150,7 @@
       "id": "ef4897f336a7a76448",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "VOCÊ NÃO É O QUE SE FORMOU - E ISSO É O QUE TORNA SUA CARREIRA INTERESSANTE",
@@ -8296,7 +8296,7 @@
       "id": "29ed206e226103656e",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "O MAR TAMBÉM É DELAS: UMA ONDA DE TRANSFORMAÇÃO - LANÇAMENTO DA CARTILHA DE PRIMEIRO EMBARQUE",
@@ -8349,7 +8349,7 @@
       "id": "3ada123888d984ada5",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ANP, P&D E POLÍTICA DE INOVAÇÃO",
@@ -8473,7 +8473,7 @@
       "id": "f1dc7cbe213b7cb082",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FINALISTAS PRÊMIO PLÍNIO CANTANHEDE - TRANSFORMAÇÃO DIGITAL E INOVAÇÃO",
@@ -8504,7 +8504,7 @@
       "id": "a391c769301dddeef2",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FINALISTAS PRÊMIO PLÍNIO CANTANHEDE - UPSTREAM",
@@ -8535,7 +8535,7 @@
       "id": "40ac754116b3c37ec6",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "GESTÃO DE DADOS E PLATAFORMAS 1",
@@ -8822,7 +8822,7 @@
       "id": "551a2167e0f4e6d8dc",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "INTELIGÊNCIA ARTIFICIAL E VIESES ALGORÍTMICOS",
@@ -8960,7 +8960,7 @@
       "id": "377941a39f0adb42db",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "GEOPOLÍTICA DA ENERGIA",
@@ -9251,7 +9251,7 @@
       "id": "406b23ee064849046b",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SEGURANÇA OPERACIONAL",
@@ -9426,7 +9426,7 @@
       "id": "9cd8b792bc2082f2cb",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "HIDROGÊNIO E ARMAZENAMENTO DE ENERGIA",
@@ -9591,7 +9591,7 @@
       "id": "6d0a1aa4b8ad982278",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SEGURANÇA OPERACIONAL",
@@ -9637,7 +9637,7 @@
       "id": "8b019487959b85a2e9",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "TECNOLOGIAS DE EOR: CAMINHOS PARA MAXIMIZAR O FATOR DE RECUPERAÇÃO EM CAMPOS MADUROS",
@@ -9739,7 +9739,7 @@
       "id": "45f4858918bab854c3",
       "date": "2026-09-22",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "id": "70b28b951f071385ab",
@@ -9882,11 +9882,11 @@
       "changed": false
     },
     {
-      "id": "94f5e0bda33a6d7453",
+      "id": "a6988011ae00ee6e79",
       "date": "2026-09-22",
       "start": "18:00",
       "end": "19:20",
-      "title": "Orquestra Petrobras",
+      "title": "Galp apresenta: Orquestra Maré do Amanhã",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -10007,11 +10007,11 @@
       "changed": false
     },
     {
-      "id": "6c433d57524b4844f7",
+      "id": "f38cc2686ac8954a11",
       "date": "2026-09-22",
       "start": "19:20",
       "end": "21:00",
-      "title": "Toni Garrido",
+      "title": "Xande de Pilares",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -10103,7 +10103,7 @@
       "id": "e6fa137495ed852415",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "BIODIVERSIDADE",
@@ -10228,7 +10228,7 @@
       "id": "26ad23d9148fbc29b6",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DESCOMISSIONAMENTO E ABANDONO",
@@ -10267,7 +10267,7 @@
       "id": "66aa43c06dc2731649",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DIVERSIDADE, EQUIDADE E INCLUSÃO (DE&I)",
@@ -10298,7 +10298,7 @@
       "id": "e9a42d429564bc5ae8",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "EFICIÊNCIA ENERGÉTICA",
@@ -10333,7 +10333,7 @@
       "id": "29582cdc11b49c9d13",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "id": "4332e430ffe64d2795",
@@ -10456,7 +10456,7 @@
       "id": "c9d2afbf871d915531",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "MODELAGEM, MATERIAIS E PERFORMANCE PARA ABANDONO DE POÇOS",
@@ -10561,7 +10561,7 @@
       "id": "c129c4004981d15087",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "RODA DE CONVERSA PETROBRAS - DA ADAPTAÇÃO À ACESSIBILIDADE: CONSTRUINDO AMBIENTES QUE FUNCIONAM PARA TODAS AS PESSOAS",
@@ -10624,7 +10624,7 @@
       "id": "8dd22ec140289c20eb",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SEGURANÇA OPERACIONAL",
@@ -10698,7 +10698,7 @@
       "id": "8d67b4e6d3dd0b1f52",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SISTEMAS SUBSEA E COMPLETAÇÃO",
@@ -10866,7 +10866,7 @@
       "id": "af29133bb19b8ce835",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "APRESENTAÇÃO DE CASO: UMA EXPERIÊNCIA DE MUDANÇA ORGANIZACIONAL",
@@ -10980,7 +10980,7 @@
       "id": "94e0084542d23e6e1e",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FINANCIAMENTO DA TRANSIÇÃO ENERGÉTICA",
@@ -11333,7 +11333,7 @@
       "id": "0bbcf6e86e05343f4e",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "REDUÇÃO DE EMISSÕES DE GEE",
@@ -11790,7 +11790,7 @@
       "id": "94e0aad80e7c6f7891",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "APRENDIZAGEM COMO ESTRATÉGIA: O PAPEL DO UPSKILLING E RESKILLING NO DESENVOLVIMENTO DE TALENTOS",
@@ -11884,7 +11884,7 @@
       "id": "115a7e91a454561eb8",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "GESTÃO ESTRATÉGICA E ECONOMIA",
@@ -12124,7 +12124,7 @@
       "id": "bca6685c9c33fa8b00",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "A IMPORTÂNCIA DA TRANSPARÊNCIA NA REGULAÇÃO DO GÁS NATURAL",
@@ -12173,7 +12173,7 @@
       "id": "1b4580a411588adc73",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ASSINATURA DO MOU COM FAETEC",
@@ -12327,7 +12327,7 @@
       "id": "7d54af6bafca20d4f9",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "MELHORES PRÁTICAS INTERSETORIAIS DE DE&I QUE ESTÃO TRANSFORMANDO ORGANIZAÇÕES",
@@ -12618,7 +12618,7 @@
       "id": "d983087d4891b6d86d",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "CARBON ACCOUNTING",
@@ -12681,7 +12681,7 @@
       "id": "9e46427b1548b8bbc3",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "CCUS 4",
@@ -12763,7 +12763,7 @@
       "id": "a496e115677f77182d",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DIGITAL TWINS, SIMULAÇÃO E MODELAGEM",
@@ -13095,7 +13095,7 @@
       "id": "21bb6e877bc0e09c1c",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "INTELIGÊNCIA ARTIFICIAL E IA GENERATIVA",
@@ -13580,7 +13580,7 @@
       "id": "ceaa878dbb29ed72ee",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "MERCADO DE CARBONO REGULADO E VOLUNTÁRIO",
@@ -13643,7 +13643,7 @@
       "id": "1ac15bec38de092d2c",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "RODA DE CONVERSA: DO BABY BOOMER AO GEN Z: COMO CADA GERAÇÃO SE REINVENTA NO MERCADO PROFISSIONAL?",
@@ -13885,7 +13885,7 @@
       "id": "786261b513252394d4",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FINALISTAS PRÊMIO PLÍNIO CANTANHEDE - GÁS NATUAL",
@@ -13916,7 +13916,7 @@
       "id": "669ab74b81bf5e61d3",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "IA EM REFINO E EFICIÊNCIA OPERACIONAL",
@@ -14536,7 +14536,7 @@
       "id": "d129bb31b79e85ba10",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "O PESO INVISÍVEL DO TRABALHO: UMA CONVERSA SOBRE SAÚDE MENTAL E RISCOS PSICOSSOCIAIS",
@@ -14611,7 +14611,7 @@
       "id": "64cd68bb97e7bf79a3",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "OPORTUNIDADES PARA UM MERCADO DE GÁS INTEGRADO NO CONE SUL",
@@ -14811,7 +14811,7 @@
       "id": "bd827b6b09b5f8b39a",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "BIOCOMBUSTÍVEIS E HIDROCARBONETOS RENOVÁVEIS",
@@ -14901,7 +14901,7 @@
       "id": "f31854b8bed56a9bc9",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "CCUS 6",
@@ -15149,7 +15149,7 @@
       "id": "e7df7d70418e11d9e1",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "PITCH SESSIONS: STARTUPS BNDES GARAGEM",
@@ -15337,7 +15337,7 @@
       "id": "7a3c95dec8c184c1e8",
       "date": "2026-09-23",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "INNOVATION HEADS - DA ESTRATÉGIA À OPERAÇÃO",
@@ -15442,11 +15442,11 @@
       "changed": false
     },
     {
-      "id": "a779854c2c9ed3d2c4",
+      "id": "31d66f7ae1181728bb",
       "date": "2026-09-23",
       "start": "18:00",
       "end": "19:20",
-      "title": "Galp apresenta: Orquestra Chiquinha Gonzaga | Patrocínio: PETRONAS",
+      "title": "Galp apresenta: Orquestra Maré do Amanhã",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -15567,11 +15567,11 @@
       "changed": false
     },
     {
-      "id": "819b48c04c44ba878f",
+      "id": "b882809ab008d4d3fa",
       "date": "2026-09-23",
       "start": "19:20",
       "end": "21:00",
-      "title": "Elba Ramalho",
+      "title": "Xande de Pilares",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -15761,7 +15761,7 @@
       "id": "4f326aaad2089940f3",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DESCARBONIZAÇÃO",
@@ -15858,7 +15858,7 @@
       "id": "986f923b2375b3db98",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "id": "034c7f7b6845e6aa8c",
@@ -16098,7 +16098,7 @@
       "id": "1befd0f4c0f1bc28be",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "PLATAFORMAS DIGITAIS, DADOS E CONHECIMENTO",
@@ -16184,7 +16184,7 @@
       "id": "08c0b5ffa816c25aa0",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SUPPLY CHAIN E LOGÍSTICA",
@@ -16231,7 +16231,7 @@
       "id": "a01ed88101c2a9602b",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "TRANSIÇÃO E SEGURANÇA ENERGÉTICA",
@@ -16282,7 +16282,7 @@
       "id": "1b6d04c932de3797c1",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "LANÇAMENTO: DOING BUSINESS IN BRAZIL",
@@ -16333,7 +16333,7 @@
       "id": "105ef6f7b0496dec33",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DESENVOLVIMENTO TERRITORIAL E IMPACTOS LOCAIS DAS OPERADORAS INDEPENDENTES",
@@ -16420,7 +16420,7 @@
       "id": "9aaf2572ec88237ea9",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ESCREVER A ENERGIA: OFICINA PRÁTICA DE ESCRITA TÉCNICO-CIENTÍFICA",
@@ -16799,7 +16799,7 @@
       "id": "52dcb631642838cf63",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "ARTE, MÚSICA E CULTURA COMO UM MOTOR DE INCLUSÃO",
@@ -16874,7 +16874,7 @@
       "id": "dd2dab2e88539f0825",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "CAMPOS GIGANTES EM PRODUÇÃO E LIÇÕES APRENDIDAS DE IMPLEMENTAÇÃO DE PROJETOS",
@@ -17012,7 +17012,7 @@
       "id": "78205ff368e91763e1",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "FRONTEIRAS EXPLORATÓRIAS MUNDIAIS",
@@ -17460,7 +17460,7 @@
       "id": "ec68e6d9592726caee",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SISTEMAS DE PRODUÇÃO ONSHORE",
@@ -17493,7 +17493,7 @@
       "id": "de73fc19e718c98143",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "CONVERSA COM API - AMERICAN PETROLEUM INSTITUTE",
@@ -17887,7 +17887,7 @@
       "id": "71bdb8e01de6c1cf72",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DESCOMISSIONAMENTO E ABANDONO",
@@ -18073,7 +18073,7 @@
       "id": "290bbf484bd45c8ab5",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "PRODUÇÃO, ESCOAMENTO E GARANTIA DE FLUXO",
@@ -18236,7 +18236,7 @@
       "id": "051bee80fd4927031a",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "SOLUÇÕES DE BAIXO CARBONO",
@@ -18310,7 +18310,7 @@
       "id": "fa9ef250df52e3dcb0",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "TECNOLOGIA DE OLEOS MARÍTIMOS",
@@ -18606,7 +18606,7 @@
       "id": "6690d7da5e84791305",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "DOS DADOS À DECISÃO: COMO A IA ESTÁ TRANSFORMANDO AS EMPRESAS",
@@ -18681,7 +18681,7 @@
       "id": "17e2bfd5c9200073c9",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "EXPERIÊNCIA DIGITAL E CADEIA DE VALOR",
@@ -19044,7 +19044,7 @@
       "id": "03470de2110443557e",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
       "title": "TRATAMENTO E INTEGRIDADE NO UPSTREAM",
@@ -19439,13 +19439,13 @@
       "id": "2f2f859d69da825160",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": true
+      "changed": false
     },
     {
-      "id": "b167ff2ea2f08ffeed",
+      "id": "e67166838c6a482f3c",
       "date": "2026-09-24",
-      "start": "18:00",
-      "end": "19:20",
+      "start": "17:30",
+      "end": "18:00",
       "title": "DJ",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
@@ -19456,11 +19456,25 @@
       "changed": false
     },
     {
-      "id": "a8a162b4fb52271c8d",
+      "id": "78ac8e76fe0470fc3b",
+      "date": "2026-09-24",
+      "start": "18:00",
+      "end": "19:20",
+      "title": "Galp apresenta: Orquestra Maré do Amanhã",
+      "location": "ROG.e FEST • Riocentro",
+      "type": "ROG.e FEST",
+      "track": "Happy Hour +",
+      "speakers": [],
+      "speakers_raw": "",
+      "source_url": "https://roge.energy/roge-fest",
+      "changed": false
+    },
+    {
+      "id": "6797572bdd36c9415b",
       "date": "2026-09-24",
       "start": "19:20",
       "end": "21:00",
-      "title": "Monobloco",
+      "title": "Xande de Pilares",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
