@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-14T18:55:20.057Z",
+  "generated_at": "2026-09-23T18:28:48.528Z",
   "source": "https://roge.energy/expositores",
-  "count": 645,
+  "count": 650,
   "exhibitors": [
     {
       "name": "2Solve",
@@ -544,6 +544,12 @@
       "website": "https://www.bray.com/"
     },
     {
+      "name": "BS&B Safety Systems",
+      "pavilion": "3",
+      "stand": "O40 - UK Pavilion",
+      "website": "https://www.bsbbrasil.com/"
+    },
+    {
       "name": "Bucka",
       "pavilion": "4",
       "stand": "Y73",
@@ -632,6 +638,12 @@
       "pavilion": "6",
       "stand": "ZD20",
       "website": "https://www.cascaduragroup.com/"
+    },
+    {
+      "name": "Castrol",
+      "pavilion": "4",
+      "stand": "V52",
+      "website": "https://www.castrol.com/pt_br/brazil/home.html"
     },
     {
       "name": "CCS Brasil",
@@ -790,6 +802,12 @@
       "website": "https://www.data.com.br/"
     },
     {
+      "name": "Dautec",
+      "pavilion": "4",
+      "stand": "W77",
+      "website": "https://dautec.net/products"
+    },
+    {
       "name": "DBR Energies",
       "pavilion": "4",
       "stand": "V68",
@@ -854,6 +872,12 @@
       "pavilion": "2",
       "stand": "F45",
       "website": ""
+    },
+    {
+      "name": "Digimat",
+      "pavilion": "3",
+      "stand": "I03",
+      "website": "https://www.digimat.com.br/"
     },
     {
       "name": "Digisensor",
@@ -1006,12 +1030,6 @@
       "website": "https://equipsea.com.br/"
     },
     {
-      "name": "Erflow",
-      "pavilion": "2",
-      "stand": "E46",
-      "website": "https://erflow.com.br/"
-    },
-    {
       "name": "Estaleiro Mauá",
       "pavilion": "3",
       "stand": "L14",
@@ -1061,7 +1079,7 @@
     },
     {
       "name": "FAC Engenharia",
-      "pavilion": "Estande: X50 - A",
+      "pavilion": "4",
       "stand": "X50 - A",
       "website": "https://facengenharia.com.br/"
     },
@@ -1282,6 +1300,12 @@
       "website": "https://www.galp.com/corp"
     },
     {
+      "name": "Gap Sistemas",
+      "pavilion": "6",
+      "stand": "ZB46",
+      "website": "https://sistemasgap.com.br/"
+    },
+    {
       "name": "Gascat",
       "pavilion": "3",
       "stand": "N06",
@@ -1480,6 +1504,12 @@
       "website": "https://www.hbxychina.com/"
     },
     {
+      "name": "Hempel",
+      "pavilion": "4",
+      "stand": "R75",
+      "website": "https://www.hempel.com/pt-pt"
+    },
+    {
       "name": "HENAN DINAK MECHANICAL EQUIPMENT",
       "pavilion": "3",
       "stand": "K14 - Ilha Abimaq",
@@ -1542,7 +1572,7 @@
     {
       "name": "HKM Indústria",
       "pavilion": "2",
-      "stand": "F44",
+      "stand": "X50",
       "website": "https://hkm.ind.br/"
     },
     {
