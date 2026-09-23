@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T19:19:04.874Z",
+  "generated_at": "2026-09-23T20:22:50.973Z",
   "source": [
     "https://roge.energy/programacao",
     "https://roge.energy/roge-fest",
@@ -16877,93 +16877,6 @@
       "changed": false
     },
     {
-      "title": "CAMPOS GIGANTES EM PRODUÇÃO E LIÇÕES APRENDIDAS DE IMPLEMENTAÇÃO DE PROJETOS",
-      "start": "11:50",
-      "end": "12:50",
-      "location": "CONGRESSO - SALA PLENÁRIA A",
-      "type": "Congresso",
-      "track": "",
-      "speakers": [
-        {
-          "name": "LUIZ OTAVIO SCHMALL DOS SANTOS",
-          "detail": "LUIZ OTAVIO SCHMALL DOS SANTOS"
-        },
-        {
-          "name": "Gerente Executivo de Búzios",
-          "detail": "Gerente Executivo de Búzios"
-        },
-        {
-          "name": "Petrobras",
-          "detail": "Petrobras"
-        },
-        {
-          "name": "ALBERTO FERRIN",
-          "detail": "ALBERTO FERRIN"
-        },
-        {
-          "name": "Presidente - Brasil",
-          "detail": "Presidente - Brasil"
-        },
-        {
-          "name": "ExxonMobil",
-          "detail": "ExxonMobil"
-        },
-        {
-          "name": "AURÉLIE CLAVE",
-          "detail": "AURÉLIE CLAVE"
-        },
-        {
-          "name": "VP Deep Offshore Customer Line OneTech",
-          "detail": "VP Deep Offshore Customer Line OneTech"
-        },
-        {
-          "name": "TotalEnergies",
-          "detail": "TotalEnergies"
-        },
-        {
-          "name": "JOÃO SANTOS ROSA",
-          "detail": "JOÃO SANTOS ROSA"
-        },
-        {
-          "name": "Presidente Brasil",
-          "detail": "Presidente Brasil"
-        },
-        {
-          "name": "Shell",
-          "detail": "Shell"
-        },
-        {
-          "name": "SUHANA SIDIK",
-          "detail": "SUHANA SIDIK"
-        },
-        {
-          "name": "Country Chair - Brasil",
-          "detail": "Country Chair - Brasil"
-        },
-        {
-          "name": "PETRONAS",
-          "detail": "PETRONAS"
-        },
-        {
-          "name": "VERÔNICA COELHO",
-          "detail": "VERÔNICA COELHO"
-        },
-        {
-          "name": "VP de Exploração e Produção Internacional",
-          "detail": "VP de Exploração e Produção Internacional"
-        },
-        {
-          "name": "Equinor",
-          "detail": "Equinor"
-        }
-      ],
-      "speakers_raw": "LUIZ OTAVIO SCHMALL DOS SANTOS • Gerente Executivo de Búzios • Petrobras • ALBERTO FERRIN • Presidente - Brasil • ExxonMobil • AURÉLIE CLAVE • VP Deep Offshore Customer Line OneTech • TotalEnergies • JOÃO SANTOS ROSA • Presidente Brasil • Shell • SUHANA SIDIK • Country Chair - Brasil • PETRONAS • VERÔNICA COELHO • VP de Exploração e Produção Internacional • Equinor",
-      "id": "481755c41c055562f3",
-      "date": "2026-09-24",
-      "source_url": "https://roge.energy/programacao",
-      "changed": false
-    },
-    {
       "title": "CERTIFICAÇÃO – CADEIAS DE CUSTÓDIA E AVALIAÇÃO DE SUSTENTABILIDADE DE PONTA A PONTA",
       "start": "11:50",
       "end": "12:50",
@@ -17010,53 +16923,6 @@
       ],
       "speakers_raw": "AMANDA GONDIM • Superintendente de Tecnologia e Meio Ambiente • ANP • LETICIA DRANKA • Coordenadora de qualidade • Raízen • RICARDO RODRIGUES DA CUNHA PINTO • Consultor Senior • Petrobras",
       "id": "78205ff368e91763e1",
-      "date": "2026-09-24",
-      "source_url": "https://roge.energy/programacao",
-      "changed": false
-    },
-    {
-      "title": "FRONTEIRAS EXPLORATÓRIAS MUNDIAIS",
-      "start": "11:50",
-      "end": "12:50",
-      "location": "CONGRESSO - SALA PLENÁRIA B",
-      "type": "Congresso",
-      "track": "",
-      "speakers": [
-        {
-          "name": "NELSON NARCISO FILHO",
-          "detail": "NELSON NARCISO FILHO"
-        },
-        {
-          "name": "Chair da ROG.e e CEO da NNF Energy Consultancy",
-          "detail": "Chair da ROG.e e CEO da NNF Energy Consultancy"
-        },
-        {
-          "name": "CARLOS GARIBALDI",
-          "detail": "CARLOS GARIBALDI"
-        },
-        {
-          "name": "Executive Secretary",
-          "detail": "Executive Secretary"
-        },
-        {
-          "name": "Arpel",
-          "detail": "Arpel"
-        },
-        {
-          "name": "LÚMEN N'PUNZA PONTES SEBASTIÃO",
-          "detail": "LÚMEN N'PUNZA PONTES SEBASTIÃO"
-        },
-        {
-          "name": "Diretor de Exploração",
-          "detail": "Diretor de Exploração"
-        },
-        {
-          "name": "Agência Nacional de Petróleo Gás e Biocombustíveis ANPG de Angola",
-          "detail": "Agência Nacional de Petróleo Gás e Biocombustíveis ANPG de Angola"
-        }
-      ],
-      "speakers_raw": "NELSON NARCISO FILHO • Chair da ROG.e e CEO da NNF Energy Consultancy • CARLOS GARIBALDI • Executive Secretary • Arpel • LÚMEN N'PUNZA PONTES SEBASTIÃO • Diretor de Exploração • Agência Nacional de Petróleo Gás e Biocombustíveis ANPG de Angola",
-      "id": "167935bd4b858a02ea",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
       "changed": false
@@ -17269,6 +17135,93 @@
       "changed": false
     },
     {
+      "title": "CAMPOS GIGANTES EM PRODUÇÃO E LIÇÕES APRENDIDAS DE IMPLEMENTAÇÃO DE PROJETOS",
+      "start": "12:20",
+      "end": "13:20",
+      "location": "CONGRESSO - SALA PLENÁRIA A",
+      "type": "Congresso",
+      "track": "",
+      "speakers": [
+        {
+          "name": "LUIZ OTAVIO SCHMALL DOS SANTOS",
+          "detail": "LUIZ OTAVIO SCHMALL DOS SANTOS"
+        },
+        {
+          "name": "Gerente Executivo de Búzios",
+          "detail": "Gerente Executivo de Búzios"
+        },
+        {
+          "name": "Petrobras",
+          "detail": "Petrobras"
+        },
+        {
+          "name": "ALBERTO FERRIN",
+          "detail": "ALBERTO FERRIN"
+        },
+        {
+          "name": "Presidente - Brasil",
+          "detail": "Presidente - Brasil"
+        },
+        {
+          "name": "ExxonMobil",
+          "detail": "ExxonMobil"
+        },
+        {
+          "name": "AURÉLIE CLAVE",
+          "detail": "AURÉLIE CLAVE"
+        },
+        {
+          "name": "VP Deep Offshore Customer Line OneTech",
+          "detail": "VP Deep Offshore Customer Line OneTech"
+        },
+        {
+          "name": "TotalEnergies",
+          "detail": "TotalEnergies"
+        },
+        {
+          "name": "JOÃO SANTOS ROSA",
+          "detail": "JOÃO SANTOS ROSA"
+        },
+        {
+          "name": "Presidente Brasil",
+          "detail": "Presidente Brasil"
+        },
+        {
+          "name": "Shell",
+          "detail": "Shell"
+        },
+        {
+          "name": "SUHANA SIDIK",
+          "detail": "SUHANA SIDIK"
+        },
+        {
+          "name": "Country Chair - Brasil",
+          "detail": "Country Chair - Brasil"
+        },
+        {
+          "name": "PETRONAS",
+          "detail": "PETRONAS"
+        },
+        {
+          "name": "VERÔNICA COELHO",
+          "detail": "VERÔNICA COELHO"
+        },
+        {
+          "name": "VP de Exploração e Produção Internacional",
+          "detail": "VP de Exploração e Produção Internacional"
+        },
+        {
+          "name": "Equinor",
+          "detail": "Equinor"
+        }
+      ],
+      "speakers_raw": "LUIZ OTAVIO SCHMALL DOS SANTOS • Gerente Executivo de Búzios • Petrobras • ALBERTO FERRIN • Presidente - Brasil • ExxonMobil • AURÉLIE CLAVE • VP Deep Offshore Customer Line OneTech • TotalEnergies • JOÃO SANTOS ROSA • Presidente Brasil • Shell • SUHANA SIDIK • Country Chair - Brasil • PETRONAS • VERÔNICA COELHO • VP de Exploração e Produção Internacional • Equinor",
+      "id": "3c3ee6b82d979923a1",
+      "date": "2026-09-24",
+      "source_url": "https://roge.energy/programacao",
+      "changed": false
+    },
+    {
       "title": "CCUS 8",
       "start": "12:20",
       "end": "13:20",
@@ -17295,6 +17248,65 @@
       ],
       "speakers_raw": "ANDRÉ LEAL • JOÃO PEDRO TAUSCHECK ZIELINSKI • RAFAEL GONÇALVES GUIMARÃES • TALITA GRANZINOLI VELLOZO PONTES",
       "id": "ca512d24176e077f04",
+      "date": "2026-09-24",
+      "source_url": "https://roge.energy/programacao",
+      "changed": false
+    },
+    {
+      "title": "FRONTEIRAS EXPLORATÓRIAS MUNDIAIS",
+      "start": "12:20",
+      "end": "13:20",
+      "location": "CONGRESSO - SALA PLENÁRIA B",
+      "type": "Congresso",
+      "track": "",
+      "speakers": [
+        {
+          "name": "NELSON NARCISO FILHO",
+          "detail": "NELSON NARCISO FILHO"
+        },
+        {
+          "name": "Chair da ROG.e e CEO da NNF Energy Consultancy",
+          "detail": "Chair da ROG.e e CEO da NNF Energy Consultancy"
+        },
+        {
+          "name": "CARLOS GARIBALDI",
+          "detail": "CARLOS GARIBALDI"
+        },
+        {
+          "name": "Executive Secretary",
+          "detail": "Executive Secretary"
+        },
+        {
+          "name": "Arpel",
+          "detail": "Arpel"
+        },
+        {
+          "name": "LÚMEN N'PUNZA PONTES SEBASTIÃO",
+          "detail": "LÚMEN N'PUNZA PONTES SEBASTIÃO"
+        },
+        {
+          "name": "Diretor de Exploração",
+          "detail": "Diretor de Exploração"
+        },
+        {
+          "name": "Agência Nacional de Petróleo Gás e Biocombustíveis ANPG de Angola",
+          "detail": "Agência Nacional de Petróleo Gás e Biocombustíveis ANPG de Angola"
+        },
+        {
+          "name": "ROB CORDRAY",
+          "detail": "ROB CORDRAY"
+        },
+        {
+          "name": "Managing Director Americas",
+          "detail": "Managing Director Americas"
+        },
+        {
+          "name": "Rystad Energy",
+          "detail": "Rystad Energy"
+        }
+      ],
+      "speakers_raw": "NELSON NARCISO FILHO • Chair da ROG.e e CEO da NNF Energy Consultancy • CARLOS GARIBALDI • Executive Secretary • Arpel • LÚMEN N'PUNZA PONTES SEBASTIÃO • Diretor de Exploração • Agência Nacional de Petróleo Gás e Biocombustíveis ANPG de Angola • ROB CORDRAY • Managing Director Americas • Rystad Energy",
+      "id": "78c043878162fa4e6b",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
       "changed": false
