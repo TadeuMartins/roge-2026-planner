@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T14:24:35.214Z",
+  "generated_at": "2026-09-24T15:44:23.637Z",
   "source": [
     "https://roge.energy/programacao",
     "https://roge.energy/roge-fest",
@@ -17371,19 +17371,19 @@
           "detail": "ANDREA LOPES"
         },
         {
-          "name": "EDUARDA NASCIMENTO",
-          "detail": "EDUARDA NASCIMENTO"
-        },
-        {
           "name": "NADYNNI SERRA SOEIRO SILVEIRA",
           "detail": "NADYNNI SERRA SOEIRO SILVEIRA"
+        },
+        {
+          "name": "REJANE MARIA DE OLIVEIRA",
+          "detail": "REJANE MARIA DE OLIVEIRA"
         }
       ],
-      "speakers_raw": "KAREN JOYCE LYRIO ARAGAO • ANDREA LOPES • EDUARDA NASCIMENTO • NADYNNI SERRA SOEIRO SILVEIRA",
+      "speakers_raw": "KAREN JOYCE LYRIO ARAGAO • ANDREA LOPES • NADYNNI SERRA SOEIRO SILVEIRA • REJANE MARIA DE OLIVEIRA",
       "id": "ce6c02870de51c967b",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": false
+      "changed": true
     },
     {
       "title": "INJETIVIDADE E DESENVOLVIMENTO DE CAMPOS",
@@ -18240,6 +18240,10 @@
           "detail": "AMANDA PUTTIN VIDOTO"
         },
         {
+          "name": "EMILSON DELANDIO MARQUES",
+          "detail": "EMILSON DELANDIO MARQUES"
+        },
+        {
           "name": "GABRIELA ESCOBAR HOCHMULLER DA SILVA",
           "detail": "GABRIELA ESCOBAR HOCHMULLER DA SILVA"
         },
@@ -18250,17 +18254,13 @@
         {
           "name": "LUIS FIERRO",
           "detail": "LUIS FIERRO"
-        },
-        {
-          "name": "SILAS RODRIGUES FERREIRA",
-          "detail": "SILAS RODRIGUES FERREIRA"
         }
       ],
-      "speakers_raw": "ALISSON FERNANDES DA ROSA • AMANDA PUTTIN VIDOTO • GABRIELA ESCOBAR HOCHMULLER DA SILVA • JOSE SILVA • LUIS FIERRO • SILAS RODRIGUES FERREIRA",
+      "speakers_raw": "ALISSON FERNANDES DA ROSA • AMANDA PUTTIN VIDOTO • EMILSON DELANDIO MARQUES • GABRIELA ESCOBAR HOCHMULLER DA SILVA • JOSE SILVA • LUIS FIERRO",
       "id": "051bee80fd4927031a",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": false
+      "changed": true
     },
     {
       "title": "SOLUÇÕES DE BAIXO CARBONO",
