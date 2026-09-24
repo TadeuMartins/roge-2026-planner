@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T21:41:01.853Z",
+  "generated_at": "2026-09-24T11:43:39.973Z",
   "source": [
     "https://roge.energy/programacao",
     "https://roge.energy/roge-fest",
@@ -18594,31 +18594,31 @@
           "detail": "EDGE"
         },
         {
-          "name": "MARCEL JORAND",
-          "detail": "MARCEL JORAND"
-        },
-        {
-          "name": "CEO",
-          "detail": "CEO"
-        },
-        {
-          "name": "Gás Verde",
-          "detail": "Gás Verde"
-        },
-        {
           "name": "RODRIGO HERVÉ",
           "detail": "RODRIGO HERVÉ"
         },
         {
           "name": "Coordenador de Assuntos Regulatórios",
           "detail": "Coordenador de Assuntos Regulatórios"
+        },
+        {
+          "name": "TAYANE VIEIRA",
+          "detail": "TAYANE VIEIRA"
+        },
+        {
+          "name": "Head de ESG",
+          "detail": "Head de ESG"
+        },
+        {
+          "name": "Urca Energia",
+          "detail": "Urca Energia"
         }
       ],
-      "speakers_raw": "TIAGO SANTOVITO • Diretor Executivo • Abiogás • JOSÉ MAURO • Diretor Jurídico e Institucional • EDGE • MARCEL JORAND • CEO • Gás Verde • RODRIGO HERVÉ • Coordenador de Assuntos Regulatórios",
+      "speakers_raw": "TIAGO SANTOVITO • Diretor Executivo • Abiogás • JOSÉ MAURO • Diretor Jurídico e Institucional • EDGE • RODRIGO HERVÉ • Coordenador de Assuntos Regulatórios • TAYANE VIEIRA • Head de ESG • Urca Energia",
       "id": "6690d7da5e84791305",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": false
+      "changed": true
     },
     {
       "title": "DOS DADOS À DECISÃO: COMO A IA ESTÁ TRANSFORMANDO AS EMPRESAS",
