@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T12:32:51.850Z",
+  "generated_at": "2026-09-24T12:52:32.457Z",
   "source": [
     "https://roge.energy/programacao",
     "https://roge.energy/roge-fest",
@@ -16140,12 +16140,12 @@
       "track": "",
       "speakers": [
         {
-          "name": "BRUNO DE ALMEIDA LEITE",
-          "detail": "BRUNO DE ALMEIDA LEITE"
-        },
-        {
           "name": "CELSO DE GUIGNET DRESJAN JUNIOR",
           "detail": "CELSO DE GUIGNET DRESJAN JUNIOR"
+        },
+        {
+          "name": "DAVID BUENO",
+          "detail": "DAVID BUENO"
         },
         {
           "name": "DÉBORA COSTA DO NASCIMENTO",
@@ -16180,11 +16180,11 @@
           "detail": "RODRIGO DE SOUZA E SILVA PICANÇA"
         }
       ],
-      "speakers_raw": "BRUNO DE ALMEIDA LEITE • CELSO DE GUIGNET DRESJAN JUNIOR • DÉBORA COSTA DO NASCIMENTO • FRANCISCO JAVIER PRIETO CORONEL • IGOR DE MIRANDA MACHADO CAEIRO • IRENE BIDA DE ARAUJO FERNANDES SIQUEIRA • IVAN JORGE BOESING • JOEL ROBERT KARP • MARILDA ROSADO DE SA RIBEIRO • RODRIGO DE SOUZA E SILVA PICANÇA",
+      "speakers_raw": "CELSO DE GUIGNET DRESJAN JUNIOR • DAVID BUENO • DÉBORA COSTA DO NASCIMENTO • FRANCISCO JAVIER PRIETO CORONEL • IGOR DE MIRANDA MACHADO CAEIRO • IRENE BIDA DE ARAUJO FERNANDES SIQUEIRA • IVAN JORGE BOESING • JOEL ROBERT KARP • MARILDA ROSADO DE SA RIBEIRO • RODRIGO DE SOUZA E SILVA PICANÇA",
       "id": "08c0b5ffa816c25aa0",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": false
+      "changed": true
     },
     {
       "title": "SUPPLY CHAIN E LOGÍSTICA",
@@ -16834,18 +16834,6 @@
           "detail": "GALP"
         },
         {
-          "name": "FLAVIO CANTO",
-          "detail": "FLAVIO CANTO"
-        },
-        {
-          "name": "Diretor",
-          "detail": "Diretor"
-        },
-        {
-          "name": "Instituto Reação",
-          "detail": "Instituto Reação"
-        },
-        {
           "name": "MARCOS FROTA",
           "detail": "MARCOS FROTA"
         },
@@ -16870,11 +16858,11 @@
           "detail": "PRIO"
         }
       ],
-      "speakers_raw": "CARLA LACERDA • Presidente • Bratecc • CRISTIANE COELHO RODRIGUES • RE - CSI Head Brasil • GALP • FLAVIO CANTO • Diretor • Instituto Reação • MARCOS FROTA • Fundador • Instituto Cultural Unicirco • OLIVIA STEWART RICHARDSON • Head de Comunicação e Marketing • PRIO",
+      "speakers_raw": "CARLA LACERDA • Presidente • Bratecc • CRISTIANE COELHO RODRIGUES • RE - CSI Head Brasil • GALP • MARCOS FROTA • Fundador • Instituto Cultural Unicirco • OLIVIA STEWART RICHARDSON • Head de Comunicação e Marketing • PRIO",
       "id": "dd2dab2e88539f0825",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": false
+      "changed": true
     },
     {
       "title": "CERTIFICAÇÃO – CADEIAS DE CUSTÓDIA E AVALIAÇÃO DE SUSTENTABILIDADE DE PONTA A PONTA",
@@ -18610,15 +18598,15 @@
           "detail": "Head de ESG"
         },
         {
-          "name": "Urca Energia",
-          "detail": "Urca Energia"
+          "name": "Gás Verde",
+          "detail": "Gás Verde"
         }
       ],
-      "speakers_raw": "TIAGO SANTOVITO • Diretor Executivo • Abiogás • JOSÉ MAURO • Diretor Jurídico e Institucional • EDGE • RODRIGO HERVÉ • Coordenador de Assuntos Regulatórios • TAYANE VIEIRA • Head de ESG • Urca Energia",
+      "speakers_raw": "TIAGO SANTOVITO • Diretor Executivo • Abiogás • JOSÉ MAURO • Diretor Jurídico e Institucional • EDGE • RODRIGO HERVÉ • Coordenador de Assuntos Regulatórios • TAYANE VIEIRA • Head de ESG • Gás Verde",
       "id": "6690d7da5e84791305",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": false
+      "changed": true
     },
     {
       "title": "DOS DADOS À DECISÃO: COMO A IA ESTÁ TRANSFORMANDO AS EMPRESAS",
