@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-24T16:44:56.674Z",
+  "generated_at": "2026-09-24T20:44:15.008Z",
   "source": [
     "https://roge.energy/programacao",
     "https://roge.energy/roge-fest",
     "https://roge.energy/expositores"
   ],
-  "count": 480,
+  "count": 481,
   "events": [
     {
       "title": "CERIMÔNIA DE ABERTURA",
@@ -9882,11 +9882,11 @@
       "changed": false
     },
     {
-      "id": "94f5e0bda33a6d7453",
+      "id": "a6988011ae00ee6e79",
       "date": "2026-09-22",
       "start": "18:00",
       "end": "19:20",
-      "title": "Orquestra Petrobras",
+      "title": "Galp apresenta: Orquestra Maré do Amanhã",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -10007,11 +10007,11 @@
       "changed": false
     },
     {
-      "id": "6c433d57524b4844f7",
+      "id": "f38cc2686ac8954a11",
       "date": "2026-09-22",
       "start": "19:20",
       "end": "21:00",
-      "title": "Toni Garrido",
+      "title": "Xande de Pilares",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -15442,11 +15442,11 @@
       "changed": false
     },
     {
-      "id": "a779854c2c9ed3d2c4",
+      "id": "31d66f7ae1181728bb",
       "date": "2026-09-23",
       "start": "18:00",
       "end": "19:20",
-      "title": "Galp apresenta: Orquestra Chiquinha Gonzaga | Patrocínio: PETRONAS",
+      "title": "Galp apresenta: Orquestra Maré do Amanhã",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -15567,11 +15567,11 @@
       "changed": false
     },
     {
-      "id": "819b48c04c44ba878f",
+      "id": "b882809ab008d4d3fa",
       "date": "2026-09-23",
       "start": "19:20",
       "end": "21:00",
-      "title": "Elba Ramalho",
+      "title": "Xande de Pilares",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
@@ -19466,10 +19466,10 @@
       "changed": false
     },
     {
-      "id": "b167ff2ea2f08ffeed",
+      "id": "e67166838c6a482f3c",
       "date": "2026-09-24",
-      "start": "18:00",
-      "end": "19:20",
+      "start": "17:30",
+      "end": "18:00",
       "title": "DJ",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
@@ -19480,11 +19480,25 @@
       "changed": false
     },
     {
-      "id": "a8a162b4fb52271c8d",
+      "id": "78ac8e76fe0470fc3b",
+      "date": "2026-09-24",
+      "start": "18:00",
+      "end": "19:20",
+      "title": "Galp apresenta: Orquestra Maré do Amanhã",
+      "location": "ROG.e FEST • Riocentro",
+      "type": "ROG.e FEST",
+      "track": "Happy Hour +",
+      "speakers": [],
+      "speakers_raw": "",
+      "source_url": "https://roge.energy/roge-fest",
+      "changed": false
+    },
+    {
+      "id": "6797572bdd36c9415b",
       "date": "2026-09-24",
       "start": "19:20",
       "end": "21:00",
-      "title": "Monobloco",
+      "title": "Xande de Pilares",
       "location": "ROG.e FEST • Riocentro",
       "type": "ROG.e FEST",
       "track": "Happy Hour +",
