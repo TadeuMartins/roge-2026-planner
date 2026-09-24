@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T13:22:48.701Z",
+  "generated_at": "2026-09-24T13:44:36.570Z",
   "source": [
     "https://roge.energy/programacao",
     "https://roge.energy/roge-fest",
@@ -15733,12 +15733,12 @@
           "detail": "ANP"
         },
         {
-          "name": "FELIPE PEREZ",
-          "detail": "FELIPE PEREZ"
+          "name": "NICOLLE ALVES MONTEIRO DE CASTRO",
+          "detail": "NICOLLE ALVES MONTEIRO DE CASTRO"
         },
         {
-          "name": "LATAM Downstream Strategist - Director Americas Refining and Marketing Research",
-          "detail": "LATAM Downstream Strategist - Director Americas Refining and Marketing Research"
+          "name": "Especialista sênior de agronegócio e biocombustíveis",
+          "detail": "Especialista sênior de agronegócio e biocombustíveis"
         },
         {
           "name": "SP Global",
@@ -15757,11 +15757,11 @@
           "detail": "Petrobras"
         }
       ],
-      "speakers_raw": "ANGELA OLIVEIRA DA COSTA • Superintendente de Derivados de Petróleo e Biocombustíveis • EPE • CRISTIANE ZULIVIA DE ANDRADE MONTEIRO • Superintendente de Biocombustíveis e Qualidade de Produtos • ANP • FELIPE PEREZ • LATAM Downstream Strategist - Director Americas Refining and Marketing Research • SP Global • WILLIAM FRANÇA DA SILVA • Diretor Executivo de Processos Industriais e Produtos • Petrobras",
+      "speakers_raw": "ANGELA OLIVEIRA DA COSTA • Superintendente de Derivados de Petróleo e Biocombustíveis • EPE • CRISTIANE ZULIVIA DE ANDRADE MONTEIRO • Superintendente de Biocombustíveis e Qualidade de Produtos • ANP • NICOLLE ALVES MONTEIRO DE CASTRO • Especialista sênior de agronegócio e biocombustíveis • SP Global • WILLIAM FRANÇA DA SILVA • Diretor Executivo de Processos Industriais e Produtos • Petrobras",
       "id": "4f326aaad2089940f3",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": false
+      "changed": true
     },
     {
       "title": "DESCARBONIZAÇÃO",
@@ -16873,6 +16873,18 @@
       "track": "",
       "speakers": [
         {
+          "name": "JORGE CARMELO",
+          "detail": "JORGE CARMELO"
+        },
+        {
+          "name": "Consultor",
+          "detail": "Consultor"
+        },
+        {
+          "name": "IBP",
+          "detail": "IBP"
+        },
+        {
           "name": "AMANDA GONDIM",
           "detail": "AMANDA GONDIM"
         },
@@ -16883,6 +16895,18 @@
         {
           "name": "ANP",
           "detail": "ANP"
+        },
+        {
+          "name": "CEZAR MATTAR",
+          "detail": "CEZAR MATTAR"
+        },
+        {
+          "name": "Coordenador Regulatório",
+          "detail": "Coordenador Regulatório"
+        },
+        {
+          "name": "Acelen Renováveis",
+          "detail": "Acelen Renováveis"
         },
         {
           "name": "LETICIA DRANKA",
@@ -16909,11 +16933,11 @@
           "detail": "Petrobras"
         }
       ],
-      "speakers_raw": "AMANDA GONDIM • Superintendente de Tecnologia e Meio Ambiente • ANP • LETICIA DRANKA • Coordenadora de qualidade • Raízen • RICARDO RODRIGUES DA CUNHA PINTO • Consultor Senior • Petrobras",
+      "speakers_raw": "JORGE CARMELO • Consultor • IBP • AMANDA GONDIM • Superintendente de Tecnologia e Meio Ambiente • ANP • CEZAR MATTAR • Coordenador Regulatório • Acelen Renováveis • LETICIA DRANKA • Coordenadora de qualidade • Raízen • RICARDO RODRIGUES DA CUNHA PINTO • Consultor Senior • Petrobras",
       "id": "78205ff368e91763e1",
       "date": "2026-09-24",
       "source_url": "https://roge.energy/programacao",
-      "changed": false
+      "changed": true
     },
     {
       "title": "O QUE DIFERENTES ATORES ENSINAM SOBRE GESTÃO DA INOVAÇÃO E PERFORMANCE",
