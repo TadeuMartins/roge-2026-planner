@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24T18:28:33.859Z",
+  "generated_at": "2026-09-24T18:47:46.462Z",
   "source": "https://roge.energy/expositores",
-  "count": 651,
+  "count": 653,
   "exhibitors": [
     {
       "name": "2Solve",
@@ -1006,6 +1006,12 @@
       "website": "https://www.enterlog.com.br/"
     },
     {
+      "name": "Enterprise Logistics",
+      "pavilion": "2",
+      "stand": "C06",
+      "website": ""
+    },
+    {
       "name": "EPS Leading",
       "pavilion": "3",
       "stand": "N52",
@@ -1610,6 +1616,12 @@
       "pavilion": "2",
       "stand": "C06",
       "website": "https://www.homybuild.com/"
+    },
+    {
+      "name": "HOMY S.r.l.",
+      "pavilion": "2",
+      "stand": "C06",
+      "website": ""
     },
     {
       "name": "HTP – HANGZHOU TURBINE POWER GROUP CO.,LTD",
