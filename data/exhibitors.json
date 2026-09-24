@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T20:23:56.113Z",
+  "generated_at": "2026-09-24T18:28:33.859Z",
   "source": "https://roge.energy/expositores",
-  "count": 650,
+  "count": 651,
   "exhibitors": [
     {
       "name": "2Solve",
@@ -1562,6 +1562,12 @@
       "pavilion": "3",
       "stand": "H66",
       "website": "https://highsupply.com.br/"
+    },
+    {
+      "name": "HILTI",
+      "pavilion": "4",
+      "stand": "R48",
+      "website": "https://www.hilti.com.br/"
     },
     {
       "name": "Hita Belzona",
