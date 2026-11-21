@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T12:40:26.603Z",
+  "generated_at": "2026-11-21T13:13:19.477Z",
   "source": "https://roge.energy/expositores",
-  "count": 648,
+  "count": 653,
   "exhibitors": [
     {
       "name": "2Solve",
@@ -3890,6 +3890,36 @@
       "pavilion": "2",
       "stand": "A50",
       "website": "https://www.valveszg.com/"
+    },
+    {
+      "name": "ZHEJIANG ZHIJU PIPELINE INDUSTRY CO., LTD.",
+      "pavilion": "6",
+      "stand": "ZA48",
+      "website": "https://www.zhiju-steel.com/"
+    },
+    {
+      "name": "ZHEJIANG ZHONGWU STEEL TUBE MFG.CO.,LTD",
+      "pavilion": "6",
+      "stand": "ZC42 - 28",
+      "website": "https://www.zhongwuguanye.com/en/"
+    },
+    {
+      "name": "Zhongda",
+      "pavilion": "4-6 (Interligação)",
+      "stand": "Z02",
+      "website": "https://www.zhongdasteel.com/em"
+    },
+    {
+      "name": "ZHONGQUAN GROUP VALVE TECHNOLOGY",
+      "pavilion": "4",
+      "stand": "Y59 - 3",
+      "website": "https://www.jochtechvalve.com/"
+    },
+    {
+      "name": "Zyfire",
+      "pavilion": "6",
+      "stand": "ZD36",
+      "website": "https://www.zyfire.com/"
     }
   ]
 }
